@@ -1,9 +1,9 @@
 # Bitácora de aprendizaje
 
 
-*--------------------------------------------------*
+--------------------------------------------------
 Clase 1
-*--------------------------------------------------*
+--------------------------------------------------
 
 ![sfi](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/3da810b6-3078-431b-8cd7-832cc0f26004)
 ![concert](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/2604172e-588f-4b3c-b7de-be5b20e5218a)
@@ -13,9 +13,9 @@ Por motivos de salud, no pude asistir a la primera clase.
 Me puse a consultar información relacionada con el nombre de la materia.
 
 Conclusion:
-*--------------------------------------------------*
+--------------------------------------------------
 Sesion Externa 1
-*--------------------------------------------------*
+--------------------------------------------------
 
 ![arduino](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/80af048f-11d1-4e5b-a77b-acc8ac8a0c1e)
 ![microbit](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/cfee54b7-3cf2-4214-b718-dace858675a0)
@@ -24,9 +24,9 @@ Sesion Externa 1
 ![gamingpc](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/71e5e4b1-08f8-4941-95f3-a614699040a2)
 ![Sierra_Supercomputer_(48002385338)](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/d1465ada-a963-4698-934c-4a1073350030)
 
-*--------------------------------------------------*
+--------------------------------------------------
 Clase 2
-*--------------------------------------------------*
+--------------------------------------------------
 REFERENCIAS/RECURSOS:
 
 Moment Factory
@@ -140,11 +140,11 @@ Respuestas
 
    Implementación:
 
-`   std::string imagen1 = ":)";
-   char[] imagen2 = { ´:´, ´(´ };
+   `std::string imagen1 = ":)";
+   char[] imagen2 = { ':', '(' };
 
    
-   if(dataRx == ´A´) {
+   if(dataRx == 'A') {
    display.scroll(imagen1, wait=False, loop=True);
 
    else display.scroll(imagen2, wait =False, loop=False);
@@ -161,17 +161,25 @@ Viernes a las 12 del dia
 
 3 momentos en la bitacora, repo codigo
 *--------------------------------------------------*
+
 Sesion Externa 2
 *--------------------------------------------------*
 
-*--------------------------------------------------*
 
 *--------------------------------------------------*
+
+
+*--------------------------------------------------*
+
 Clase 3
 *--------------------------------------------------*
 
+
 *--------------------------------------------------*
+
 Sesion Externa 3
 *--------------------------------------------------*
 
+
 *--------------------------------------------------*
+
