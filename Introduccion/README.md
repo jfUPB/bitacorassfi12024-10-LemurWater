@@ -111,18 +111,18 @@ Respuestas
   2. "background(byte);" Es el comando para cambiar el color de fondo, utiliza escala 0-255 en escala de grises
 
       Implementación:
+
+       ` byte color = 126;
+        if(true){
+            background(color);
+        }
+        return 0;`
       
-      byte color = 126;
-      if(true){
-          background(color);
-      }
-      return 0;
-      
- 3. El comando "display.show()" permite mostrar graficos de un banco predefinido, como "Image.HEART" e "Image.HAPPY"
+ 2. El comando "display.show()" permite mostrar graficos de un banco predefinido, como "Image.HEART" e "Image.HAPPY"
 
     Implementación:
 
-    if(port.availableBytes() > 0){
+  `  if(port.availableBytes() > 0){
         let dataRx = port.read(1);
         if(dataRx == 'A'){
             display.show(Image.HEART);
@@ -132,13 +132,13 @@ Respuestas
         }
         else{
             printf("NO input!");
-        }
+        }`
 
-4.  Una forma facil, eficiente y practica, aunque un poco limitada, seria utilizar ASCII. Letras que parescan o se asemejen a formas e imprimirlas con el comando scroll "display.scroll(':)', wait=False, loop=True). Como nota extra incluso se podrian hacer secuencias de caracteres que cuenten una historia ...
+3.  Una forma facil, eficiente y practica, aunque un poco limitada, seria utilizar ASCII. Letras que parescan o se asemejen a formas e imprimirlas con el comando scroll "display.scroll(':)', wait=False, loop=True). Como nota extra incluso se podrian hacer secuencias de caracteres que cuenten una historia ...
 
    Implementación:
 
-   std::string imagen1 = ":)";
+`   std::string imagen1 = ":)";
    char[] imagen2 = { ´:´, ´(´ };
 
    
@@ -147,7 +147,7 @@ Respuestas
 
    else display.scroll(imagen2, wait =False, loop=False);
    }
-   return 0;
+   return 0;`
 
 
 ![Captura de pantalla 2024-01-26 113119](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/f858deee-a451-4898-80aa-e6e54368cbdd)
