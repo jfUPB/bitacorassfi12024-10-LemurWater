@@ -13,6 +13,11 @@ Por motivos de salud, no pude asistir a la primera clase.
 Me puse a consultar información relacionada con el nombre de la materia.
 
 Conclusion:
+Pequeños computadores que utilizan programas libianos pueden ser conectados entre si para desarrollar tareas mas complejas. Utilizando hardware para conectar los estimulos sensados del mundo real, ser interpretados y trasmitir cierta informacion a otro computador.
+
+Asi con el solo oprimir un boto, se pueden desencadenar una serie de procesos que puedan entretener a un publico o facilitar una tarea.
+Concepto: Fuerte union entre Hardware (PC/sensores) y Software (funcionalidad)
+
 --------------------------------------------------
 Sesion Externa 1
 --------------------------------------------------
