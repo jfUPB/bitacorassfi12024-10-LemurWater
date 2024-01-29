@@ -51,6 +51,9 @@ audio.play(Sound.HELLO) | audio.play(Sound.HELLO, speed=60, pitch=255)
 El objecto audio tiene la funcion "play()", la cual recibe como parametro el sonido a producir; en este ejemplo se utilizan un banco de sonidos predefinidos.
 NOTA: Tambien se puede definir variables como la velocidad y el pitch.
 
+music.play() tambien tiene una biblioteca de sonidos chiptune predefinidos, mas melodicos y ritmicos.
+
+
 7. ¿Qué es una máquina de estados?
 
 Maquina de estados finita:
