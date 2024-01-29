@@ -59,3 +59,9 @@ Los estados se pueden definir como comportamientos que tienen los objetos. Los e
 Cierto estado requiere ciertas funciones y atributos especificos que pueden ser solo relevantes para ese estado.
 
 
+
+8. ¿Qué son eventos en una máquina de estados?
+
+son sucesos o acciones disparados por un "trigger" que son relevantes solo para y dentro de la maquina, estos pueden ser IO streams, completar timers, condicionales, etc...
+
+
