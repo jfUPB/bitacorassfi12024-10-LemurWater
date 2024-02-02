@@ -134,3 +134,19 @@ while True:
                //display image
                return
 return 0
+
+
+
+
+
+
+¿Cómo funciona este ejemplo?
+
+se importan las librerias
+se crea un objeto que representa un estado con una responsabilidad (guardar el tiempo actual)
+
+se inicia la maquina
+
+inicia en el estado que guarda el tiempo actual.
+luego pasa al siguiente estado que es un timer el cual tiene un evento que se activa cuando la diferencia de tiempo es mayor a la establecida
+luego tiene otro evento que ocurre dependiendo del estado de la variable self.pixelState
