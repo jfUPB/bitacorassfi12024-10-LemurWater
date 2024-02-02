@@ -99,3 +99,15 @@ Es una implementación adicional que trabaja con las funciones base del programa
 ESTADO: Inicia en modo de configuración, es decir, sin hacer cuenta regresiva aún, la bomba está desarmada. El valor inicial del conteo regresivo es de 20 segundos.
 
 https://app.diagrams.net/#G1o5ITmyDJ8qYDsCI7YrF0lJ_WU11ojUny
+
+
+
+
+-----
+Sesion individual
+
+
+
+11. ¿Cómo es posible estructurar una aplicación usando una máquina de estados para poder atender varios eventos de manera concurrente?
+
+Se empaquetan los eventos buscando tener una alta cohesion, la máquina irá secuencialmente de un estado a otro, utilizando los eventos que necesite pasando por sus etapas de funcionamiento. Habrán unos estados iniciales, finales. y unos intermedios los cuales el sistema usará convenientemente y concurrentemente en su uso habitual.
