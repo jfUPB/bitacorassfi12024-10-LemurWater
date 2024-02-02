@@ -157,3 +157,15 @@ luego tiene otro evento que ocurre dependiendo del estado de la variable self.pi
 2. ¿Qué relación tiene este ejemplo con las preguntas guía?
 
 Es un equema muy sensillo de una maquina de estados la cual contiene un estado que dispara algunos eventos y sus acciones serian configurar y decrementar el timer, mostrar imagenes en la pantalla y alterar variables
+
+
+
+CONCLUSIONES:
+Aveces tendemos a crear software como escribimos ... porque tenemos la habilidad, vamos escribiendo cualquier cosa que se nos va ocurriendo en la mente.
+
+Pero si lo que se busca es la creacion de una obra literaria, se deben mantener siertas normas y reglas que faciliten tanto al creador como al lector, nadar por el mundo creado.
+
+El software no es la excepcion (con ciertas diferencias, claro esta)
+
+
+Sigiendo con los conceptos de OOP y similares, buscamos empaquetar la informacion y procesos, agrupando en "cosas" similares. Los estados son una manera muy util de entender claramente que hace que, cuando y donde.
