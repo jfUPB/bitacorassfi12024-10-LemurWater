@@ -93,3 +93,9 @@ NOTA: No pude asistir a la clase pasada.
 Es una implementación adicional que trabaja con las funciones base del programa, la accion puede estar escrita en un lenguaje diferente al de la implementacion basica.
 
 
+
+10. ¿Cuáles son los estados, eventos y acciones en el reto propuesto?
+
+ESTADO: Inicia en modo de configuración, es decir, sin hacer cuenta regresiva aún, la bomba está desarmada. El valor inicial del conteo regresivo es de 20 segundos.
+
+https://app.diagrams.net/#G1o5ITmyDJ8qYDsCI7YrF0lJ_WU11ojUny
