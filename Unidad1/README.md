@@ -140,7 +140,7 @@ return 0
 
 
 
-¿Cómo funciona este ejemplo?
+1. ¿Cómo funciona este ejemplo?
 
 se importan las librerias
 se crea un objeto que representa un estado con una responsabilidad (guardar el tiempo actual)
@@ -150,3 +150,10 @@ se inicia la maquina
 inicia en el estado que guarda el tiempo actual.
 luego pasa al siguiente estado que es un timer el cual tiene un evento que se activa cuando la diferencia de tiempo es mayor a la establecida
 luego tiene otro evento que ocurre dependiendo del estado de la variable self.pixelState
+
+
+
+
+2. ¿Qué relación tiene este ejemplo con las preguntas guía?
+
+Es un equema muy sensillo de una maquina de estados la cual contiene un estado que dispara algunos eventos y sus acciones serian configurar y decrementar el timer, mostrar imagenes en la pantalla y alterar variables
