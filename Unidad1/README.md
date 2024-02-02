@@ -68,12 +68,13 @@ Maquina de estados finita:
 Los estados se pueden definir como comportamientos que tienen los objetos. Los estados dan la impresion de que ses tienen varios objetos, o que un objeto cambia a ser otro.
 
 Cierto estado requiere ciertas funciones y atributos especificos que pueden ser solo relevantes para ese estado.
-
+NOTA: El sistema solo puede estar en un (1) solo estado en todo momento (pero en cualquier momento puede cambiar de estado).
 
 
 8. ¿Qué son eventos en una máquina de estados?
 
 son sucesos o acciones disparados por un "trigger" que son relevantes solo para y dentro de la maquina, estos pueden ser IO streams, completar timers, condicionales, etc...
+NOTA: pueden ocurrir varios al mismo tiempo.
 
 
 
@@ -89,12 +90,11 @@ NOTA: No pude asistir a la clase pasada.
 
  
 9. ¿Qué son las acciones?
-    
 Es una implementación adicional que trabaja con las funciones base del programa, la accion puede estar escrita en un lenguaje diferente al de la implementacion basica.
+CONCEPTO INTERESANTE Y DISCUTIBLE: La unica manera de trabajar varias acciones al mismo tiempo es con Multithreading, pero inclusive asi, se puede argumentar que el sistema solo puede ejecutar una funcion al tiempo; a diferencia de las "acciones" en los seres vivos, podemos respirar y caminar al mismo tiempo (2 acciones a la vez).
 
 
-
-10. ¿Cuáles son los estados, eventos y acciones en el reto propuesto?
+11. ¿Cuáles son los estados, eventos y acciones en el reto propuesto?
 
 ESTADO: Inicia en modo de configuración, es decir, sin hacer cuenta regresiva aún, la bomba está desarmada. El valor inicial del conteo regresivo es de 20 segundos.
 
@@ -111,3 +111,26 @@ Sesion individual
 11. ¿Cómo es posible estructurar una aplicación usando una máquina de estados para poder atender varios eventos de manera concurrente?
 
 Se empaquetan los eventos buscando tener una alta cohesion, la máquina irá secuencialmente de un estado a otro, utilizando los eventos que necesite pasando por sus etapas de funcionamiento. Habrán unos estados iniciales, finales. y unos intermedios los cuales el sistema usará convenientemente y concurrentemente en su uso habitual.
+
+
+
+12. ¿Cuáles son los eventos que pueden ocurrir de manera simultánea en el problema planteado en el reto?
+
+La serializacion es un evento que podriamos considerar siempre ocurre en paralelo con cualquier otro proceso.
+
+
+
+13. Construye una aplicación que muestre en la pantalla de LED dos imágenes diferentes que se alternarán cada 2 segundos, pero sin usar la función bloqueante sleep(). Investiga las funciones ticks_ms() y ticks_diff() de la biblioteca utime. ¿Cómo puedes utilizar las dos funciones anteriores para resolver el problema de las imágenes que alternan?
+
+REFERENCIAS: 
+ticks_diff(a,b): devuelve la diferencia entre a y b
+ticks_ms(): contador estandar que tiene un punto arbitrario como referencia
+
+while True:
+    now = int(utime.ticks_ms())
+        while True:
+           if int(utime.ticks_ms() / 1000) > now + 10:
+           if ticks_diff(now + 2000, now) > 0:
+               //display image
+               return
+return 0
