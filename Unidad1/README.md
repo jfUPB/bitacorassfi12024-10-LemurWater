@@ -68,3 +68,20 @@ Cierto estado requiere ciertas funciones y atributos especificos que pueden ser 
 son sucesos o acciones disparados por un "trigger" que son relevantes solo para y dentro de la maquina, estos pueden ser IO streams, completar timers, condicionales, etc...
 
 
+
+
+
+
+--------
+Continuacion
+
+NOTA: No pude asistir a la clase pasada.
+
+
+
+ 
+9. ¿Qué son las acciones?
+    
+Es una implementación adicional que trabaja con las funciones base del programa, la accion puede estar escrita en un lenguaje diferente al de la implementacion basica.
+
+
