@@ -171,6 +171,8 @@ Red Text test
 OBJETIVO: El proposito de la sesion sera implementar el codigo de la momba en el micro:bit.
 Voy a empezar, en esta micro-sesion, por entender el algoritmo del ejemplo y transformarlo a UML.
 
+NOTA: Me a tomado DEMASIADO tiempo crear el algoritmo (nisiquiera e empezado con el UML (50+ mins)) ... pero da una claridad visual hacerca del funcionamiento del sistema, asi que voy a continuar con la diagramacion.
+
 -----
 #### Micro-sesión 2
 
