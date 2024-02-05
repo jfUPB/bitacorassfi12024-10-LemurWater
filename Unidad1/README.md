@@ -154,11 +154,25 @@ El software no es la excepcion (con ciertas diferencias, claro esta)
 
 Sigiendo con los conceptos de OOP y similares, buscamos empaquetar la informacion y procesos, agrupando en "cosas" similares. Los estados son una manera muy util de entender claramente que hace que, cuando y donde.
 
+-----
+
 ## SEMANA 2
 
 ### Sesión 1 lunes febrero 5
 
 #### Micro-sesión 1: apertura.
+Estuve arreglando un bag en esta parte del código:
+
+```py
+display.show(Image.HEART)
+```
+No he podido arreglar. Realicé tales pruebas:
+
+* asdkasñdk
+* asdkjlasj
+
+Ahora voy a probar otra idea: jbcjshdfljashdflkahsdfkjhasdf
+
 
 #### Micro-sesión 2
 
