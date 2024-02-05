@@ -173,6 +173,11 @@ Voy a empezar, en esta micro-sesion, por entender el algoritmo del ejemplo y tra
 
 NOTA: Me a tomado DEMASIADO tiempo crear el algoritmo (nisiquiera e empezado con el UML (50+ mins)) ... pero da una claridad visual hacerca del funcionamiento del sistema, asi que voy a continuar con la diagramacion.
 
+![Bomba_8](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/bac70350-bb9c-4866-bf64-a588b538ddf3)
+
+
+
+
 -----
 #### Micro-sesión 2
 
