@@ -1,26 +1,14 @@
 # Bitácora de aprendizaje
 
-Lunes 29 de Enero
-
+## SEMANA 2
 
 WEB: https://sistemasfisicosinteractivos1.readthedocs.io/
-
-
-
-
-
 
 Software para sistemas embebidos
 
 Que es un sistema embebido?
 
 Es un computador el cual envia, recibe y procesa informacion con otros computadores dentro de un sistema. normalmente cumple una funcion especifica.
-
-
-
-
-
-
 
 Preguntas guía iniciales
 
@@ -75,10 +63,6 @@ NOTA: El sistema solo puede estar en un (1) solo estado en todo momento (pero en
 
 son sucesos o acciones disparados por un "trigger" que son relevantes solo para y dentro de la maquina, estos pueden ser IO streams, completar timers, condicionales, etc...
 NOTA: pueden ocurrir varios al mismo tiempo.
-
-
-
-
 
 
 --------
@@ -169,3 +153,38 @@ El software no es la excepcion (con ciertas diferencias, claro esta)
 
 
 Sigiendo con los conceptos de OOP y similares, buscamos empaquetar la informacion y procesos, agrupando en "cosas" similares. Los estados son una manera muy util de entender claramente que hace que, cuando y donde.
+
+## SEMANA 2
+
+### Sesión 1 lunes febrero 5
+
+#### Micro-sesión 1: apertura.
+
+#### Micro-sesión 2
+
+#### Micro-sesión 3
+
+#### Micro-sesión 4: cierre 
+
+### Sesión 2 miércoles febrero 7
+
+#### Micro-sesión 1: apertura.
+
+#### Micro-sesión 2
+
+#### Micro-sesión 3
+
+#### Micro-sesión 4: cierre 
+
+### Sesión 3 fecha?
+
+#### Micro-sesión 1: apertura.
+
+#### Micro-sesión 2
+
+#### Micro-sesión 3
+
+#### Micro-sesión 4
+
+#### Micro-sesión 5: cierre 
+
