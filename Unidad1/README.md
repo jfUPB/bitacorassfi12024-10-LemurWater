@@ -157,7 +157,7 @@ Sigiendo con los conceptos de OOP y similares, buscamos empaquetar la informacio
 -----
 
 <span style="color:red">
-Text content
+Red Text test
 </span>
 
 
