@@ -160,6 +160,8 @@ Sigiendo con los conceptos de OOP y similares, buscamos empaquetar la informacio
 Red Text test
 </span>
 
+<span style="color:red">Text content</span>sistemas-embebidos
+
 
 ## SEMANA 2
 
