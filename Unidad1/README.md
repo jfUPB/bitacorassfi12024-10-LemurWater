@@ -171,19 +171,20 @@ Red Text test
 OBJETIVO: El proposito de la sesion sera implementar el codigo de la momba en el micro:bit.
 Voy a empezar, en esta micro-sesion, por entender el algoritmo del ejemplo y transformarlo a UML.
 
+
+#### Micro-sesión 2
+
 NOTA: Me a tomado DEMASIADO tiempo crear el algoritmo (nisiquiera e empezado con el UML (50+ mins)) ... pero da una claridad visual hacerca del funcionamiento del sistema, asi que voy a continuar con la diagramacion.
+
+
+#### Micro-sesión 3
 
 ![Bomba_8](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/bac70350-bb9c-4866-bf64-a588b538ddf3)
 
 
-
-
------
-#### Micro-sesión 2
-
-#### Micro-sesión 3
-
 #### Micro-sesión 4: cierre 
+
+CONCLUSIONES: El diagrama del algoritmo da gran claridad del funcionamiento del sistema y es muy facil verlo y referenciarse para analizar una parte especifica del funcionamiento del sistema. Tambien permite ver las conecciones entre los distinos bloques logicos.
 
 ### Sesión 2 miércoles febrero 7
 
