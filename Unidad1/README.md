@@ -164,6 +164,7 @@ Sigiendo con los conceptos de OOP y similares, buscamos empaquetar la informacio
 OBJETIVO: El proposito de la sesion sera implementar el codigo de la momba en el micro:bit.
 
 Voy a empezar, en esta micro-sesion, por entender el algoritmo del ejemplo y transformarlo a UML.
+
 -----
 #### Micro-sesión 2
 
