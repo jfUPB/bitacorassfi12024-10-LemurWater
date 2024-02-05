@@ -156,9 +156,12 @@ Sigiendo con los conceptos de OOP y similares, buscamos empaquetar la informacio
 
 -----
 
-<span style="color:blue">some *blue* text</span>
+<span style="color:red">
+Text content
+</span>
 
-## SEMANA 2</span>
+
+## SEMANA 2
 
 ### Sesión 1 lunes febrero 5
 
