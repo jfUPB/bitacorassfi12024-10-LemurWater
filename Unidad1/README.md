@@ -156,7 +156,7 @@ Sigiendo con los conceptos de OOP y similares, buscamos empaquetar la informacio
 
 -----
 
-## SEMANA 2
+## <span style="color:red">SEMANA 2</span>
 
 ### Sesión 1 lunes febrero 5
 
