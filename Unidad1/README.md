@@ -161,18 +161,9 @@ Sigiendo con los conceptos de OOP y similares, buscamos empaquetar la informacio
 ### Sesión 1 lunes febrero 5
 
 #### Micro-sesión 1: apertura.
-Estuve arreglando un bag en esta parte del código:
+OBJETIVO: El proposito de la sesion sera implementar el codigo de la momba en el micro:bit.
 
-```py
-display.show(Image.HEART)
-```
-No he podido arreglar. Realicé tales pruebas:
-
-* asdkasñdk
-* asdkjlasj
-
-Ahora voy a probar otra idea: jbcjshdfljashdflkahsdfkjhasdf
-
+Voy a empezar, en esta micro-sesion, por entender el algoritmo del ejemplo y transformarlo a UML.
 
 #### Micro-sesión 2
 
