@@ -155,7 +155,7 @@ El software no es la excepcion (con ciertas diferencias, claro esta)
 Sigiendo con los conceptos de OOP y similares, buscamos empaquetar la informacion y procesos, agrupando en "cosas" similares. Los estados son una manera muy util de entender claramente que hace que, cuando y donde.
 
 -----
-<span style="color:red">
+<span style="color:blue">some *blue* text</span>.
 ## SEMANA 2</span>
 
 ### Sesión 1 lunes febrero 5
