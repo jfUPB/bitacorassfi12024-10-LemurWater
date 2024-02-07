@@ -198,9 +198,36 @@ CONCLUSIONES: El diagrama del algoritmo da gran claridad del funcionamiento del 
 
 ### Sesión 3 fecha?
 
+PROPOSITO: Darle realismo al proyecto con elementos faciles de implementar pero altamente creativos e interesantes que le agreguen valor al proyecto.
+
+
 #### Micro-sesión 1: apertura.
 
+PROPOSITO: Buscar componentes para armar el proyecto:
+- tubos para los tacos de TNT.
+- Cinta de teflon que los sostenga.
+- Cables de decoracion y posible implementacion para desactivar la bomba quitando los cable en el orden especifico.
+
+![5](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/925c9d75-ea83-49aa-a522-926d2cdd1e9b)
+![4](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/706e99f6-9c17-4e87-a568-903d54aff396)
+![unnamed](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/cff5b1dd-6432-41c3-b25e-6fdc0777c51d)
+
+
 #### Micro-sesión 2
+
+PROPOSITO: Aprender como funcionan los pines de entrada y salida de micro:bit, para agregarle elementos interactivos a la bomba.
+
+![pins-v1-v2](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/2697d436-fcb8-4db3-89a7-bd5502aa14e1)
+https://makecode.microbit.org/device/pins
+
+Los pines de cocodrilo pueden ser una buena opcion para el proyecto, se pueden desconectar facilmente a diferencia de los plugs banana de 4mm.
+
+![Screenshot from 2024-02-06 23-00-59](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/675852f1-a218-4c62-9fbe-3fe932310140)
+aliexpress.com
+
+![4](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/5c870062-7d03-4985-8788-926aae73ead3)
+
+
 
 #### Micro-sesión 3
 
