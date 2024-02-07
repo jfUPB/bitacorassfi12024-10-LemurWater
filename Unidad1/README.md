@@ -198,6 +198,11 @@ CONCLUSIONES: El diagrama del algoritmo da gran claridad del funcionamiento del 
 
 ### Sesión 3 fecha?
 
+METODOLOGIA: La sesion 3 se va a completar en 2 dias, siendo la primera parte donde se consiguen los materiales y la segunda donde se implementan.
+Se considera de alta importancia que los elementos de decoracion y agregado trabajados durante esta semana se completemen lo mas pronto posible para no entorpecer la realizacion del proyecto base.
+
+A diferencia del flujo de trabajo normal, realizar la parte estetica, visual e interactiva del proyecto en una etapa temprana puede facilitar la planeacion y distribucion del tiempo restante para finalizar la actividad, invirtiendo la mayor cantidad de tiempo en el proyecto base y la menor cantidad posible en los elementos extra.
+
 PROPOSITO: Darle realismo al proyecto con elementos faciles de implementar pero altamente creativos e interesantes que le agreguen valor al proyecto.
 
 
