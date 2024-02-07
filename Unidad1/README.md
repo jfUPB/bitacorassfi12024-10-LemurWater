@@ -186,9 +186,18 @@ NOTA: Me a tomado DEMASIADO tiempo crear el algoritmo (nisiquiera e empezado con
 
 CONCLUSIONES: El diagrama del algoritmo da gran claridad del funcionamiento del sistema y es muy facil verlo y referenciarse para analizar una parte especifica del funcionamiento del sistema. Tambien permite ver las conecciones entre los distinos bloques logicos.
 
+
+-----
+
 ### Sesión 2 miércoles febrero 7
 
+OBJETIVO: Consolidar el sistema de desarmado de la bomba por cables (si es posible, y si no descartarlo lo mas pronto posible sin perder tiempo innecesario en su desarrollo)
+
 #### Micro-sesión 1: apertura.
+
+Voy a comenzar por solucionar dudas sobre el IO stream de la lectura de los pines (digitales).
+Se le pide guia y asesoria al profesor del plan quese tiene para el proyecto.
+
 
 #### Micro-sesión 2
 
