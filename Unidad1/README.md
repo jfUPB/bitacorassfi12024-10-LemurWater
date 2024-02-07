@@ -202,7 +202,9 @@ Se le pide guia y asesoria al profesor del plan quese tiene para el proyecto.
 #### Micro-sesión 2
 
 OBJETIVO: Voy a implementar/experimentar como leer los pines (0-2)
-![microbt io pins](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/807925fc-5600-477a-a801-2f8e24c59ec1)
+![microbt io pins](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/f542789a-505f-4239-bc2b-c653fdc75e53)
+
+![microbt io pins_2](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/124c9b7b-3756-4b19-99b7-0374a5d28b30)
 
 NOTA: Se logro complir con el objetivo, obtener el estado de un solo PIN para ver si tiene cambio de estado (0-1)
 
