@@ -225,7 +225,9 @@ Tambien trabaje haciendole pequenas mejoras al codigo para leer los otros pines.
 
 #### Micro-sesión 4: cierre 
 
+El siguente paso sera conseguir los componentes que faltan (caimanes, conecciones en U y pintura naranjada)
 
+NOTA: Esto muy satisfecho con el proceso que lleva el proyecto, espero poder generar una buena implementacion de los cables en la bomba.
 
 -----
 
