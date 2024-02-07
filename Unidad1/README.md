@@ -201,6 +201,10 @@ Se le pide guia y asesoria al profesor del plan quese tiene para el proyecto.
 
 #### Micro-sesión 2
 
+OBJETIVO: Voy a implementar/experimentar como leer los pines (0-2)
+![microbt io pins](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/807925fc-5600-477a-a801-2f8e24c59ec1)
+
+
 #### Micro-sesión 3
 
 #### Micro-sesión 4: cierre 
