@@ -5,6 +5,12 @@ from microbit import *
 # Code in a 'while True:' loop repeats forever
 while True:
     if pin0.is_touched():
-        display.show(1)
+        if pin1.is_touched():
+            display.show(2)
+        else:
+            display.show(3)
     else:
-        display.show(0)
+        if pin1.is_touched():
+            display.show(1)
+        else:
+            display.show(0)
