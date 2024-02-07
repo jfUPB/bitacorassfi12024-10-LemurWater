@@ -221,7 +221,10 @@ PROPOSITO: Aprender como funcionan los pines de entrada y salida de micro:bit, p
 
 https://makecode.microbit.org/device/pins
 
+
 Los pines de cocodrilo pueden ser una buena opcion para el proyecto, se pueden desconectar facilmente a diferencia de los plugs banana de 4mm.
+
+El incerto tipo U tambien puede ser una opcion a considerar, utilizando un tornillo puede ser muy facil su coneccion/desconeccion
 
 ![Screenshot from 2024-02-06 23-00-59](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/675852f1-a218-4c62-9fbe-3fe932310140)
 
