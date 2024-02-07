@@ -204,7 +204,7 @@ PROPOSITO: Darle realismo al proyecto con elementos faciles de implementar pero 
 #### Micro-sesión 1: apertura.
 
 PROPOSITO: Buscar componentes para armar el proyecto:
-- tubos para los tacos de TNT.
+- Tubos para los tacos de TNT.
 - Cinta de teflon que los sostenga.
 - Cables de decoracion y posible implementacion para desactivar la bomba quitando los cable en el orden especifico.
 
