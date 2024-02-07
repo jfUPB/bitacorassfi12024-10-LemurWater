@@ -205,7 +205,11 @@ Se le pide guia y asesoria al profesor del plan quese tiene para el proyecto.
 
 #### Micro-sesión 4: cierre 
 
-### Sesión 3 fecha?
+
+
+-----
+
+### Sesión 3 (Parte 1: Feb 6/Parte 2: Feb 8)
 
 METODOLOGIA: La sesion 3 se va a completar en 2 dias, siendo la primera parte donde se consiguen los materiales y la segunda donde se implementan.
 Se considera de alta importancia que los elementos de decoracion y agregado trabajados durante esta semana se completemen lo mas pronto posible para no entorpecer la realizacion del proyecto base.
