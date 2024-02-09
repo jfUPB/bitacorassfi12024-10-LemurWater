@@ -296,6 +296,10 @@ DESCRIPCION: Mejora de los cables, utilizando unos menos potentes y mas bonitos
 
 
 Utilizando un cable mas bonito para realzar la experiencia de "desactivar la bomba"
+
+NOTA: Se aprendieron conceptos como puente electrico y corto circuito.
+Se utilizo una lata de cerveza cortada para hacer puente y preservar la integridad de los pines.
+Tambien se considero seder la fuerza de los caimanes pero se descarto para facilidad del proyecto.
 ![8](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/e79addd8-b241-4297-9eed-7761c18e7ee0)
 ![6](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/c96539b0-a426-4259-b59a-5c5148897692)
 
