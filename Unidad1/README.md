@@ -314,3 +314,13 @@ Y se reduce a solo la accion de cortar o no el cable.
 -Cual cable cortar? envez de Quedo bien cortado?
 
 Este pequeno toque mejora en gran medida la experiencia (metodos simples y faciles de darle agrego al software)
+
+
+CONCLUSIONES:
+Si bien nos concentramos mucho en el codigo que va a correr X aparato, es de gran importancia tener presente que este aparato tienen un espacio fisico y cumple con condiciones del mundo real. Al escribir codigo nunca pensamos en factores como:
+
+- A que temperatura va a estar el software corrienod en el dispositivo.
+- Que limitaciones de espacio puede presentar el Hardware requerido por el Software
+  
+
+
