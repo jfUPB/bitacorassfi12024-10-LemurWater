@@ -283,10 +283,12 @@ Con todos los elementos, se logro armar el prototipo funcional.
 NOTA: Los caimanes producen alto dano en los pines del micro:bit.
 Hablando con mi madre, ella me recomendo utilizar tiras cortadas de latas de pintura para protejer las conecciones.
 
-![3](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/1c12da7d-32e9-4889-949f-f5e1f176d1ae)
+
 ![2](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/f6076ee8-8bdf-4eeb-8301-03cf7c22139d)
 ![1](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/a55b9d86-ef16-4fc5-ac20-d31ef3726f2b)
 
+Papel aluminio para protejer el dispositivo y que pueda durar mas tiempo
+![3](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/1c12da7d-32e9-4889-949f-f5e1f176d1ae)
 
 #### Micro-sesión 4
 
