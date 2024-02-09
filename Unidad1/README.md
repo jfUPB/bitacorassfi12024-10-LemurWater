@@ -283,9 +283,34 @@ Con todos los elementos, se logro armar el prototipo funcional.
 NOTA: Los caimanes producen alto dano en los pines del micro:bit.
 Hablando con mi madre, ella me recomendo utilizar tiras cortadas de latas de pintura para protejer las conecciones.
 
+![3](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/1c12da7d-32e9-4889-949f-f5e1f176d1ae)
+![2](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/f6076ee8-8bdf-4eeb-8301-03cf7c22139d)
+![1](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/a55b9d86-ef16-4fc5-ac20-d31ef3726f2b)
 
 
 #### Micro-sesión 4
 
+DESCRIPCION: Mejora de los cables, utilizando unos menos potentes y mas bonitos
+
+
+Utilizando un cable mas bonito para realzar la experiencia de "desactivar la bomba"
+![8](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/e79addd8-b241-4297-9eed-7761c18e7ee0)
+![6](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/c96539b0-a426-4259-b59a-5c5148897692)
+
+
+Tambien existe la posiblidad de utilizar tornillos, aunque no se quitan como los cocodrilos, no maltratan tanto los pines.
+![9](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/167dbf02-fb0a-4cb1-b518-71b3ac499c79)
+
+
+
 #### Micro-sesión 5: cierre 
 
+Enves de cojer la pinza del caiman y quitarla, se decidio que el sistema fuera cortar envez de quitar.
+
+Le agrega realizsmo al producto y el usuario no tiene que perder tiempo pensando si la fuerza para quitar el caiman es suficiente o si ya se desconecto.
+
+Y se reduce a solo la accion de cortar o no el cable. 
+
+-Cual cable cortar? envez de Quedo bien cortado?
+
+Este pequeno toque mejora en gran medida la experiencia (metodos simples y faciles de darle agrego al software)
