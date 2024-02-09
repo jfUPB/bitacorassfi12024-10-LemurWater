@@ -276,6 +276,15 @@ El incerto tipo U tambien puede ser una opcion a considerar, utilizando un torni
 
 #### Micro-sesión 3
 
+Febrero 9
+
+Con todos los elementos, se logro armar el prototipo funcional.
+
+NOTA: Los caimanes producen alto dano en los pines del micro:bit.
+Hablando con mi madre, ella me recomendo utilizar tiras cortadas de latas de pintura para protejer las conecciones.
+
+
+
 #### Micro-sesión 4
 
 #### Micro-sesión 5: cierre 
