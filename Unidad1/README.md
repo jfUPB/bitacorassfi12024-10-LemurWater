@@ -288,6 +288,7 @@ Hablando con mi madre, ella me recomendo utilizar tiras cortadas de latas de pin
 ![1](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/a55b9d86-ef16-4fc5-ac20-d31ef3726f2b)
 
 Papel aluminio para protejer el dispositivo y que pueda durar mas tiempo
+
 ![3](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/1c12da7d-32e9-4889-949f-f5e1f176d1ae)
 
 #### Micro-sesión 4
@@ -300,11 +301,13 @@ Utilizando un cable mas bonito para realzar la experiencia de "desactivar la bom
 NOTA: Se aprendieron conceptos como puente electrico y corto circuito.
 Se utilizo una lata de cerveza cortada para hacer puente y preservar la integridad de los pines.
 Tambien se considero seder la fuerza de los caimanes pero se descarto para facilidad del proyecto.
+
 ![8](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/e79addd8-b241-4297-9eed-7761c18e7ee0)
 ![6](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/c96539b0-a426-4259-b59a-5c5148897692)
 
 
 Tambien existe la posiblidad de utilizar tornillos, aunque no se quitan como los cocodrilos, no maltratan tanto los pines.
+
 ![9](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/167dbf02-fb0a-4cb1-b518-71b3ac499c79)
 
 
