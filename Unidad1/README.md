@@ -358,4 +358,9 @@ Explico partes importantes como la maquina de estados.
 
 #### Micro-sesión 3:
 
+Intento de desarrollo de maquina de estados ...
+![bombcode1](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/1a2c58a4-1ac4-4ced-8b12-1f268e0f057b)
+
+avance del codigo. Se me dificulto un poco y presente problemas con el PC que me retrasaron un pcoo el trabajo.
+
 
