@@ -359,8 +359,14 @@ Explico partes importantes como la maquina de estados.
 #### Micro-sesión 3:
 
 Intento de desarrollo de maquina de estados ...
+
 ![bombcode1](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/1a2c58a4-1ac4-4ced-8b12-1f268e0f057b)
 
 avance del codigo. Se me dificulto un poco y presente problemas con el PC que me retrasaron un pcoo el trabajo.
 
 
+#### Micro-sesión 4:
+
+Debo repsar mas los conceptos de maaquina de estados y como va a ser la serializacion.
+
+No creo que la implmentacion que estoy haciendo con los cables interfiera el trabajo original, o incluso llegue a modificarlo; puede ser el mismo sistema base y agregar los cables en la funcion que se encarga del serializado.
