@@ -331,5 +331,8 @@ Si bien nos concentramos mucho en el codigo que va a correr X aparato, es de gra
 - A que temperatura va a estar el software corrienod en el dispositivo.
 - Que limitaciones de espacio puede presentar el Hardware requerido por el Software
   
+## SEMANA 4
 
+### Sesión 1 (lunes 12 febrero)
 
+#### Micro-sesión 1: apertura.
