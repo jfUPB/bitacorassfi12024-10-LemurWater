@@ -339,9 +339,8 @@ Si bien nos concentramos mucho en el codigo que va a correr X aparato, es de gra
 
 #### Micro-sesión 1: apertura.
 
-![cableA](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/a33acefa-1ed8-4152-81af-4c6c85356ae1)
 ![cableB](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/cc5a8040-2e07-4d0f-b92b-04b64b9292a6)
-
+![cableA](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/a33acefa-1ed8-4152-81af-4c6c85356ae1)
 
 REFLEXION: Al crear el algoritmo del programa, pude visualizar una oportunidad 
 para intercambiar uno de los bloques del algo (input del usuario, para desactivar la bomba)
