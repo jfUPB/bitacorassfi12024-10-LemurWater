@@ -330,9 +330,33 @@ Si bien nos concentramos mucho en el codigo que va a correr X aparato, es de gra
 
 - A que temperatura va a estar el software corrienod en el dispositivo.
 - Que limitaciones de espacio puede presentar el Hardware requerido por el Software
-  
+
+
+-----
 ## SEMANA 4
 
 ### Sesión 1 (lunes 12 febrero)
 
 #### Micro-sesión 1: apertura.
+
+![cableA](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/a33acefa-1ed8-4152-81af-4c6c85356ae1)
+![cableB](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/cc5a8040-2e07-4d0f-b92b-04b64b9292a6)
+
+
+REFLEXION: Al crear el algoritmo del programa, pude visualizar una oportunidad 
+para intercambiar uno de los bloques del algo (input del usuario, para desactivar la bomba)
+por una funcionalidad agregada (cortar los cables)
+
+Como los bloques re reemplazan, se debe cuidar de mantener las conecciones con el bloque anterior y el posterior; para que la intrusion en el sistema, no genere ningun cambio.
+
+
+#### Micro-sesión 2:
+
+El profesor dio una breve explicacion de como funciona el sistema, con ejemplos en codigo.
+
+Explico partes importantes como la maquina de estados.
+
+
+#### Micro-sesión 3:
+
+
