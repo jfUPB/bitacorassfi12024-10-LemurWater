@@ -429,3 +429,15 @@ En esta sesion se planea pulir acabados del proyecto, implementar la lectura IO 
 
 Se utilizo cinta naranja para simular los tacos de dinamita (TNT)
 
+
+#### Micro-sesión 3:
+
+La implementacion del io-read no fue tan facil como esperaba, toca crear algunas conecciones y adaptar el codigo para desactivar la bomba.
+
+![code5](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/9261a82a-a89c-4584-85cd-726d43ade8f3)
+
+
+#### Micro-sesión 4 - Cierre:
+
+Falta muy poco, estoy muy conforme con el proceso que lleva el proyecto.
+Falta una semana (3 sesiones); yo creo que voy con buen tiempo, el ideal es acabar el proyecto la proxima sesion, la que sigue destinarla para correcciones y dejar la ultima sesion para imprevistos.
