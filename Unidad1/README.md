@@ -424,3 +424,8 @@ En esta sesion se planea pulir acabados del proyecto, implementar la lectura IO 
 
 
 #### Micro-sesión 2:
+
+![TNT](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/f87b560d-a29f-4fc7-8de9-fd2424efacf5)
+
+Se utilizo cinta naranja para simular los tacos de dinamita (TNT)
+
