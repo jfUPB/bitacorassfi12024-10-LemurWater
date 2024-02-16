@@ -375,9 +375,10 @@ No creo que la implmentacion que estoy haciendo con los cables interfiera el tra
 
 ### Sesión 2 (Viernes 16 Feb)
 
-OBJETIVO: avanzar lo que mas se pueda en el codigo de la bomba, es lo unico que falta.
+NOTA: No pude asistir a la clase presencial (miercoles 14)
+OBJETIVO: avanzar lo que mas se pueda en el codigo de la bomba, es lo único que falta.
 
-#### Micro-sesión 1: apertura
+#### Micro-sesión 1: apertura:
 
 Al empezar a escribir el codigo siguiendo el algoritmo base, no tube mayores problemas, pero al intentar realizar procesos mas complejos, empece a tener problemas, principalmente con las funciones y las variables globales.
 NOTA: Afortunadamente e estado utilizando el Game engine Godot; y me fue facil entender la poca documentacion que encontre al respecto (variables globales)
@@ -385,7 +386,7 @@ NOTA: Afortunadamente e estado utilizando el Game engine Godot; y me fue facil e
 ![code1](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/03438d63-4412-4008-8dc3-d31fec198734)
 
 
-#### Micro-sesión 2
+#### Micro-sesión 2:
 
 Descrubrí en la pagina web de python micro:bit, que en el panel izquierdo hay documentacion muy detallada de funcionalidad.
 Encontré la explicacion de las funciones y rapidamente desacoplé el código.
@@ -393,4 +394,13 @@ Encontré la explicacion de las funciones y rapidamente desacoplé el código.
 ![code2](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/54363815-8193-40f0-8aca-bf7fe9a8650e)
 
 
-#### Micro-sesión 3
+#### Micro-sesión 3:
+
+Gran avance en el codigo.
+
+NOTA: 
+- Se exploró la capacidad que tiene micro:bit para producir diferentes tipos de sonidos y de diferentes formas; conceptos externos al curso como frecuencia (sonido) fueron aplicados.
+BUGS:
+- El timer de la bomba tiene un error: Hay una funcion que bloquea la ejecucion del codigo y descuadra los intervalos en segundos.
+
+#### Micro-sesión 4 - Cierre:
