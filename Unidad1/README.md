@@ -406,6 +406,7 @@ BUGS:
 #### Micro-sesión 4 - Cierre:
 
 Muy satisfecho con los avances obtenidos, se puede sentir la intencion del producto al probarlo, aunque falta implementar la desactivada.
+Se le hicieron unas mejoras al codigo: optimizacion, claridad, etc ...
 
 FALTA:
 - Input del usuario
