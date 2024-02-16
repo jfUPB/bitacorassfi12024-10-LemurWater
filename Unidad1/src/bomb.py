@@ -8,17 +8,7 @@ global timer
 global state
 
 
-def _clear_display():
-    display.show(Image('00000:'
-                       '00000:'
-                       '00000:'
-                       '00000:'
-                       '00000'))
-    
-    
-def _draw_arrow():
-    _clear_display()
-    
+def draw_arrow():
     display.set_pixel(0,2,9)
     display.set_pixel(1,1,9)
     display.set_pixel(1,3,9)
@@ -34,14 +24,12 @@ def setup():
     global timer
     global state
 
+    timer = 9
+    set_volume(128)
     state = 'SETUP'
     speech.say('SETUP')
-    timer = 9
-    set_volume(255)
-    _draw_arrow()
+    draw_arrow()
     sleep(400)
-    state = 'CONFIG'
-    speech.say('CONFIG')
     
     
 def config():
@@ -102,9 +90,9 @@ def explode():
     
     music.set_tempo(bpm=110)
     display.show(Image.SKULL)
-    state = 'SETUP'
     music.play(music.FUNERAL, wait=True, loop=False)
     sleep(400)
+    state = 'SETUP'
 
 def player_win():
     global state
@@ -115,14 +103,12 @@ def player_win():
     state = 'SETUP'
 
 
-setup()
+ 
 
 
 # Code in a 'while True:' loop repeats forever
 while True:
     if state == 'SETUP':
-        setup()
-    if state == 'CONFIG':
         config()
     elif state == 'ARMED':
         countdown()
@@ -130,4 +116,3 @@ while True:
         explode()
     elif state == 'DISARMED':
         player_win()
-    
