@@ -1,4 +1,4 @@
-  # Bitácora de aprendizaje
+# Bitácora de aprendizaje
 
 ## SEMANA 2
 
@@ -165,9 +165,9 @@ Red Text test
 
 ## SEMANA 3
 
-### Sesión 1 lunes febrero 5
+### Sesión 1 (lunes febrero 5)
 
-#### Micro-sesión 1: apertura.
+#### Micro-sesión 1: apertura
 OBJETIVO: El proposito de la sesion sera implementar el codigo de la momba en el micro:bit.
 Voy a empezar, en esta micro-sesion, por entender el algoritmo del ejemplo y transformarlo a UML.
 
@@ -189,7 +189,7 @@ CONCLUSIONES: El diagrama del algoritmo da gran claridad del funcionamiento del 
 
 -----
 
-### Sesión 2 miércoles febrero 7
+### Sesión 2: miércoles febrero 7
 
 OBJETIVO: Consolidar el sistema de desarmado de la bomba por cables (si es posible, y si no descartarlo lo mas pronto posible sin perder tiempo innecesario en su desarrollo)
 
@@ -337,7 +337,7 @@ Si bien nos concentramos mucho en el codigo que va a correr X aparato, es de gra
 
 ### Sesión 1 (lunes 12 febrero)
 
-#### Micro-sesión 1: apertura.
+#### Micro-sesión 1: apertura
 
 ![cableB](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/cc5a8040-2e07-4d0f-b92b-04b64b9292a6)
 ![cable1](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/e962e6fd-1708-47a9-899b-e8c2d7c5a36f)
@@ -375,7 +375,22 @@ No creo que la implmentacion que estoy haciendo con los cables interfiera el tra
 
 ### Sesión 2 (Viernes 16 Feb)
 
-#### Micro-sesión 1: apertura.
-
 OBJETIVO: avanzar lo que mas se pueda en el codigo de la bomba, es lo unico que falta.
 
+#### Micro-sesión 1: apertura
+
+Al empezar a escribir el codigo siguiendo el algoritmo base, no tube mayores problemas, pero al intentar realizar procesos mas complejos, empece a tener problemas, principalmente con las funciones y las variables globales.
+NOTA: Afortunadamente e estado utilizando el Game engine Godot; y me fue facil entender la poca documentacion que encontre al respecto (variables globales)
+
+![code1](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/03438d63-4412-4008-8dc3-d31fec198734)
+
+
+#### Micro-sesión 2
+
+Descrubrí en la pagina web de python micro:bit, que en el panel izquierdo hay documentacion muy detallada de funcionalidad.
+Encontré la explicacion de las funciones y rapidamente desacoplé el código.
+
+![code2](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/54363815-8193-40f0-8aca-bf7fe9a8650e)
+
+
+#### Micro-sesión 3
