@@ -402,6 +402,8 @@ NOTA:
 - Se exploró la capacidad que tiene micro:bit para producir diferentes tipos de sonidos y de diferentes formas; conceptos externos al curso como frecuencia (sonido) fueron aplicados.
 BUGS:
 - El timer de la bomba tiene un error: Hay una funcion que bloquea la ejecucion del codigo y descuadra los intervalos en segundos.
+- El timer va de 1 a 9, por facilidad para mostrar en la pantalla; en ejercicio original es de 10 a 60.
+  Se le debe preguntar al profesor si esta solucion es viable.
 
 #### Micro-sesión 4 - Cierre:
 
