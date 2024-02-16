@@ -413,3 +413,14 @@ Se le hicieron unas mejoras al codigo: optimizacion, claridad, etc ...
 FALTA:
 - Input del usuario
 - Serializacion a la aplicacion web
+
+
+
+### Sesión 3 (Viernes 16 Feb)
+
+#### Micro-sesión 1: apertura
+
+En esta sesion se planea pulir acabados del proyecto, implementar la lectura IO con los pines y combinar todos los elementos del proyecto para ver el producto como va quedando.
+
+
+#### Micro-sesión 2:
