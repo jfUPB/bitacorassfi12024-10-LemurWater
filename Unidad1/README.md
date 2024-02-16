@@ -365,8 +365,17 @@ Intento de desarrollo de maquina de estados ...
 avance del codigo. Se me dificulto un poco y presente problemas con el PC que me retrasaron un pcoo el trabajo.
 
 
-#### Micro-sesión 4:
+#### Micro-sesión 4 - Cierre:
 
 Debo repsar mas los conceptos de maaquina de estados y como va a ser la serializacion.
 
 No creo que la implmentacion que estoy haciendo con los cables interfiera el trabajo original, o incluso llegue a modificarlo; puede ser el mismo sistema base y agregar los cables en la funcion que se encarga del serializado.
+
+
+
+### Sesión 2 (Viernes 16 Feb)
+
+#### Micro-sesión 1: apertura.
+
+OBJETIVO: avanzar lo que mas se pueda en el codigo de la bomba, es lo unico que falta.
+
