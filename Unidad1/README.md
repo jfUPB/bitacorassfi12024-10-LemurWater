@@ -404,3 +404,9 @@ BUGS:
 - El timer de la bomba tiene un error: Hay una funcion que bloquea la ejecucion del codigo y descuadra los intervalos en segundos.
 
 #### Micro-sesión 4 - Cierre:
+
+Muy satisfecho con los avances obtenidos, se puede sentir la intencion del producto al probarlo, aunque falta implementar la desactivada.
+
+FALTA:
+- Input del usuario
+- Serializacion a la aplicacion web
