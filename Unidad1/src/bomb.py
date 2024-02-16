@@ -114,6 +114,19 @@ def player_win():
     sleep(400)
     state = 'SETUP'
 
+def io_read():
+    if pin0.is_touched():
+        if pin1.is_touched():
+            display.show(2)
+        else:
+            display.show(3)
+    else:
+        if pin1.is_touched():
+            display.show(1)
+        else:
+            display.show(0)
+
+
 
 setup()
 
