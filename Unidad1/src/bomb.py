@@ -7,6 +7,19 @@ import speech
 global timer
 global state
 
+global dcode 
+dcode = ["UP", "DOWN", "UP", "DOWN", "UP", "UP", "ARMED"]
+global userInput 
+userInput = ["UP", "UP", "UP", "UP", "UP", "UP", "ARMED"]
+global userInputPtr
+userInputPtr = 0
+
+global cableCode
+cableCode = ["RED", "GREEN", "YELLOW"]
+global cableInput
+cableInput = ["RED", "YELLOW", "GREEN"]
+global cableCodePtr
+cableCodePtr = 0
 
 def _clear_display():
     display.show(Image('00000:'
@@ -36,8 +49,8 @@ def setup():
 
     state = 'SETUP'
     speech.say('SETUP')
-    timer = 9
-    set_volume(128)
+    timer = 20
+    set_volume(255)
     _draw_arrow()
     sleep(400)
     state = 'CONFIG'
@@ -52,33 +65,33 @@ def config():
         state = 'ARMED'
         speech.say('ARMED')
     if button_a.was_pressed():
-        if timer > 1:
+        if timer > 10:
             timer = timer - 1
-            display.show(timer)
             music.play(['c'])
+            display.scroll(timer)
             #falta serial
     elif button_b.was_pressed():
-        if timer < 9:
+        if timer < 60:
             timer = timer + 1
-            display.show(timer)
             music.play(['d'])
+            display.scroll(timer)
             #falta serial
 
 def countdown():
     global timer
     global state
     
-    display.show(timer)
+    display.scroll(timer)
 
     #falta serial
     
     #Timer
     if timer > 0:
         timer = timer - 1
-        if timer > 5:
+        if timer > 29:
             #music.play(['e4:4'], wait=False)
             music.pitch(666, 500, wait=False)
-        elif timer < 6 and timer > 3:
+        elif timer < 30 and timer > 11:
             #music.set_tempo(bpm=180)
             music.pitch(666, 250, wait=True)
             music.pitch(666, 250, wait=True)
@@ -126,7 +139,46 @@ def io_read():
         else:
             display.show(0)
 
+def input_listener():
+    user_input()
+    cable_disarm()
 
+def 
+():
+    global userInputPtr
+    global userInput
+    
+    if button_a.was_pressed():
+        userInput[userInputPtr] = 'DOWN'
+        userInputPtr += 1
+    elif button_b.was_pressed():
+        userInput[userInputPtr] = 'UP'
+        userInputPtr += 1
+
+    if userInputPtr > 7:
+        if cableInput == cableCode:
+            state = 'DISARMED'
+        userInputPtr = 0
+            
+        
+def cable_disarm():
+    global userInputPtr
+    global state
+    if pin0.is_touched():
+        userInput[userInputPtr] = 'RED'
+        userInputPtr += 1
+    elif pin1.is_touched():
+        userInput[userInputPtr] = 'GREEN'
+        userInputPtr += 1
+    elif pin2.is_touched():0
+        userInput[userInputPtr] = 'YELLOW'
+        userInputPtr += 1
+        
+    if userInputPtr > 2:
+        if cableInput == cableCode:
+            state = 'DISARMED'
+        userInputPtr = 0
+            
 
 setup()
 
@@ -139,6 +191,7 @@ while True:
         config()
     elif state == 'ARMED':
         countdown()
+        input_listener()
     elif state == 'EXPLODE':
         explode()
     elif state == 'DISARMED':
