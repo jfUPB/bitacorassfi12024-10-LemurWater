@@ -471,3 +471,11 @@ Se avanzo un poco en el codigo, se creo la variable que va a guardar la secuenci
 
 Se va a intentar corregir la funcionalidad con "sleep()" que bloquea la aplicacion
 Se avanzo un poco en el codigo (menos de lo esperado)
+
+#### Micro-sesión 4
+
+Un poco desilucionado con el avance tangible, pero rapidamente recuerdo que uno de los requisitos para hacer algo en la vida es tener el conocimiento sobre eso.
+
+Asi que para poder ver avance tangible, primero se deben tener claros los preconceptos, o incluso conceptos que van surgiendo en el mismo camino.
+
+NOTA: se esta acabando el tiempo!
