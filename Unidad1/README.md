@@ -441,3 +441,24 @@ La implementacion del io-read no fue tan facil como esperaba, toca crear algunas
 
 Falta muy poco, estoy muy conforme con el proceso que lleva el proyecto.
 Falta una semana (3 sesiones); yo creo que voy con buen tiempo, el ideal es acabar el proyecto la proxima sesion, la que sigue destinarla para correcciones y dejar la ultima sesion para imprevistos.
+
+
+-----
+## SEMANA 5
+
+En esta semana debe estar listo el proyecto.
+
+Falta:
+- Guardar la secuencia de desarmado
+- Input de usuario para desarmar
+- Timer hasta 60 seg
+### Sesión 1 (lunes 19 febrero)
+
+OBJETIVOS: avanzar lo que mas se pueda, la idea es tener listo el proyecto en las 2 primeras sesiones y dejar la ultima para correcciones.
+
+#### Micro-sesión 1: apertura
+
+Se le pregunto al profesor sobre dudas de la implementacion del proyecto.
+El timer debe ser de 60 segundos, mostrando dos digitos
+
+#### Micro-sesión 2
