@@ -464,3 +464,5 @@ Se le pregunto al profesor sobre dudas de la implementacion del proyecto.
 El timer debe ser de 60 segundos, mostrando dos digitos
 
 #### Micro-sesión 2
+
+Se avanzo un poco en el codigo, se creo la variable que va a guardar la secuencia de desactivado y voy en la parte para leer los inputs del usuario y guardarlos en un vector
