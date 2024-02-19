@@ -470,3 +470,4 @@ Se avanzo un poco en el codigo, se creo la variable que va a guardar la secuenci
 #### Micro-sesión 3
 
 Se va a intentar corregir la funcionalidad con "sleep()" que bloquea la aplicacion
+Se avanzo un poco en el codigo (menos de lo esperado)
