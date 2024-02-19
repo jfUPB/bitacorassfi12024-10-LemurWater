@@ -452,6 +452,8 @@ Falta:
 - Guardar la secuencia de desarmado
 - Input de usuario para desarmar
 - Timer hasta 60 seg
+- Serializacion
+  
 ### Sesión 1 (lunes 19 febrero)
 
 OBJETIVOS: avanzar lo que mas se pueda, la idea es tener listo el proyecto en las 2 primeras sesiones y dejar la ultima para correcciones.
