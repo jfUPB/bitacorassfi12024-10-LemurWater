@@ -2,6 +2,7 @@
 from microbit import *
 import music
 import speech
+import utime
 
 
 global timer
@@ -61,7 +62,7 @@ def config():
     global timer
     global state
     
-    if button_a.is_pressed() and button_b.is_pressed() or pin_logo.is_touched():
+    if button_a.was_pressed() and button_b.was_pressed() or pin_logo.is_touched():
         state = 'ARMED'
         speech.say('ARMED')
     if button_a.was_pressed():
@@ -102,7 +103,7 @@ def countdown():
              music.pitch(666, 125, wait=True)
              music.pitch(666, 125, wait=True)
              music.pitch(666, 125, wait=True)
-        sleep(1000)
+        #sleep(1000)
     else:
         state = 'EXPLODE'
         
@@ -153,8 +154,11 @@ def user_input():
     elif button_b.was_pressed():
         userInput[userInputPtr] = 'UP'
         userInputPtr += 1
+    elif pin_logo.is_touched():
+        userInput[userInputPtr] = 'ARMED'
+        userInputPtr += 1
 
-    if userInputPtr > 7:
+    if userInputPtr > 5:
         if cableInput == cableCode:
             state = 'DISARMED'
         userInputPtr = 0
@@ -180,18 +184,23 @@ def cable_disarm():
             
 
 setup()
-
+startTime = utime.ticks_us()
 
 # Code in a 'while True:' loop repeats forever
 while True:
-    if state == 'SETUP':
-        setup()
-    if state == 'CONFIG':
-        config()
-    elif state == 'ARMED':
-        countdown()
-        input_listener()
-    elif state == 'EXPLODE':
-        explode()
-    elif state == 'DISARMED':
-        player_win()
+
+    if utime.ticks_diff(utime.ticks_us(), startTime) > 1000:
+        if state == 'SETUP':
+            setup()
+        if state == 'CONFIG':
+            config()
+        elif state == 'ARMED':
+            countdown()
+            input_listener()
+        elif state == 'EXPLODE':
+            explode()
+        elif state == 'DISARMED':
+            player_win()
+    
+    else:
+        startTime = utime.ticks_us()
