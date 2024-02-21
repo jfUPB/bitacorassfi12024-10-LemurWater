@@ -167,6 +167,7 @@ def user_input():
 def cable_disarm():
     global userInputPtr
     global state
+    
     if pin0.is_touched():
         userInput[userInputPtr] = 'RED'
         userInputPtr += 1
@@ -189,7 +190,7 @@ startTime = utime.ticks_us()
 # Code in a 'while True:' loop repeats forever
 while True:
 
-    if utime.ticks_diff(utime.ticks_us(), startTime) > 1000:
+    if utime.ticks_diff(utime.ticks_us(), startTime) > 1000000:
         if state == 'SETUP':
             setup()
         if state == 'CONFIG':
@@ -201,6 +202,6 @@ while True:
             explode()
         elif state == 'DISARMED':
             player_win()
-    
-    else:
+
         startTime = utime.ticks_us()
+        
