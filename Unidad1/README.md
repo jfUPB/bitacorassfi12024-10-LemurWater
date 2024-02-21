@@ -372,6 +372,7 @@ Debo repsar mas los conceptos de maaquina de estados y como va a ser la serializ
 No creo que la implmentacion que estoy haciendo con los cables interfiera el trabajo original, o incluso llegue a modificarlo; puede ser el mismo sistema base y agregar los cables en la funcion que se encarga del serializado.
 
 
+-----
 
 ### Sesión 2 (Viernes 16 Feb)
 
@@ -479,3 +480,18 @@ Un poco desilucionado con el avance tangible, pero rapidamente recuerdo que uno 
 Asi que para poder ver avance tangible, primero se deben tener claros los preconceptos, o incluso conceptos que van surgiendo en el mismo camino.
 
 NOTA: se esta acabando el tiempo!
+
+-----
+
+### Sesión 2 (miercoles 21 febrero)
+
+#### Micro-sesión 1: apertura
+
+FALTA: 
+- Input de usuario para desarmar
+- Serializacion
+
+  
+#### Micro-sesión 2
+'
+Lectura documentacion: utime
