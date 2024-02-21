@@ -143,8 +143,7 @@ def input_listener():
     user_input()
     cable_disarm()
 
-def 
-():
+def user_input():
     global userInputPtr
     global userInput
     
@@ -170,7 +169,7 @@ def cable_disarm():
     elif pin1.is_touched():
         userInput[userInputPtr] = 'GREEN'
         userInputPtr += 1
-    elif pin2.is_touched():0
+    elif pin2.is_touched():
         userInput[userInputPtr] = 'YELLOW'
         userInputPtr += 1
         
