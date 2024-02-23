@@ -493,5 +493,9 @@ FALTA:
 
   
 #### Micro-sesión 2
-'
-Lectura documentacion: utime
+
+- Lectura documentacion: utime
+- Se a decidido dejar algunos bloqueos de los procesos "(sleep()"; estrategicamente, que no afectan los procesos del contador, pero que permiten no tener que estar revisando otros procesos cuando se sabe que se debe esperar un tiempo fijo y pasar a un proceso establecido; con esto siento que e entendido el concepto de porque se bloquea la aplicacion, que generalmente no se desea PERO que en algunas ocaciones puede ser util
+NOTA:[se debe consultar al profesor]
+
+#### Micro-sesión 3: (Continuacion viernes 23)
