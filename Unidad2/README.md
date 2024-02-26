@@ -12,4 +12,4 @@ Comienzo de unidad
 
 Explicacion introductoria 
 - GAME LOOPS function
-- Manquina de estados y eventos
+- Maquina de estados y eventos
