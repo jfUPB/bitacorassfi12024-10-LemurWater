@@ -499,3 +499,17 @@ FALTA:
 NOTA:[se debe consultar al profesor]
 
 #### Micro-sesión 3: (Continuacion viernes 23)
+
+Por motivos de fuerza mayor tube que interrumpir la sesion y continuar en otro momento.
+
+Falta poco del codigo, pero no e podio acabar el proyecto, estoy dando vueltas en el codigo sin avances
+
+#### Micro-sesión 3: (Continuacion Lunes 26)
+
+Intente continuar con el codigo ...
+
+- La serializacion tenia el ejemplo en javascript, entonces no pude simplemente copiar, pegar y modificar como queria.
+
+- La aplicacion tiene algunos bloqueos que no e podido correjir.
+
+- 
