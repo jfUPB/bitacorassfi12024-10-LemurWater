@@ -41,4 +41,13 @@ Voy a consultar informacion sobre cliente-servidor, aplicacion distribuida y rec
 
 - Protocolos de comunicacion: '''https://en.wikipedia.org/wiki/Communication_protocol'''
 
+- Se le pregunto al profesosr sobre serializacion
+
+
+#### Micro-sesion 4: Cierre
+
+A simple vista el proyecto no me parece dificil, pero, a simple vista, veo que se se deben tener fuertemenete los preconcetos de server-client y serializacion para no tener inconvenientes en el futuro.
+
+Me gustaria hacer una implementacion sensilla de un videojuego controlado por el micro:bit. Debe ser implementado en la pagina p5js
+
 ----
