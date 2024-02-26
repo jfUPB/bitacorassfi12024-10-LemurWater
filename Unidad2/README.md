@@ -23,3 +23,21 @@ Cierre Unidad 1, comienzo de unidad 2
 Explicacion introductoria 
 - GAME LOOPS function
 - Maquina de estados y eventos
+
+#### Micro-sesión 2:
+
+Continuacion explicacion introductoria de la unidad, presentacion de algunos ejemplos y que sigue de ahora en adeltante en el curso
+
+
+#### Micro-sesion 3:
+
+Voy a consultar informacion sobre cliente-servidor, aplicacion distribuida y recursos compartidos
+
+- https://en.wikipedia.org/wiki/Client%E2%80%93server_model
+
+- https://en.wikipedia.org/wiki/Distributed_computing
+
+- https://en.wikipedia.org/wiki/Shared_resource
+
+
+----
