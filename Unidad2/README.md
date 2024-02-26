@@ -39,5 +39,6 @@ Voy a consultar informacion sobre cliente-servidor, aplicacion distribuida y rec
 
 - https://en.wikipedia.org/wiki/Shared_resource
 
+- Protocolos de comunicacion: '''https://en.wikipedia.org/wiki/Communication_protocol'''
 
 ----
