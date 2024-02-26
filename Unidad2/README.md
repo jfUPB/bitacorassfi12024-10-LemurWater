@@ -8,3 +8,8 @@
 #### Micro-sesión 1: apertura
 
 Comienzo de unidad
+
+
+Explicacion introductoria 
+GAME LOOPS function
+
