@@ -51,3 +51,7 @@ A simple vista el proyecto no me parece dificil, pero, a simple vista, veo que s
 Me gustaria hacer una implementacion sensilla de un videojuego controlado por el micro:bit. Debe ser implementado en la pagina p5js
 
 ----
+
+### Sesión 2:
+
+#### Micro-sesión 1: apertura
