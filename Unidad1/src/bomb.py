@@ -96,15 +96,10 @@ def countdown():
                 #music.play(['e4:4'], wait=False)
                 music.pitch(666, 500, wait=False)
             elif timer < 30 and timer > 11:
-                #music.set_tempo(bpm=180)
-                music.pitch(666, 250, wait=True)
                 music.pitch(666, 250, wait=True)
             else:
                  #music.set_tempo(bpm=240)
                  #music.play(['d4', 'd4', 'd4', 'd4', 'd4', 'd4'])
-                 music.pitch(666, 125, wait=True)
-                 music.pitch(666, 125, wait=True)
-                 music.pitch(666, 125, wait=True)
                  music.pitch(666, 125, wait=True)
             #sleep(1000)
         else:
@@ -146,30 +141,40 @@ def io_read():
 
 def input_listener():
     user_input()
-    cable_disarm()
+    #cable_disarm()
 
 def user_input():
     global userInputPtr
     global userInput
     
     if button_a.was_pressed():
+        display.show(Image.ARROW_S, wait=True)
         userInput[userInputPtr] = 'DOWN'
         userInputPtr += 1
+        display.show(Image.ARROW_S, wait=False)
+        #print(display.read_light_level())
+            
     elif button_b.was_pressed():
         userInput[userInputPtr] = 'UP'
         userInputPtr += 1
+        display.show(Image.ARROW_N, wait=False)
+            
     elif pin_logo.is_touched():
-        userInput[userInputPtr] = 'ARMED'
-        userInputPtr += 1
+        if userInputPtr == 5:
+            userInput[userInputPtr] = 'ARMED'
+            userInputPtr += 1
+        else:
+            userInputPtr = 0
 
     if userInputPtr > 5:
-        if cableInput == cableCode:
-            state = 'DISARMED'
-            display.show(Image.YES)
-        else:
-            display.show(Image.NO)
-        userInputPtr = 0
-            
+        display.show(Image.NO)
+        for i in range(7):
+            if userInput[i] != dcode[i]:
+                userInputPtr = 0
+                return
+        state = 'DISARMED'
+        display.show(Image.YES)     
+
         
 def cable_disarm():
     global userInputPtr
@@ -185,10 +190,10 @@ def cable_disarm():
         userInput[userInputPtr] = 'YELLOW'
         userInputPtr += 1
         
-    if userInputPtr > 2:
-        if cableInput == cableCode:
-            state = 'DISARMED'
-        userInputPtr = 0
+    #if userInputPtr > 2:
+    #    if cableInput == cableCode:
+    #        state = 'DISARMED'
+    #    userInputPtr = 0
             
 
 setup()
