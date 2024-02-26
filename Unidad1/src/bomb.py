@@ -53,7 +53,7 @@ def setup():
     timer = 20
     set_volume(255)
     _draw_arrow()
-    sleep(400)
+    sleep(500)
     state = 'CONFIG'
     speech.say('CONFIG')
     
@@ -61,55 +61,59 @@ def setup():
 def config():
     global timer
     global state
+    global startTime
     
-    if button_a.was_pressed() and button_b.was_pressed() or pin_logo.is_touched():
+    if button_a.is_pressed() and button_b.is_pressed() or pin_logo.is_touched():
         state = 'ARMED'
         speech.say('ARMED')
-    if button_a.was_pressed():
+        startTime = utime.ticks_us()
+        return
+    if button_a.is_pressed():
         if timer > 10:
             timer = timer - 1
             music.play(['c'])
-            display.scroll(timer)
+            display.scroll(timer, delay=100, loop=True, wait=False)
             #falta serial
-    elif button_b.was_pressed():
+    elif button_b.is_pressed():
         if timer < 60:
             timer = timer + 1
             music.play(['d'])
-            display.scroll(timer)
+            display.scroll(timer, delay=100, loop=True, wait=False)
             #falta serial
 
 def countdown():
     global timer
     global state
+    global startTime
     
     display.scroll(timer)
 
-    #falta serial
-    
     #Timer
-    if timer > 0:
-        timer = timer - 1
-        if timer > 29:
-            #music.play(['e4:4'], wait=False)
-            music.pitch(666, 500, wait=False)
-        elif timer < 30 and timer > 11:
-            #music.set_tempo(bpm=180)
-            music.pitch(666, 250, wait=True)
-            music.pitch(666, 250, wait=True)
+    if utime.ticks_diff(utime.ticks_us(), startTime) > 1000000:
+        if timer > 0:
+            timer = timer - 1
+            if timer > 29:
+                #music.play(['e4:4'], wait=False)
+                music.pitch(666, 500, wait=False)
+            elif timer < 30 and timer > 11:
+                #music.set_tempo(bpm=180)
+                music.pitch(666, 250, wait=True)
+                music.pitch(666, 250, wait=True)
+            else:
+                 #music.set_tempo(bpm=240)
+                 #music.play(['d4', 'd4', 'd4', 'd4', 'd4', 'd4'])
+                 music.pitch(666, 125, wait=True)
+                 music.pitch(666, 125, wait=True)
+                 music.pitch(666, 125, wait=True)
+                 music.pitch(666, 125, wait=True)
+            #sleep(1000)
         else:
-             #music.set_tempo(bpm=240)
-             #music.play(['d4', 'd4', 'd4', 'd4', 'd4', 'd4'])
-             music.pitch(666, 125, wait=True)
-             music.pitch(666, 125, wait=True)
-             music.pitch(666, 125, wait=True)
-             music.pitch(666, 125, wait=True)
-        #sleep(1000)
-    else:
-        state = 'EXPLODE'
-        
-    if pin_logo.is_touched():
-        state = 'DISARMED'
-        speech.say('DISARMED')
+            state = 'EXPLODE'
+            
+        if pin_logo.is_touched():
+            state = 'DISARMED'
+            speech.say('DISARMED')
+        startTime = utime.ticks_us()
 
 def explode():
     global state
@@ -161,6 +165,9 @@ def user_input():
     if userInputPtr > 5:
         if cableInput == cableCode:
             state = 'DISARMED'
+            display.show(Image.YES)
+        else:
+            display.show(Image.NO)
         userInputPtr = 0
             
         
@@ -189,19 +196,15 @@ startTime = utime.ticks_us()
 
 # Code in a 'while True:' loop repeats forever
 while True:
-
-    if utime.ticks_diff(utime.ticks_us(), startTime) > 1000000:
-        if state == 'SETUP':
-            setup()
-        if state == 'CONFIG':
-            config()
-        elif state == 'ARMED':
-            countdown()
-            input_listener()
-        elif state == 'EXPLODE':
-            explode()
-        elif state == 'DISARMED':
-            player_win()
-
-        startTime = utime.ticks_us()
+    if state == 'SETUP':
+        setup()
+    elif state == 'CONFIG':
+        config()
+    elif state == 'ARMED':
+        countdown()
+        input_listener()
+    elif state == 'EXPLODE':
+        explode()
+    elif state == 'DISARMED':
+        player_win()
         
