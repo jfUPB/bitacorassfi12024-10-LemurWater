@@ -59,3 +59,6 @@ Me gustaria hacer una implementacion sensilla de un videojuego controlado por el
 Me acuerdo muy poco de lo propuesto para esta unidad, voy a comenzar haciendo un repaso
 
 
+#### Micro-sesion 2: Entender
+
+Aprender p5.js atravez de videos: https://www.youtube.com/watch?v=MXs1cOlidWs&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA&index=4
