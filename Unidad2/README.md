@@ -52,6 +52,10 @@ Me gustaria hacer una implementacion sensilla de un videojuego controlado por el
 
 ----
 
-### Sesión 2:
+### Sesión 2: Febrero 28
 
-#### Micro-sesión 1: apertura
+#### Micro-sesion 1: Apertura
+
+Me acuerdo muy poco de lo propuesto para esta unidad, voy a comenzar haciendo un repaso
+
+
