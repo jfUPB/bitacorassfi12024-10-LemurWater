@@ -62,3 +62,17 @@ Me acuerdo muy poco de lo propuesto para esta unidad, voy a comenzar haciendo un
 #### Micro-sesion 2: Entender
 
 Aprender p5.js atravez de videos: https://www.youtube.com/watch?v=MXs1cOlidWs&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA&index=4
+
+#### Micro-sesion 2: Entender
+
+Continuacion, voy a saltar algunos videos del playlist que hablan sobre fundamentos de programacion.
+
+Voy en la implementacion de numeros aleatorios (para repasar)
+
+#### Micro-sesion 2: Cierre
+
+El aparendizaje de la plataforma debe ser rapido. Voy a buscar un juego ya echo envez de hacerlo, para ahorrar tiempo y concentrarme en el tema del curso (Serializado)
+
+----
+
+### Sesión 3: Marzo 4
