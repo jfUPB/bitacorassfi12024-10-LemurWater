@@ -79,9 +79,20 @@ El aparendizaje de la plataforma debe ser rapido. Voy a buscar un juego ya echo 
 
 #### Micro-sesion 1: Apertura
 
+En este espacio se va  finalizar la etapa de comprometimiento, produciendo una idea global de lo que se va a hacer, de como va a ser el proyecto.
+
+**NOTA:** Se debe consultar informacion hacerca del serializado ASCII
+
 #### Micro-sesion 2: Investigacion y eleccion
 
 En este espacio voy a buscar y *decidir* cual juego se va a implementar en el ejercicio. E descidido un juego por que estoy familiarizado con este tipo de software y se pueden adaptar muy facilemnte los controles
 
 - El juego seleccionado es Snake: https://p5js.org/examples/interaction-snake-game.html
 
+#### Micro-sesion 3: Preconceptos
+
+En este espacio voy a estudiar preconceptos necesarios para la realizacion del proyecto, empezando por:
+- *Serializado ASCII*
+- controlar videojuego en *p5.js* con *micro:bit*
+
+#### Micro-sesion 4: Cierre
