@@ -20,8 +20,8 @@ userInput = ['VOID', 'VOID', 'VOID', 'VOID', 'VOID', 'VOID', 'ARMED']
 userInputPtr = 0
 
 wireMode = False
-WIRE_DISARM_CODE = [[1, 1, 1], [1, 0, 1], [1, 0, 0], [0, 0, 0]]
-wireUserInput = [0, 0, 0]
+WIRE_DISARM_CODE = [1, 2, 0]# [[1, 1, 1], [1, 0, 1], [1, 0, 0], [0, 0, 0]]
+#wireUserInput = [0, 0, 0]
 wireDisarmPtr = 0
 
 
@@ -63,6 +63,7 @@ def setup():
     global startTime
     global wireDisarmPtr
     global wireUserInput
+    global wireMode
     
     state = 'SETUP'
     set_volume(255)
@@ -75,6 +76,7 @@ def setup():
     else : 
         wireDisarmPtr = 0
         wireUserInput = [0, 0, 0]
+        wireMode = True
         display.show(Image.YES)
 
     sleep(DELAY_SHORT)
@@ -198,15 +200,38 @@ def cable_disarm():
     global wireDisarmPtr
     global state
     
-    if _pin_state == WIRE_DISARM_CODE[wireDisarmPtr - 1]:
-        return
-    elif _pin_state == WIRE_DISARM_CODE[wireDisarmPtr]:
-        if wireDisarmPtr == 4: 
-            state = 'DISARMED'
-            speech.say('DISARMED')
+    if wireDisarmPtr == 0:
+        if pin1.is_touched() == False and pin0.is_touched() == True and pin2.is_touched() == True:
+            wireDisarmPtr += 1
+            music.play('c')
+        elif pin1.is_touched() == True and pin0.is_touched() == True or pin2.is_touched() == True:
+           return
+        else: state = 'EXPLODE'
+
+    if wireDisarmPtr == 1:
+        if pin0.is_touched() == True and pin1.is_touched() == False and pin2.is_touched() == True:
+            wireDisarmPtr += 1
+            music.play('d')
+        elif pin0.is_touched() == True and pin1.is_touched() == True and pin2.is_touched() == True:
+           return
+        else: state = 'EXPLODE'
+
+    if wireDisarmPtr == 2:
+        if pin0.is_touched() == True and pin1.is_touched() == False and pin2.is_touched() == False:
+            wireDisarmPtr += 1
+            music.play('d')
+        elif pin0.is_touched() == True and pin1.is_touched() == False and pin2.is_touched() == True: 
             return
-        wireDisarmPtr += 1
-    else: state = 'EXPLODE'
+        else: state = 'EXPLODE'
+
+    if wireDisarmPtr == 3:
+        if pin0.is_touched() == False and pin1.is_touched() == False and pin2.is_touched() == False:
+            music.play('e')
+            sleep(DELAY_SHORT)
+            state = 'DISARMED'
+        elif pin0.is_touched() == True and pin1.is_touched() == False and pin2.is_touched() == False: 
+            return
+        else: state = 'EXPLODE'
 
 
 # Code in a 'while True:' loop repeats forever
