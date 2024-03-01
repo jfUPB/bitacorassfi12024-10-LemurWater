@@ -21,17 +21,14 @@ userInputPtr = 0
 
 wireMode = False
 WIRE_DISARM_CODE = [1, 2, 0]# [[1, 1, 1], [1, 0, 1], [1, 0, 0], [0, 0, 0]]
-#wireUserInput = [0, 0, 0]
 wireDisarmPtr = 0
 
 
 def _check_wires():
-    if pin0.is_touched():
-        wireUserInput[0] = 1
-    if pin1.is_touched():
-        wireUserInput[1] = 1
-    if pin2.is_touched():
-        wireUserInput[2] = 1
+    if pin0.is_touched() == False: return False
+    if pin1.is_touched() == False: return False
+    if pin2.is_touched() == False: return False
+    return True
     
 def _clear_input():
     if button_a.was_pressed():
@@ -79,7 +76,7 @@ def setup():
         wireMode = True
         display.show(Image.YES)
 
-    sleep(DELAY_SHORT)
+    sleep(DELAY_LONG)
     
     _draw_arrow()
     state = 'CONFIG'
