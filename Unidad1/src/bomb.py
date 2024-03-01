@@ -106,22 +106,15 @@ def countdown():
     if utime.ticks_diff(utime.ticks_us(), startTime) > 1000000:
         if timer > 0:
             timer = timer - 1
-            if timer > 29:
-                #music.play(['e4:4'], wait=False)
-                music.pitch(666, 500, wait=False)
-            elif timer < 30 and timer > 11:
-                music.pitch(666, 250, wait=True)
+            if timer > 10:
+                music.pitch(666, 250, wait=False)
+            elif timer < 11 and timer > 5:
+                music.pitch(777, 250, wait=False)
             else:
-                 #music.set_tempo(bpm=240)
-                 #music.play(['d4', 'd4', 'd4', 'd4', 'd4', 'd4'])
-                 music.pitch(666, 125, wait=True)
-            #sleep(1000)
+                 music.pitch(999, 250, wait=False)
         else:
             state = 'EXPLODE'
             
-        #if pin_logo.is_touched():
-            #state = 'DISARMED'
-            #speech.say('DISARMED')
         startTime = utime.ticks_us()
         display.scroll(timer, delay=DELAY_TIMER, loop=False, wait=False)
 
@@ -180,6 +173,7 @@ def user_input():
     if userInputPtr > 6:
         if userInput == dcode:
             state = 'DISARMED'
+            speech.say('DISARMED')
             display.show(Image.YES)
             sleep(DELAY_TIMER)
         else:
