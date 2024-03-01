@@ -75,4 +75,13 @@ El aparendizaje de la plataforma debe ser rapido. Voy a buscar un juego ya echo 
 
 ----
 
-### Sesión 3: Marzo 4
+### Sesión 3: Marzo 1
+
+#### Micro-sesion 1: Apertura
+
+#### Micro-sesion 2: Investigacion y eleccion
+
+En este espacio voy a buscar y *decidir* cual juego se va a implementar en el ejercicio. E descidido un juego por que estoy familiarizado con este tipo de software y se pueden adaptar muy facilemnte los controles
+
+- El juego seleccionado es Snake: https://p5js.org/examples/interaction-snake-game.html
+
