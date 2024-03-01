@@ -7,12 +7,13 @@ import utime
 
 state = 'SETUP'
 timer =  20
-DELAY = 75
 startTime = utime.ticks_us()
+DELAY_TIMER = 75
+DELAY_SHORT = 400
+DELAY_LONG = 1250
 
-
-dcode = ["ARMED", "ARMED", "ARMED", "ARMED", "ARMED", "ARMED", "ARMED"]
-userInput = ["UP", "UP", "UP", "UP", "UP", "UP", "ARMED"]
+dcode = ['UP', 'DOWN', 'UP', 'DOWN', 'UP', 'UP', 'ARMED']
+userInput = ['ARMED', 'ARMED', 'ARMED', 'ARMED', 'ARMED', 'ARMED', 'ARMED']
 userInputPtr = 0
 
 cableCode = ["RED", "GREEN", "YELLOW"]
@@ -45,17 +46,22 @@ def _draw_arrow():
 def setup():
     global state
     global dcode
+    global userInput
     global userInputPtr
+    global timer
+    global startTime
     
     speech.say('SETUP')
     state = 'SETUP'
     set_volume(255)
-    dcode = ["ARMED", "ARMED", "ARMED", "ARMED", "ARMED", "ARMED", "ARMED"]
+    timer = 20
+    userInput = ['ARMED', 'ARMED', 'ARMED', 'ARMED', 'ARMED', 'ARMED', 'ARMED']
     userInputPtr = 0
+    startTime = utime.ticks_us()
     _draw_arrow()
 
     
-    sleep(500)
+    sleep(DELAY_SHORT)
     state = 'CONFIG'
     speech.say('CONFIG')
     
@@ -76,22 +82,22 @@ def config():
         speech.say('ARMED')
         startTime = utime.ticks_us()
         clear_input()
-        display.scroll(timer, delay=DELAY, loop=False, wait=False)
-        sleep(1000)
+        display.scroll(timer, delay=DELAY_TIMER, loop=False, wait=False)
+        sleep(DELAY_LONG)
         display.show(userInputPtr)
-        sleep(300)
+        sleep(DELAY_SHORT)
         return
     if button_a.is_pressed():
         if timer > 10:
             timer = timer - 1
             music.play(['c'])
-            display.scroll(timer, delay=DELAY, loop=True, wait=False)
+            display.scroll(timer, delay=DELAY_TIMER, loop=True, wait=False)
             #falta serial
     elif button_b.is_pressed():
         if timer < 60:
             timer = timer + 1
             music.play(['d'])
-            display.scroll(timer, delay=DELAY, loop=True, wait=False)
+            display.scroll(timer, delay=DELAY_TIMER, loop=True, wait=False)
             #falta serial
 
 
@@ -121,23 +127,23 @@ def countdown():
             #state = 'DISARMED'
             #speech.say('DISARMED')
         startTime = utime.ticks_us()
-        display.scroll(timer, delay=DELAY, loop=False, wait=False)
+        display.scroll(timer, delay=DELAY_TIMER, loop=False, wait=False)
 
 def explode():
     global state
 
     music.set_tempo(bpm=110)
     display.show(Image.SKULL)
-    state = 'SETUP'
     music.play(music.FUNERAL, wait=True, loop=False)
-    sleep(400)
+    sleep(DELAY_LONG)
+    state = 'SETUP'
 
 def player_win():
     global state
     
     display.show(Image.HEART)
     music.play(music.FUNK)
-    sleep(400)
+    sleep(DELAY_LONG)
     state = 'SETUP'
 
 def io_read():
@@ -179,17 +185,10 @@ def user_input():
         if userInput == dcode:
             state = 'DISARMED'
             display.show(Image.YES)
-            sleep(1250)
+            sleep(DELAY_TIMER)
         else:
             display.show(Image.NO)
             userInputPtr = 0
-        #for i in range(7):
-            #if userInput[i] != dcode[i]:
-                #userInputPtr = 0
-                #return
-        #state = 'DISARMED'
-        #display.show(Image.YES)     
-
         
 def cable_disarm():
     global userInputPtr
@@ -203,14 +202,7 @@ def cable_disarm():
     elif pin2.is_touched():
         userInput[userInputPtr] = 'YELLOW'
         userInputPtr += 1
-        
-    #if userInputPtr > 2:
-    #    if cableInput == cableCode:
-    #        state = 'DISARMED'
-    #    userInputPtr = 0
-            
 
-setup()
 
 # Code in a 'while True:' loop repeats forever
 while True:
