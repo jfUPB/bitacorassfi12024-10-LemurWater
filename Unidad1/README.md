@@ -533,3 +533,16 @@ Aprendizaje sobre variables globales en python: https://microbit-challenges.read
 - Version 1.0 del programa completamente funcional.
 
 #### Micro-sesión 4: Cierre de Unidad
+
+Se **cumplio** *satisfactoriamente* con el proyecto.
+
+- Tenia  de antemano, identificado, que se me dificultaba bastante finalizar proyectos y concetarlos; y con este siento que fue un gran paso en aprender como crear software de version completa (*stable release*).
+
+- Python es una herramienta muy versatil y potente. La e estado usando para **porotipos** en *Godot*, lo cual me ayudo a desarrollar este proyecto y puenso que puede ser una herramienta extremadamente util para solucionar futuros problemas.
+
+**CONCLUSION:** 
+
+Los microcontroladores son una herramienta extremadamente potente que pueden realizar tareas *relativamente sensillas* a bajo costo. Son mas faciles de programas por su simpleza estructural pero pueden ser una potente herramienta que satisfaga a un sistema superior, facilitandole funciones y repartiendo el poder de procesamiento en distintos subsistemas especializados y optimizados.
+
+
+**NOTA:** Falta la *serializacion* (Se debe consultar al profesor de como hacer la implementacion).
