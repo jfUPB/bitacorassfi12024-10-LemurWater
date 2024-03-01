@@ -83,13 +83,13 @@ En este espacio se va  finalizar la etapa de comprometimiento, produciendo una i
 
 **NOTA:** Se debe consultar informacion hacerca del serializado ASCII
 
-#### Micro-sesion 2: Investigacion y eleccion
+#### Micro-sesion 2: Investigación y elección
 
 En este espacio voy a buscar y *decidir* cual juego se va a implementar en el ejercicio. E descidido un juego por que estoy familiarizado con este tipo de software y se pueden adaptar muy facilemnte los controles
 
 - El juego seleccionado es Snake: https://p5js.org/examples/interaction-snake-game.html
 
-#### Micro-sesion 3: Preconceptos
+#### Micro-sesion 3: Pre-conceptos
 
 En este espacio voy a estudiar preconceptos necesarios para la realizacion del proyecto, empezando por:
 - *Serializado ASCII*
