@@ -512,4 +512,14 @@ Intente continuar con el codigo ...
 
 - La aplicacion tiene algunos bloqueos que no e podido correjir.
 
-- 
+
+-----
+
+### Sesión 3 (Jueves 29 febrero)
+
+#### Micro-sesión 1: apertura
+
+Breve retoma del proyecto y analizar el estado
+
+
+#### Micro-sesión 2:
