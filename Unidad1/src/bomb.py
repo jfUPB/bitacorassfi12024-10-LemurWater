@@ -20,15 +20,32 @@ userInput = ['VOID', 'VOID', 'VOID', 'VOID', 'VOID', 'VOID', 'ARMED']
 userInputPtr = 0
 
 wireMode = False
-WIRE_DISARM_CODE = [1, 2, 0]# [[1, 1, 1], [1, 0, 1], [1, 0, 0], [0, 0, 0]]
+WIRE_DISARM_CODE = [1, 2, 0]
 wireDisarmPtr = 0
 
 
 def _check_wires():
-    if pin0.is_touched() == False: return False
-    if pin1.is_touched() == False: return False
-    if pin2.is_touched() == False: return False
-    return True
+    if pin0.is_touched() and pin1.is_touched() and pin2.is_touched():
+        if pin0.is_touched():
+            display.set_pixel(0,0,9)
+            display.set_pixel(0,1,9)
+            display.set_pixel(0,2,9)
+            display.set_pixel(0,3,9)
+            display.set_pixel(0,4,9)
+        if pin1.is_touched():
+            display.set_pixel(1,0,9)
+            display.set_pixel(1,1,9)
+            display.set_pixel(1,2,9)
+            display.set_pixel(1,3,9)
+            display.set_pixel(1,4,9)
+        if pin2.is_touched():
+            display.set_pixel(2,0,9)
+            display.set_pixel(2,1,9)
+            display.set_pixel(2,2,9)
+            display.set_pixel(2,3,9)
+            display.set_pixel(2,4,9)
+        return True
+    else: return False
     
 def _clear_input():
     if button_a.was_pressed():
@@ -69,12 +86,12 @@ def setup():
     userInputPtr = 0
     startTime = utime.ticks_us()
 
-    if _check_wires() == False: display.show(Image.NO)
-    else : 
+    if _check_wires():
+        display.show(Image.YES)
         wireDisarmPtr = 0
         wireUserInput = [0, 0, 0]
-        wireMode = True
-        display.show(Image.YES)
+        wireMode = True     
+    else : display.show(Image.NO)
 
     sleep(DELAY_LONG)
     
@@ -185,13 +202,6 @@ def button_disarm():
             userInputPtr = 0
 
 
-def _pin_state():
-    tmp = [0, 0, 0]
-    if pin0.is_touched(): tmp[0] = 1   
-    if pin1.is_touched(): tmp[1] = 1  
-    if pin2.is_touched(): tmp[2] = 1  
-    return tmp
-    
 def cable_disarm():
     global wireUserInput
     global wireDisarmPtr
