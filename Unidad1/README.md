@@ -522,4 +522,6 @@ Intente continuar con el codigo ...
 Breve retoma del proyecto y analizar el estado
 
 
-#### Micro-sesión 2:
+#### Micro-sesión 2: Aprendizaje
+
+aprendizaje sobre variables globales en python: https://microbit-challenges.readthedocs.io/en/latest/basics/functionsii.html
