@@ -5,22 +5,20 @@ import speech
 import utime
 
 
-global timer
-global state
+state = 'SETUP'
+timer = 20
+DELAY = 75
+startTime = utime.ticks_us()
 
-global dcode 
+
 dcode = ["UP", "DOWN", "UP", "DOWN", "UP", "UP", "ARMED"]
-global userInput 
 userInput = ["UP", "UP", "UP", "UP", "UP", "UP", "ARMED"]
-global userInputPtr
 userInputPtr = 0
 
-global cableCode
 cableCode = ["RED", "GREEN", "YELLOW"]
-global cableInput
 cableInput = ["RED", "YELLOW", "GREEN"]
-global cableCodePtr
 cableCodePtr = 0
+
 
 def _clear_display():
     display.show(Image('00000:'
@@ -45,50 +43,48 @@ def _draw_arrow():
     display.set_pixel(4,2,9)
     
 def setup():
-    global timer
     global state
 
-    state = 'SETUP'
     speech.say('SETUP')
-    timer = 20
+    state = 'SETUP'
     set_volume(255)
     _draw_arrow()
+
+    
     sleep(500)
     state = 'CONFIG'
     speech.say('CONFIG')
     
     
 def config():
-    global timer
     global state
+    global timer
     global startTime
     
     if button_a.is_pressed() and button_b.is_pressed() or pin_logo.is_touched():
         state = 'ARMED'
         speech.say('ARMED')
         startTime = utime.ticks_us()
+        display.scroll(timer, delay=DELAY, loop=False, wait=False)
         return
     if button_a.is_pressed():
         if timer > 10:
             timer = timer - 1
             music.play(['c'])
-            display.scroll(timer, delay=100, loop=True, wait=False)
+            display.scroll(timer, delay=DELAY, loop=True, wait=False)
             #falta serial
     elif button_b.is_pressed():
         if timer < 60:
             timer = timer + 1
             music.play(['d'])
-            display.scroll(timer, delay=100, loop=True, wait=False)
+            display.scroll(timer, delay=DELAY, loop=True, wait=False)
             #falta serial
 
 def countdown():
-    global timer
     global state
+    global timer
     global startTime
     
-    display.scroll(timer)
-
-    #Timer
     if utime.ticks_diff(utime.ticks_us(), startTime) > 1000000:
         if timer > 0:
             timer = timer - 1
@@ -105,14 +101,15 @@ def countdown():
         else:
             state = 'EXPLODE'
             
-        if pin_logo.is_touched():
-            state = 'DISARMED'
-            speech.say('DISARMED')
+        #if pin_logo.is_touched():
+            #state = 'DISARMED'
+            #speech.say('DISARMED')
         startTime = utime.ticks_us()
+        display.scroll(timer, delay=DELAY, loop=False, wait=False)
 
 def explode():
     global state
-    
+
     music.set_tempo(bpm=110)
     display.show(Image.SKULL)
     state = 'SETUP'
@@ -145,40 +142,45 @@ def input_listener():
 
 def user_input():
     global userInputPtr
-    global userInput
     
     if button_a.was_pressed():
-        display.show(Image.ARROW_S, wait=True)
+        display.show(Image.ARROW_S)
         userInput[userInputPtr] = 'DOWN'
         userInputPtr += 1
-        display.show(Image.ARROW_S, wait=False)
-        #print(display.read_light_level())
+        display.show(Image.ARROW_S)
             
     elif button_b.was_pressed():
         userInput[userInputPtr] = 'UP'
         userInputPtr += 1
-        display.show(Image.ARROW_N, wait=False)
+        display.show(Image.ARROW_N)
             
     elif pin_logo.is_touched():
-        if userInputPtr == 5:
+        if userInputPtr < 5:
             userInput[userInputPtr] = 'ARMED'
             userInputPtr += 1
         else:
             userInputPtr = 0
 
-    if userInputPtr > 5:
+    if userInputPtr > 6:
+        global state
+        
         display.show(Image.NO)
-        for i in range(7):
-            if userInput[i] != dcode[i]:
-                userInputPtr = 0
-                return
-        state = 'DISARMED'
-        display.show(Image.YES)     
+        if userInput == dcode:
+            state = 'DISARMED'
+            display.show(Image.YES)
+            sleep(500)
+        else:
+            userInputPtr = 0
+        #for i in range(7):
+            #if userInput[i] != dcode[i]:
+                #userInputPtr = 0
+                #return
+        #state = 'DISARMED'
+        #display.show(Image.YES)     
 
         
 def cable_disarm():
     global userInputPtr
-    global state
     
     if pin0.is_touched():
         userInput[userInputPtr] = 'RED'
@@ -197,12 +199,11 @@ def cable_disarm():
             
 
 setup()
-startTime = utime.ticks_us()
 
 # Code in a 'while True:' loop repeats forever
 while True:
     if state == 'SETUP':
-        setup()
+     setup()
     elif state == 'CONFIG':
         config()
     elif state == 'ARMED':
