@@ -524,4 +524,12 @@ Breve retoma del proyecto y analizar el estado
 
 #### Micro-sesión 2: Aprendizaje
 
-aprendizaje sobre variables globales en python: https://microbit-challenges.readthedocs.io/en/latest/basics/functionsii.html
+Aprendizaje sobre variables globales en python: https://microbit-challenges.readthedocs.io/en/latest/basics/functionsii.html
+
+#### Micro-sesión 3: Ejecución
+
+- Archivo /src/bomb.py completamente funcional.
+
+- Version 1.0 del programa completamente funcional.
+
+#### Micro-sesión 4: Cierre de Unidad
