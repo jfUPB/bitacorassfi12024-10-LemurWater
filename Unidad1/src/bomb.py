@@ -21,13 +21,18 @@ cableInput = ["RED", "YELLOW", "GREEN"]
 cableCodePtr = 0
 
 
+def _clear_input():
+    if button_a.was_pressed():
+        display.show(Image.HAPPY)
+    if button_b.was_pressed():
+        display.show(Image.HAPPY)
+    
 def _clear_display():
     display.show(Image('00000:'
                        '00000:'
                        '00000:'
                        '00000:'
-                       '00000'))
-    
+                       '00000')) 
     
 def _draw_arrow():
     _clear_display()
@@ -43,6 +48,7 @@ def _draw_arrow():
     display.set_pixel(3,2,9)
     display.set_pixel(4,2,9)
     
+
 def setup():
     global state
     global dcode
@@ -51,7 +57,6 @@ def setup():
     global timer
     global startTime
     
-    speech.say('SETUP')
     state = 'SETUP'
     set_volume(255)
     timer = 20
@@ -59,29 +64,20 @@ def setup():
     userInputPtr = 0
     startTime = utime.ticks_us()
     _draw_arrow()
-
-    
-    sleep(DELAY_SHORT)
     state = 'CONFIG'
     speech.say('CONFIG')
-    
 
-def clear_input():
-    if button_a.was_pressed():
-        display.show(Image.HAPPY)
-    if button_b.was_pressed():
-        display.show(Image.HAPPY)
-    
+
 def config():
     global state
     global timer
     global startTime
-    
+
     if button_a.is_pressed() and button_b.is_pressed() or pin_logo.is_touched():
         state = 'ARMED'
         speech.say('ARMED')
         startTime = utime.ticks_us()
-        clear_input()
+        _clear_input()
         display.scroll(timer, delay=DELAY_TIMER, loop=False, wait=False)
         sleep(DELAY_LONG)
         display.show(userInputPtr)
@@ -138,11 +134,11 @@ def explode():
     sleep(DELAY_LONG)
     state = 'SETUP'
 
-def player_win():
+def disarmed():
     global state
     
-    display.show(Image.HEART)
-    music.play(music.FUNK)
+    display.show(Image.HAPPY)
+    music.play(music.ENTERTAINER, wait=True, loop=False)
     sleep(DELAY_LONG)
     state = 'SETUP'
 
@@ -216,5 +212,5 @@ while True:
     elif state == 'EXPLODE':
         explode()
     elif state == 'DISARMED':
-        player_win()
+        disarmed()
         
