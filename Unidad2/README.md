@@ -96,3 +96,30 @@ En este espacio voy a estudiar preconceptos necesarios para la realizacion del p
 - controlar videojuego en *p5.js* con *micro:bit*
 
 #### Micro-sesion 4: Cierre
+
+Me parece que el videojuego de snake encaja perfectamente con los controladores del micro bit, izq y derecha. La culebra siempre tiene movimiento en 3 direcciones:
+
+- Al frente, automaticamente
+- Al lado izquiero y derecho (2)
+
+----
+
+## SEMANA 7
+
+
+### Sesión 1: (lunes marzo 04)
+
+#### Micro-sesión 1: apertura
+
+Retoma del proyecto.
+
+El profesor dio una breve explicacion del proyecto con unas recomendaciones que pueden servir:
+
+- Seguir el paso a paso del desarrollo del proyecto. No saltarse ningun paso para reducir los probleams que se puedan presentar y facilitar el desarrollo del proyecto.
+
+
+PLANEACION:
+
+- Investigar mas a fondo como se puede desarrollar el serializado
+
+#### Micro-sesión 2:
