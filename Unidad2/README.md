@@ -126,3 +126,7 @@ PLANEACION:
 #### Micro-sesión 2:
 
 Se le pidio orientacion al profesor hacerca de la serializacion, mas especificamente del codigo.
+
+**NOTA:** TODAS las indicaciones para el serializado estan en la seccion: Flujo de trabajo del curso.
+Se debe repasar y aprender esta informacion.
+
