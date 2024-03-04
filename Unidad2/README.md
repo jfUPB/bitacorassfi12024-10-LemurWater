@@ -5,9 +5,9 @@ DURACION: Semana 6-9
 
 REFERENCIAS:
 
-[WEB](https://sistemasfisicosinteractivos1.readthedocs.io/)
+[WEB del curso](https://sistemasfisicosinteractivos1.readthedocs.io/)
 
-https://p5js.org/
+[p5.js](https://p5js.org/)
 
 ----
 
