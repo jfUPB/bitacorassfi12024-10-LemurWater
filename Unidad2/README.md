@@ -127,6 +127,13 @@ PLANEACION:
 
 Se le pidio orientacion al profesor hacerca de la serializacion, mas especificamente del codigo.
 
-**NOTA:** TODAS las indicaciones para el serializado estan en la seccion: Flujo de trabajo del curso.
+**NOTA:** TODAS las indicaciones para el serializado estan en la seccion: [Flujo de trabajo del curso](https://sistemasfisicosinteractivos1.readthedocs.io/es/latest/_intro/courseFlow.html#).
 Se debe repasar y aprender esta informacion.
 
+#### Micro-sesión 3:
+
+Continuacion repaso/estudio sobre serializacion.
+
+#### Micro-sesión 4: Cierre
+
+Solo me falta un breve repaso al proceso de serializacion explicado en la pagina del curso.
