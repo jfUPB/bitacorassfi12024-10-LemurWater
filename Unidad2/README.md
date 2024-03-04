@@ -124,3 +124,5 @@ PLANEACION:
 - Investigar mas a fondo como se puede desarrollar el serializado
 
 #### Micro-sesión 2:
+
+Se le pidio orientacion al profesor hacerca de la serializacion, mas especificamente del codigo.
