@@ -34,13 +34,13 @@ Continuacion explicacion introductoria de la unidad, presentacion de algunos eje
 
 Voy a consultar informacion sobre cliente-servidor, aplicacion distribuida y recursos compartidos
 
-- https://en.wikipedia.org/wiki/Client%E2%80%93server_model
+- [Client–server model](https://en.wikipedia.org/wiki/Client%E2%80%93server_model)
 
-- https://en.wikipedia.org/wiki/Distributed_computing
+- [Distributed computing](https://en.wikipedia.org/wiki/Distributed_computing)
 
-- https://en.wikipedia.org/wiki/Shared_resource
+- [Shared resource](https://en.wikipedia.org/wiki/Shared_resource)
 
-- Protocolos de comunicacion: '''https://en.wikipedia.org/wiki/Communication_protocol'''
+- [Protocolos de comunicacion](https://en.wikipedia.org/wiki/Communication_protocol)
 
 - Se le pregunto al profesosr sobre serializacion
 
@@ -62,7 +62,7 @@ Me acuerdo muy poco de lo propuesto para esta unidad, voy a comenzar haciendo un
 
 #### Micro-sesion 2: Entender
 
-Aprender p5.js atravez de videos: https://www.youtube.com/watch?v=MXs1cOlidWs&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA&index=4
+Aprender p5.js atravez de [videos](https://www.youtube.com/watch?v=MXs1cOlidWs&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA&index=4)
 
 #### Micro-sesion 2: Entender
 
@@ -88,7 +88,7 @@ En este espacio se va  finalizar la etapa de comprometimiento, produciendo una i
 
 En este espacio voy a buscar y *decidir* cual juego se va a implementar en el ejercicio. E descidido un juego por que estoy familiarizado con este tipo de software y se pueden adaptar muy facilemnte los controles
 
-- El juego seleccionado es Snake: https://p5js.org/examples/interaction-snake-game.html
+- El juego seleccionado es [SNAKE](https://p5js.org/examples/interaction-snake-game.html)
 
 #### Micro-sesion 3: Pre-conceptos
 
