@@ -1,5 +1,13 @@
 # Bitácora de aprendizaje
 
+> [!IMPORTANT]  
+> RETO PERSONALIZADO
+> 
+> Personaliza el reto cambiando los signos ¿? por tu personalización. ¿Qué interés vas a explorar? ¿En qué consiste la aplicación
+> ¿Qué sensores y actuadores usarás
+> 
+> Diseñaré e implementaré una aplicación interactiva para explorar ¿? mediante la integración de los siguientes sensores: ¿? y estos actuadores ¿?. La integración se realizará mediante protocolos ASCII utilizando una
+> arquitectura cliente-servidor.
 
 DURACION: Semana 6-9
 
