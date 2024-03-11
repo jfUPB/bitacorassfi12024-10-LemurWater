@@ -165,9 +165,9 @@ Red Text test
 
 ## SEMANA 3
 
-### Sesión 1 lunes febrero 5
+### Sesión 1 (lunes febrero 5)
 
-#### Micro-sesión 1: apertura.
+#### Micro-sesión 1: apertura
 OBJETIVO: El proposito de la sesion sera implementar el codigo de la momba en el micro:bit.
 Voy a empezar, en esta micro-sesion, por entender el algoritmo del ejemplo y transformarlo a UML.
 
@@ -189,7 +189,7 @@ CONCLUSIONES: El diagrama del algoritmo da gran claridad del funcionamiento del 
 
 -----
 
-### Sesión 2 miércoles febrero 7
+### Sesión 2: miércoles febrero 7
 
 OBJETIVO: Consolidar el sistema de desarmado de la bomba por cables (si es posible, y si no descartarlo lo mas pronto posible sin perder tiempo innecesario en su desarrollo)
 
@@ -209,7 +209,7 @@ OBJETIVO: Voy a implementar/experimentar como leer los pines (0-2)
 
 NOTA: Se logro complir con el objetivo, obtener el estado de un solo PIN para ver si tiene cambio de estado (0-1)
 
-![state 0](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/e910a47b-876d-4005-aa9e-e413aa83d65a)
+![cable1](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/3f53d609-4719-4a9b-8af2-c3f0d43537be)
 ![state 1](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/6dbae83d-4552-4864-8795-2fd3c1bbcd36)
 
 #### Micro-sesión 3
@@ -276,7 +276,273 @@ El incerto tipo U tambien puede ser una opcion a considerar, utilizando un torni
 
 #### Micro-sesión 3
 
+Febrero 9
+
+Con todos los elementos, se logro armar el prototipo funcional.
+
+NOTA: Los caimanes producen alto dano en los pines del micro:bit.
+Hablando con mi madre, ella me recomendo utilizar tiras cortadas de latas de pintura para protejer las conecciones.
+
+
+![2](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/f6076ee8-8bdf-4eeb-8301-03cf7c22139d)
+![1](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/a55b9d86-ef16-4fc5-ac20-d31ef3726f2b)
+
+Papel aluminio para protejer el dispositivo y que pueda durar mas tiempo
+
+![3](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/1c12da7d-32e9-4889-949f-f5e1f176d1ae)
+
 #### Micro-sesión 4
+
+DESCRIPCION: Mejora de los cables, utilizando unos menos potentes y mas bonitos
+
+
+Utilizando un cable mas bonito para realzar la experiencia de "desactivar la bomba"
+
+NOTA: Se aprendieron conceptos como puente electrico y corto circuito.
+Se utilizo una lata de cerveza cortada para hacer puente y preservar la integridad de los pines.
+Tambien se considero seder la fuerza de los caimanes pero se descarto para facilidad del proyecto.
+
+![8](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/e79addd8-b241-4297-9eed-7761c18e7ee0)
+![6](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/c96539b0-a426-4259-b59a-5c5148897692)
+
+
+Tambien existe la posiblidad de utilizar tornillos, aunque no se quitan como los cocodrilos, no maltratan tanto los pines.
+
+![9](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/167dbf02-fb0a-4cb1-b518-71b3ac499c79)
+
+
 
 #### Micro-sesión 5: cierre 
 
+Enves de cojer la pinza del caiman y quitarla, se decidio que el sistema fuera cortar envez de quitar.
+
+Le agrega realizsmo al producto y el usuario no tiene que perder tiempo pensando si la fuerza para quitar el caiman es suficiente o si ya se desconecto.
+
+Y se reduce a solo la accion de cortar o no el cable. 
+
+-Cual cable cortar? envez de Quedo bien cortado?
+
+Este pequeno toque mejora en gran medida la experiencia (metodos simples y faciles de darle agrego al software)
+
+
+CONCLUSIONES:
+Si bien nos concentramos mucho en el codigo que va a correr X aparato, es de gran importancia tener presente que este aparato tienen un espacio fisico y cumple con condiciones del mundo real. Al escribir codigo nunca pensamos en factores como:
+
+- A que temperatura va a estar el software corrienod en el dispositivo.
+- Que limitaciones de espacio puede presentar el Hardware requerido por el Software
+
+
+-----
+## SEMANA 4
+
+### Sesión 1 (lunes 12 febrero)
+
+#### Micro-sesión 1: apertura
+
+![cableB](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/cc5a8040-2e07-4d0f-b92b-04b64b9292a6)
+![cable1](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/e962e6fd-1708-47a9-899b-e8c2d7c5a36f)
+
+REFLEXION: Al crear el algoritmo del programa, pude visualizar una oportunidad 
+para intercambiar uno de los bloques del algo (input del usuario, para desactivar la bomba)
+por una funcionalidad agregada (cortar los cables)
+
+Como los bloques re reemplazan, se debe cuidar de mantener las conecciones con el bloque anterior y el posterior; para que la intrusion en el sistema, no genere ningun cambio.
+
+
+#### Micro-sesión 2:
+
+El profesor dio una breve explicacion de como funciona el sistema, con ejemplos en codigo.
+
+Explico partes importantes como la maquina de estados.
+
+
+#### Micro-sesión 3:
+
+Intento de desarrollo de maquina de estados ...
+
+![bombcode1](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/1a2c58a4-1ac4-4ced-8b12-1f268e0f057b)
+
+avance del codigo. Se me dificulto un poco y presente problemas con el PC que me retrasaron un pcoo el trabajo.
+
+
+#### Micro-sesión 4 - Cierre:
+
+Debo repsar mas los conceptos de maaquina de estados y como va a ser la serializacion.
+
+No creo que la implmentacion que estoy haciendo con los cables interfiera el trabajo original, o incluso llegue a modificarlo; puede ser el mismo sistema base y agregar los cables en la funcion que se encarga del serializado.
+
+
+-----
+
+### Sesión 2 (Viernes 16 Feb)
+
+NOTA: No pude asistir a la clase presencial (miercoles 14)
+OBJETIVO: avanzar lo que mas se pueda en el codigo de la bomba, es lo único que falta.
+
+#### Micro-sesión 1: apertura:
+
+Al empezar a escribir el codigo siguiendo el algoritmo base, no tube mayores problemas, pero al intentar realizar procesos mas complejos, empece a tener problemas, principalmente con las funciones y las variables globales.
+NOTA: Afortunadamente e estado utilizando el Game engine Godot; y me fue facil entender la poca documentacion que encontre al respecto (variables globales)
+
+![code1](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/03438d63-4412-4008-8dc3-d31fec198734)
+
+
+#### Micro-sesión 2:
+
+Descrubrí en la pagina web de python micro:bit, que en el panel izquierdo hay documentacion muy detallada de funcionalidad.
+Encontré la explicacion de las funciones y rapidamente desacoplé el código.
+
+![code2](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/54363815-8193-40f0-8aca-bf7fe9a8650e)
+
+
+#### Micro-sesión 3:
+
+Gran avance en el codigo.
+
+NOTA: 
+- Se exploró la capacidad que tiene micro:bit para producir diferentes tipos de sonidos y de diferentes formas; conceptos externos al curso como frecuencia (sonido) fueron aplicados.
+BUGS:
+- El timer de la bomba tiene un error: Hay una funcion que bloquea la ejecucion del codigo y descuadra los intervalos en segundos.
+- El timer va de 1 a 9, por facilidad para mostrar en la pantalla; en ejercicio original es de 10 a 60.
+  Se le debe preguntar al profesor si esta solucion es viable.
+
+#### Micro-sesión 4 - Cierre:
+
+Muy satisfecho con los avances obtenidos, se puede sentir la intencion del producto al probarlo, aunque falta implementar la desactivada.
+Se le hicieron unas mejoras al codigo: optimizacion, claridad, etc ...
+
+FALTA:
+- Input del usuario
+- Serializacion a la aplicacion web
+
+
+
+### Sesión 3 (Viernes 16 Feb)
+
+#### Micro-sesión 1: apertura
+
+En esta sesion se planea pulir acabados del proyecto, implementar la lectura IO con los pines y combinar todos los elementos del proyecto para ver el producto como va quedando.
+
+
+#### Micro-sesión 2:
+
+![TNT](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/f87b560d-a29f-4fc7-8de9-fd2424efacf5)
+
+Se utilizo cinta naranja para simular los tacos de dinamita (TNT)
+
+
+#### Micro-sesión 3:
+
+La implementacion del io-read no fue tan facil como esperaba, toca crear algunas conecciones y adaptar el codigo para desactivar la bomba.
+
+![code5](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/9261a82a-a89c-4584-85cd-726d43ade8f3)
+
+
+#### Micro-sesión 4 - Cierre:
+
+Falta muy poco, estoy muy conforme con el proceso que lleva el proyecto.
+Falta una semana (3 sesiones); yo creo que voy con buen tiempo, el ideal es acabar el proyecto la proxima sesion, la que sigue destinarla para correcciones y dejar la ultima sesion para imprevistos.
+
+
+-----
+## SEMANA 5
+
+En esta semana debe estar listo el proyecto.
+
+Falta:
+- Guardar la secuencia de desarmado
+- Input de usuario para desarmar
+- Timer hasta 60 seg
+- Serializacion
+  
+### Sesión 1 (lunes 19 febrero)
+
+OBJETIVOS: avanzar lo que mas se pueda, la idea es tener listo el proyecto en las 2 primeras sesiones y dejar la ultima para correcciones.
+
+#### Micro-sesión 1: apertura
+
+Se le pregunto al profesor sobre dudas de la implementacion del proyecto.
+El timer debe ser de 60 segundos, mostrando dos digitos
+
+#### Micro-sesión 2
+
+Se avanzo un poco en el codigo, se creo la variable que va a guardar la secuencia de desactivado y voy en la parte para leer los inputs del usuario y guardarlos en un vector
+
+#### Micro-sesión 3
+
+Se va a intentar corregir la funcionalidad con "sleep()" que bloquea la aplicacion
+Se avanzo un poco en el codigo (menos de lo esperado)
+
+#### Micro-sesión 4
+
+Un poco desilucionado con el avance tangible, pero rapidamente recuerdo que uno de los requisitos para hacer algo en la vida es tener el conocimiento sobre eso.
+
+Asi que para poder ver avance tangible, primero se deben tener claros los preconceptos, o incluso conceptos que van surgiendo en el mismo camino.
+
+NOTA: se esta acabando el tiempo!
+
+-----
+
+### Sesión 2 (miercoles 21 febrero)
+
+#### Micro-sesión 1: apertura
+
+FALTA: 
+- Input de usuario para desarmar
+- Serializacion
+
+  
+#### Micro-sesión 2
+
+- Lectura documentacion: utime
+- Se a decidido dejar algunos bloqueos de los procesos "(sleep()"; estrategicamente, que no afectan los procesos del contador, pero que permiten no tener que estar revisando otros procesos cuando se sabe que se debe esperar un tiempo fijo y pasar a un proceso establecido; con esto siento que e entendido el concepto de porque se bloquea la aplicacion, que generalmente no se desea PERO que en algunas ocaciones puede ser util
+NOTA:[se debe consultar al profesor]
+
+#### Micro-sesión 3: (Continuacion viernes 23)
+
+Por motivos de fuerza mayor tube que interrumpir la sesion y continuar en otro momento.
+
+Falta poco del codigo, pero no e podio acabar el proyecto, estoy dando vueltas en el codigo sin avances
+
+#### Micro-sesión 3: (Continuacion Lunes 26)
+
+Intente continuar con el codigo ...
+
+- La serializacion tenia el ejemplo en javascript, entonces no pude simplemente copiar, pegar y modificar como queria.
+
+- La aplicacion tiene algunos bloqueos que no e podido correjir.
+
+
+-----
+
+### Sesión 3 (Jueves 29 febrero)
+
+#### Micro-sesión 1: apertura
+
+Breve retoma del proyecto y analizar el estado
+
+
+#### Micro-sesión 2: Aprendizaje
+
+Aprendizaje sobre variables globales en python: https://microbit-challenges.readthedocs.io/en/latest/basics/functionsii.html
+
+#### Micro-sesión 3: Ejecución
+
+- Archivo /src/bomb.py completamente funcional.
+
+- Version 1.0 del programa completamente funcional.
+
+#### Micro-sesión 4: Cierre de Unidad
+
+Se **cumplio** *satisfactoriamente* con el proyecto.
+
+- Tenia  de antemano, identificado, que se me dificultaba bastante finalizar proyectos y concetarlos; y con este siento que fue un gran paso en aprender como crear software de version completa (*stable release*).
+
+- Python es una herramienta muy versatil y potente. La e estado usando para **porotipos** en *Godot*, lo cual me ayudo a desarrollar este proyecto y puenso que puede ser una herramienta extremadamente util para solucionar futuros problemas.
+
+**CONCLUSION:** 
+
+Los microcontroladores son una herramienta extremadamente potente que pueden realizar tareas *relativamente sensillas* a bajo costo. Son mas faciles de programas por su simpleza estructural pero pueden ser una potente herramienta que satisfaga a un sistema superior, facilitandole funciones y repartiendo el poder de procesamiento en distintos subsistemas especializados y optimizados.
+
+
+**NOTA:** Falta la *serializacion* (Se debe consultar al profesor de como hacer la implementacion).
