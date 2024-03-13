@@ -145,3 +145,18 @@ Continuacion repaso/estudio sobre serializacion.
 #### Micro-sesión 4: Cierre
 
 Solo me falta un breve repaso al proceso de serializacion explicado en la pagina del curso.
+
+----
+
+## SEMANA 8
+
+
+### Sesión 1: (lunes marzo 13)
+
+#### Micro-sesión 1: Apertura
+
+Estube enfermo la semana pasada y voy a retomar el trabajo.
+En esta sesion voy a crear un sistema simple de serializado con el ejemplo del principio del semestre, como fundaciones del proyecto y sobre esto se ira mejorando.
+
+
+#### Micro-sesión 2: 
