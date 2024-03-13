@@ -17,6 +17,8 @@ REFERENCIAS:
 
 [p5.js](https://p5js.org/)
 
+[Web Serial](https://capuf.in/web-serial-terminal/)
+
 ----
 
 ## SEMANA 6
