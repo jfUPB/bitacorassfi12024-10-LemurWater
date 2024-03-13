@@ -172,4 +172,12 @@ El buscador de linux no tiene **WebSerial** ni **WebUSB**, e presentado problema
 
 [USB](https://www.beyondlogic.org/usbnutshell/usb1.shtml)
 
+
+#### Micro-sesión 3:
+
+No pude solucionar el problema de serializacion en linux, voy a preguntarle al profesor si conoce alguna forma de solucionar esto.
+
+#### Micro-sesión 4: Cierre
+
+No e podido avanzar mucho en el proyecto. Estoy estancado en la serializacion y por lo mucho que e buscado, no hay facil/directa solucion a este problema.
 #### Micro-sesión 3:
