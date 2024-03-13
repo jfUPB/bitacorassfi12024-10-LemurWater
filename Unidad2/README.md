@@ -160,3 +160,14 @@ En esta sesion voy a crear un sistema simple de serializado con el ejemplo del p
 
 
 #### Micro-sesión 2: 
+
+El buscador de linux no tiene **WebSerial** ni **WebUSB**, e presentado problemas para conectar el *micro:bit*, y creo que me puede ahorrar tiempo instalar los componentes para realizar este serializado desde mi maquina, ya que es muy trabajoso utilizar otro sistema operativo solo para la serializacion...
+ - Tambien pienso que solucionar esta barrera puede acortarme tiempo no solo para futuros proyectos de esta materia, sino en otras y para      mis trabajos profesionales/personales.
+
+ - Pero tampoco quiero dedicarle mucho tiempo a esto. Si no logro hacer funcionar el serializado desde linux, voy a continuar, utilizando      otro PC como soporte.
+ 
+ - Conocer como funciona, de forma basica, la interface USB puede ser una herramienta util para entender y facilitar los ejercicios de serializacion de la materia.
+
+[USB](https://www.beyondlogic.org/usbnutshell/usb1.shtml)
+
+#### Micro-sesión 3:
