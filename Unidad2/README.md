@@ -17,6 +17,8 @@ REFERENCIAS:
 
 [p5.js](https://p5js.org/)
 
+[Web Serial](https://capuf.in/web-serial-terminal/)
+
 ----
 
 ## SEMANA 6
@@ -160,3 +162,22 @@ En esta sesion voy a crear un sistema simple de serializado con el ejemplo del p
 
 
 #### Micro-sesión 2: 
+
+El buscador de linux no tiene **WebSerial** ni **WebUSB**, e presentado problemas para conectar el *micro:bit*, y creo que me puede ahorrar tiempo instalar los componentes para realizar este serializado desde mi maquina, ya que es muy trabajoso utilizar otro sistema operativo solo para la serializacion...
+ - Tambien pienso que solucionar esta barrera puede acortarme tiempo no solo para futuros proyectos de esta materia, sino en otras y para      mis trabajos profesionales/personales.
+
+ - Pero tampoco quiero dedicarle mucho tiempo a esto. Si no logro hacer funcionar el serializado desde linux, voy a continuar, utilizando      otro PC como soporte.
+ 
+ - Conocer como funciona, de forma basica, la interface USB puede ser una herramienta util para entender y facilitar los ejercicios de serializacion de la materia.
+
+[USB](https://www.beyondlogic.org/usbnutshell/usb1.shtml)
+
+
+#### Micro-sesión 3:
+
+No pude solucionar el problema de serializacion en linux, voy a preguntarle al profesor si conoce alguna forma de solucionar esto.
+
+#### Micro-sesión 4: Cierre
+
+No e podido avanzar mucho en el proyecto. Estoy estancado en la serializacion y por lo mucho que e buscado, no hay facil/directa solucion a este problema.
+#### Micro-sesión 3:
