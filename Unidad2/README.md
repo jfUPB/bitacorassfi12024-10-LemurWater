@@ -180,4 +180,3 @@ No pude solucionar el problema de serializacion en linux, voy a preguntarle al p
 #### Micro-sesión 4: Cierre
 
 No e podido avanzar mucho en el proyecto. Estoy estancado en la serializacion y por lo mucho que e buscado, no hay facil/directa solucion a este problema.
-#### Micro-sesión 3:
