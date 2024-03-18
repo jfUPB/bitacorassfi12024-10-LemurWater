@@ -213,8 +213,22 @@ Debido a que los desarrolladores de ***Firefox*** no quieren implementar **WebSe
 
 #### Micro-sesión 4: Cierre
 
+----
+
+## SEMANA 9
+
+
+### Sesión 1: (lunes marzo 18)
+
+#### Micro-sesión 1: Apertura
+
+El profesor me va a ayudar a solucionar el problema de serializado (**webUSB**).
+
+![webSERIAL](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/ea2afb2e-60d8-4db1-a9e3-238c393a699b)
+
 
 ----
+
 ### REPOSICION SEMANA 7: Sesión 3
 
 ----
