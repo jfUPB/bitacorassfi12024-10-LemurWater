@@ -188,6 +188,8 @@ No e podido avanzar mucho en el proyecto. Estoy estancado en la serializacion y 
 E pensado en como solucionar el inconveniente que no permite hacer la coneccion de ***micro:bit*** en **Linux**.
 La ultima idea que me queda es intentar por medio de una maquina virtual. Con mis conocimientos previos creo que sera posible realizar este intento con destreza.
 
+**PS:** El fin de semana estube sin internet, lo que me dificulto avanzar en la materia 😔.
+
 #### Micro-sesión 2: Experimentacion
 ----
 ## REPOSICION SEMANA 7: Sesion 3
