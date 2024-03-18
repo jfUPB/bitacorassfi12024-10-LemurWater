@@ -182,7 +182,7 @@ No pude solucionar el problema de serializacion en linux, voy a preguntarle al p
 No e podido avanzar mucho en el proyecto. Estoy estancado en la serializacion y por lo mucho que e buscado, no hay facil/directa solucion a este problema.
 
 ----
-### REPOSICION SEMANA 7: Sesion 2
+### REPOSICION SEMANA 7: Sesión 2
 
 #### Micro-sesión 1: Apertura
 
@@ -191,12 +191,12 @@ La ultima idea que me queda es intentar por medio de una maquina virtual. Con mi
 
 **PS:** El fin de semana estube sin internet, lo que me dificulto avanzar en la materia 😔.
 
-#### Micro-sesión 2: Experimentacion
+#### Micro-sesión 2: Experimentación
 ----
-### REPOSICION SEMANA 7: Sesion 3
+### REPOSICION SEMANA 7: Sesión 3
 
 ----
-### REPOSICION SEMANA 8: Sesion 2
+### REPOSICION SEMANA 8: Sesión 2
 
 
 ----
