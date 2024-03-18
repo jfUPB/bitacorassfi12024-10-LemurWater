@@ -202,9 +202,10 @@ Logre con satisfaccion realizar la coneccion serial sin necesidad de cambiar de 
 
 - Tambien siento que hace parte del camino de aprendizaje personal. Otros companeros que utilicen otros SO pueden no presentar este problema, pero si esta es la forma en la que yo (...), debo aprender a solucionar mis problemas especificos.
 
+![Screenshot from 2024-03-17 23-25-04](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/6d41a726-2d20-4eab-9341-6ffabbf789b5)
+
 ![Screenshot from 2024-03-17 22-52-42](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/984acc16-9aa4-4049-94a9-9247b4bc7607)
 
-![Screenshot from 2024-03-17 23-25-04](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/6d41a726-2d20-4eab-9341-6ffabbf789b5)
 
 #### Micro-sesión 3: Test
 
