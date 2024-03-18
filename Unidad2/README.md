@@ -233,7 +233,11 @@ Voy a realizar los ejercicios del curso relacionados con serializacion para ente
 
 #### Micro-sesión 3:
 
+Debo repasar los conceptos de p5.js y como hacer para mostrar el juego; creo qua la coneccion serial sera mas facil ya que el tema en si lo entiendo muy bien.
+
 #### Micro-sesión 4: Cierre
+
+Siento que ya estoy mas centrado y puedo ver con claridad lo que debo hacer, ademas de poderlo practicar.
 
 ----
 
