@@ -180,3 +180,23 @@ No pude solucionar el problema de serializacion en linux, voy a preguntarle al p
 #### Micro-sesión 4: Cierre
 
 No e podido avanzar mucho en el proyecto. Estoy estancado en la serializacion y por lo mucho que e buscado, no hay facil/directa solucion a este problema.
+----
+## REPOSICION SEMANA 7: Sesion 2
+
+#### Micro-sesión 1: Apertura
+
+E pensado en como solucionar el inconveniente que no permite hacer la coneccion de ***micro:bit*** en **Linux**.
+La ultima idea que me queda es intentar por medio de una maquina virtual. Con mis conocimientos previos creo que sera posible realizar este intento con destreza.
+
+#### Micro-sesión 2: Experimentacion
+----
+## REPOSICION SEMANA 7: Sesion 3
+
+----
+## REPOSICION SEMANA 8: Sesion 2
+
+
+----
+## REPOSICION SEMANA 8: Sesion 3
+
+----
