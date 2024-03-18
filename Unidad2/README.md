@@ -192,6 +192,27 @@ La ultima idea que me queda es intentar por medio de una maquina virtual. Con mi
 **PS:** El fin de semana estube sin internet, lo que me dificulto avanzar en la materia 😔.
 
 #### Micro-sesión 2: Experimentación
+
+Logre con satisfaccion realizar la coneccion serial sin necesidad de cambiar de sistema operativo.
+
+**NOTA:** 
+- En cierta forma siento que el aprendizaje del tiempo invertido en esta solucion, hace parte del aprendizaje de la materia; de como conectar varios sistemas (en este caso un sistema dentro de otro sistema), y a su vez la coneccion con el ***micro:bit***.
+
+- Tambien me puede servir mas adelante para otros trabajos de la misma materia y para un futuro, eliminando la limitacion de un sistema operativo u otro.
+
+- Tambien siento que hace parte del camino de aprendizaje personal. Otros companeros que utilicen otros SO pueden no presentar este problema, pero si esta es la forma en la que yo (...), debo aprender a solucionar mis problemas especificos.
+
+![Screenshot from 2024-03-17 22-52-42](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/984acc16-9aa4-4049-94a9-9247b4bc7607)
+
+![Screenshot from 2024-03-17 23-25-04](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/6d41a726-2d20-4eab-9341-6ffabbf789b5)
+
+#### Micro-sesión 3: Test
+
+Debido a que los desarrolladores de ***Firefox*** no quieren implementar **WebSerial**, no me habia sido posible practicar este componente critico del curso; pero ya que solucioné este problema voy continuar con repasar el ejercicio de comienzo de semestre sobre serializacione (**Web Serial Terminal**).
+
+#### Micro-sesión 4: Cierre
+
+
 ----
 ### REPOSICION SEMANA 7: Sesión 3
 
