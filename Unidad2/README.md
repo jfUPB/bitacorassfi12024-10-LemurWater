@@ -227,6 +227,13 @@ El profesor me va a ayudar a solucionar el problema de serializado (**webUSB**).
 
 ![webSERIAL](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/ea2afb2e-60d8-4db1-a9e3-238c393a699b)
 
+#### Micro-sesión 2:
+
+Voy a realizar los ejercicios del curso relacionados con serializacion para entender como funciona.
+
+#### Micro-sesión 3:
+
+#### Micro-sesión 4: Cierre
 
 ----
 
