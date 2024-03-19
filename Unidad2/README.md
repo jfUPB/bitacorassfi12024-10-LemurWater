@@ -241,7 +241,15 @@ Siento que ya estoy mas centrado y puedo ver con claridad lo que debo hacer, ade
 
 ----
 
-### REPOSICION SEMANA 7: Sesión 3
+### REPOSICION SEMANA 7: Sesión 3 (Martes 19)
+
+### Sesión 1: (lunes marzo 18)
+
+#### Micro-sesión 1: Apertura
+
+Continuacion test serializacion, probar juego en ***p5.js**
+
+#### Micro-sesión 1: Apertura
 
 ----
 ### REPOSICION SEMANA 8: Sesión 2
