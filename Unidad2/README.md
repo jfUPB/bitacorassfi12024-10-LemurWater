@@ -284,6 +284,9 @@ function keyPressed() {
 }
 ```
 
+#### Micro-sesión 4: Cierre
+
+
 
 ----
 
