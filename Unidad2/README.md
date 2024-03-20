@@ -255,6 +255,33 @@ Pienso que la informacion que va a pasar sobre la serializacion puede ser los mo
 
 #### Micro-sesión 3:
 
+```
+function keyPressed() {
+  switch (keyCode) {
+    case 65:
+      if (direction !== 'right') {
+        direction = 'left';
+      }
+      break;
+    case 68:
+      if (direction !== 'left') {
+        direction = 'right'; 
+      }
+      break;
+    case 87:
+      if (direction !== 'down') {
+        direction = 'up';
+      }
+      break;
+    case 83:
+      if (direction !== 'up') {
+        direction = 'down';
+      }
+      break;
+  }
+}
+```
+
 
 ----
 
