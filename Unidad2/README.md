@@ -286,7 +286,7 @@ function keyPressed() {
 
 #### Micro-sesión 4: Cierre
 
-
+Siento que el proyecto va avanzando por buen camino, solo me faltan solucionar algunos incovenientes que impiden la serializacion.
 
 ----
 
