@@ -1,3 +1,5 @@
+  let port;
+
 
   // the snake is divided into small segments, which are drawn and edited on each 'draw' call
   let numSegments = 10;
@@ -15,6 +17,12 @@
   let scoreElem;
 
   function setup() {
+     port = createSerial();
+     if (!port.opened()) {
+        port.open('MicroPython', 115200);
+     } else port.close();
+    
+    
     scoreElem = createDiv('Score = 0');
     scoreElem.position(20, 20);
     scoreElem.id = 'score';
@@ -40,6 +48,29 @@
     updateSnakeCoordinates();
     checkGameStatus();
     checkForFruit();
+    
+    
+    
+    if(port.availableBytes() > 0){
+        let dataRx = port.read(1);
+        if(dataRx == 'A'){
+            direction = 'up';
+        }
+        else if(dataRx == 'B'){
+            direction = 'down';
+        }
+        else{
+            //fill('green');
+        }
+    }
+
+
+    if (!port.opened()) {
+        //connectBtn.html('Connect to micro:bit');
+    }
+    else {
+        //connectBtn.html('Disconnect');
+    }
   }
 
   /*
