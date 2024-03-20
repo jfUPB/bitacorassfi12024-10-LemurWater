@@ -255,6 +255,8 @@ Pienso que la informacion que va a pasar sobre la serializacion puede ser los mo
 
 #### Micro-sesión 3:
 
+Se modificaron los controles del ***Player*** para facilitar la navegabilidad:
+
 ```
 function keyPressed() {
   switch (keyCode) {
