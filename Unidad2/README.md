@@ -241,6 +241,23 @@ Siento que ya estoy mas centrado y puedo ver con claridad lo que debo hacer, ade
 
 ----
 
+### Sesión 2: (miercoles marzo 20)
+
+#### Micro-sesión 1: Apertura
+
+Le consulte al profesor como realizar la coneccion serial hacia p5.js (no sabia donde poner la informacion de ***index.html***)
+
+NOTA: Ya tengo todas las herramientas necesarias para realizar el proyecto.
+
+#### Micro-sesión 2: Comprometerse
+
+Pienso que la informacion que va a pasar sobre la serializacion puede ser los movimientos de la culebra y el puntaje, cada vez que uno de estos eventos se activa, mostrar la informacion en el **micro:bit**
+
+#### Micro-sesión 3:
+
+
+----
+
 ### REPOSICION SEMANA 7: Sesión 3 (Martes 19)
 
 ### Sesión 1: (lunes marzo 18)
