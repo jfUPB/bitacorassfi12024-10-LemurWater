@@ -141,22 +141,22 @@ function updateFruitCoordinates() {
 
 function keyPressed() {
   switch (keyCode) {
-    case 65:
+    case 74:
       if (direction !== 'right') {
         direction = 'left';
       }
       break;
-    case 68:
+    case 76:
       if (direction !== 'left') {
-        direction = 'right'; 
+        direction = 'right';
       }
       break;
-    case 87:
+    case 73:
       if (direction !== 'down') {
         direction = 'up';
       }
       break;
-    case 83:
+    case 75:
       if (direction !== 'up') {
         direction = 'down';
       }
