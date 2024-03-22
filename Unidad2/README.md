@@ -298,7 +298,18 @@ Siento que el proyecto va avanzando por buen camino, solo me faltan solucionar a
 
 Continuacion test serializacion, probar juego en ***p5.js**
 
-#### Micro-sesión 1: Apertura
+#### Micro-sesión 2:
+
+**PROBLEMA:** 
+
+![Screenshot from 2024-03-22 04-15-11](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/4daf2fde-6eb0-4f66-a834-cdfa2d107789)
+
+![Screenshot from 2024-03-22 04-14-45](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/c3253edb-f755-48be-8f9d-6269177feb9e)
+
+No me es posible conectar **micro:bit** a *Web Serial Terminal*, me dice que ya esta conectado. Ya intente resolver el problema:
+- terminando la coneccion en la otra ventana.
+- re-conectando el dispositivo.
+- reiniciando el computador.
 
 ----
 ### REPOSICION SEMANA 8: Sesión 2
