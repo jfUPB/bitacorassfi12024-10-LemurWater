@@ -1,4 +1,5 @@
   let port;
+  let connectBtn;
 
 
   // the snake is divided into small segments, which are drawn and edited on each 'draw' call
@@ -50,7 +51,7 @@
     checkForFruit();
     
     
-    
+    /*
     if(port.availableBytes() > 0){
         let dataRx = port.read(1);
         if(dataRx == 'A'){
@@ -71,7 +72,7 @@
     else {
         //connectBtn.html('Disconnect');
     }
-  }
+  }*/
 
   /*
    The segments are updated based on the direction of the snake.
@@ -193,4 +194,47 @@
         }
         break;
     }
+    function serial() {
+      connectBtn = createButton('Connect to micro:bit');
+      connectBtn.position(80, 300);
+      connectBtn.mousePressed(connectBtnClick);
+
+
+      
+      if(port.availableBytes() > 0){
+        let dataRx = port.read(1);
+        if(dataRx == 'A'){
+            fill('red');
+        }
+        else if(dataRx == 'B'){
+            fill('yellow');
+        }
+        else{
+            fill('green');
+        }
+        background(220);
+        ellipse(width / 2, height / 2, 100, 100);
+        fill('black');
+        text(dataRx, width / 2, height / 2);
+    }
+
+
+    if (!port.opened()) {
+        connectBtn.html('Connect to micro:bit');
+    }
+    else {
+        connectBtn.html('Disconnect');
+    }
   }
+
+  function connectBtnClick() {
+      if (!port.opened()) {
+          port.open('MicroPython', 115200);
+      } else {
+          port.close();
+      }
+  }
+
+  function sendBtnClick() {
+    port.write('h');
+}
