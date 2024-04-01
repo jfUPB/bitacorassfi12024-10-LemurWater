@@ -1,3 +1,13 @@
+REFERENCIAS:
+
+[WEB del curso](https://sistemasfisicosinteractivos1.readthedocs.io/)
+
+[p5.js](https://p5js.org/)
+
+[Web Serial](https://capuf.in/web-serial-terminal/)
+
+---
+
 # Bitácora de aprendizaje
 
 ## ¿Cómo voy?
@@ -747,4 +757,15 @@
 8. ¿Cuáles son los pasos siguientes para continuar avanzando en el proyecto?
 
 
+---
 
+## SEMANA 10
+
+### Sesión 1: (lunes Abril 1)
+
+#### Micro-sesión 1: apertura
+
+Nueva unidad, le pregunte al profesosr para que me ayude a resolver unos problemas que tenia de la unidad anterior, para irla cerrando.
+Ahora el objetivo es centrarme en la nueva unidad (Queda pendiente solucionar lo anterior lo mas pronto posible y sin interferir con el tiempo destinado para esta unidad)
+
+#### Micro-sesión 2: Puerta al conocimiento
