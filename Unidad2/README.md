@@ -314,6 +314,10 @@ No me es posible conectar **micro:bit** a *Web Serial Terminal*, me dice que ya 
 ----
 ### REPOSICION SEMANA 8: Sesión 2
 
+#### Micro-sesión 1: Apertura
+
+El sketch de ejemplo se conecta sin ningun problema, pero al modificarlo para el juego de la actividad, el systema no serializa. 
+Voy a intentar resolver este problema.
 
 ----
 ### REPOSICION SEMANA 8: Sesion 3
