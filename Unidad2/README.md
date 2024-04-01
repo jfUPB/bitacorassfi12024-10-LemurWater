@@ -319,6 +319,13 @@ No me es posible conectar **micro:bit** a *Web Serial Terminal*, me dice que ya 
 El sketch de ejemplo se conecta sin ningun problema, pero al modificarlo para el juego de la actividad, el systema no serializa. 
 Voy a intentar resolver este problema.
 
+#### Micro-sesión 2: Problemas
+
+El codigo no funciona, la fusion del codigo de serializado base y el juego snake a sido un ***fracaso*** hasta el momento.
+
+![Screenshot from 2024-04-01 10-36-12](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/e57535ee-8762-4b97-a486-a145413011cf)
+
+
 ----
 ### REPOSICION SEMANA 8: Sesion 3
 
