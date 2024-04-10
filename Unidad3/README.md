@@ -242,7 +242,7 @@ REFERENCIAS:
 
 > Escribe aquí
 
-### Sesión 2
+### Sesión 2 (Miercoles 10)
 
 1. ¿Cuál será el propósito de la sesión de hoy?
 
