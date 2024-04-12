@@ -342,4 +342,16 @@ Se implemento:
 - cambio de direccion con tan solo 2 teclas
 - maquina de estados rudimentaria (coneccion, y gameplay) 
 
+
+#### Micro-sesión 3:
+
+La coneccion entre el microbit y el sistema funciona. Los botones son presionados en el microbit y la informacion es enviada e interpretada por el codigo para modificar el movimiento de la culebra.
+
+FALTA: Enviar informacion al **micro:bit**
+
+![semana 8 sesion 3 ms 2](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/0bdcdeea-eb61-497c-b485-ff82f6d02886)
+
+
+#### Micro-sesión 4:
+#### Micro-sesión 5 (Cierre):
 ----
