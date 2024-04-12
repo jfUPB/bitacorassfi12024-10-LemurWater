@@ -16,9 +16,8 @@ let xFruit = 0;
 let yFruit = 0;
 let scoreElem;
 
-
 let state = 0;
-
+let pause = false;
 
 function setup() {
   port = createSerial();
@@ -48,6 +47,7 @@ function draw() {
     textOutput("Snake Game - Press ?]");
   }
   if (state == 1) {
+    if (pause == false) {
       background(0);
       for (let i = 0; i < numSegments - 1; i++) {
         line(xCor[i], yCor[i], xCor[i + 1], yCor[i + 1]);
@@ -55,20 +55,22 @@ function draw() {
       updateSnakeCoordinates();
       checkGameStatus();
       checkForFruit();
-  }
-  if (port.availableBytes() > 0) {
-    let dataRx = port.read(1);
-    if (dataRx == "A") {
-      // UP
-      if (direction !== "down") {
-        direction = "up";
+
+      if (port.availableBytes() > 0) {
+        let dataRx = port.read(1);
+        if (dataRx == "A") {
+          // UP
+          if (direction !== "down") {
+            direction = "up";
+          }
+        } else if (dataRx == "B") {
+          // DOWN
+          if (direction !== "up") {
+            direction = "down";
+          }
+        } else {
+        }
       }
-    } else if (dataRx == "B") {
-      // DOWN
-      if (direction !== "up") {
-        direction = "down";
-      }
-    } else {
     }
   }
 
@@ -132,7 +134,7 @@ function checkGameStatus() {
     //noLoop();
     const scoreVal = parseInt(scoreElem.html().substring(8));
     scoreElem.html("Game ended! Your score was : " + scoreVal);
-    
+
     state = 0;
     setup();
   }
@@ -182,17 +184,21 @@ function updateFruitCoordinates() {
 
 function keyPressed() {
   switch (keyCode) {
-    case 65:// A
+    case 65: // A
       if (direction == "up") direction = "left";
       else if (direction == "down") direction = "right";
       else if (direction == "left") direction = "down";
       else direction = "up";
       break;
-    case 68:// D
+    case 68: // D
       if (direction == "up") direction = "right";
       else if (direction == "down") direction = "left";
       else if (direction == "left") direction = "up";
       else direction = "down";
+      break;
+      case 80:// Pause
+      if (pause == false) pause = true;
+      else pause = false;
       break;
   }
 }
