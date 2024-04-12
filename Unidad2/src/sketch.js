@@ -182,25 +182,17 @@ function updateFruitCoordinates() {
 
 function keyPressed() {
   switch (keyCode) {
-    case 74:
-      if (direction !== "right") {
-        direction = "left";
-      }
+    case 65:// A
+      if (direction == "up") direction = "left";
+      else if (direction == "down") direction = "right";
+      else if (direction == "left") direction = "down";
+      else direction = "up";
       break;
-    case 76:
-      if (direction !== "left") {
-        direction = "right";
-      }
-      break;
-    case 73:
-      if (direction !== "down") {
-        direction = "up";
-      }
-      break;
-    case 75:
-      if (direction !== "up") {
-        direction = "down";
-      }
+    case 68:// D
+      if (direction == "up") direction = "right";
+      else if (direction == "down") direction = "left";
+      else if (direction == "left") direction = "up";
+      else direction = "down";
       break;
   }
 }
