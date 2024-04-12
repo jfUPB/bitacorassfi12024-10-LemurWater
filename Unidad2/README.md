@@ -335,4 +335,11 @@ El plan es realizar modificaciones al codigo base; adaptarlo al proyecto. Que la
 
 NOTA: se debe adaptar porque el input original es de 4 botones y se va a reducir a 2. En la logica del codigo se debe poner estas opciones.
 
+#### Micro-sesión 2:
+
+Se implemento:
+- sistema de *pause* 
+- cambio de direccion con tan solo 2 teclas
+- maquina de estados rudimentaria (coneccion, y gameplay) 
+
 ----
