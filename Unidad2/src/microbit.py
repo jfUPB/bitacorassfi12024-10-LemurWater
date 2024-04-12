@@ -7,7 +7,7 @@ while True:
     if button_a.was_pressed():
         uart.write('A')
     if button_b.was_pressed():
-        uart.write('B')
+        uart.write('D')
     if accelerometer.was_gesture('shake'):
         uart.write('C')
     if uart.any():
