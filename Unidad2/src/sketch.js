@@ -22,8 +22,10 @@ let pause = false;
 function setup() {
   port = createSerial();
   connectBtn = createButton("Connect to micro:bit");
-  connectBtn.position(80, 300);
+  connectBtn.position(80, 500);
   connectBtn.mousePressed(connectBtnClick);
+  sendData();
+  
 
   scoreElem = createDiv("Score = 0");
   scoreElem.position(20, 20);
@@ -44,7 +46,7 @@ function setup() {
 
 function draw() {
   if (state == 0) {
-    textOutput("Snake Game - Press ?]");
+    textOutput("Snake Game - Press [?]");
   }
   if (state == 1) {
     if (pause == false) {
@@ -59,16 +61,18 @@ function draw() {
       if (port.availableBytes() > 0) {
         let dataRx = port.read(1);
         if (dataRx == "A") {
-          // UP
-          if (direction !== "down") {
-            direction = "up";
-          }
-        } else if (dataRx == "B") {
-          // DOWN
-          if (direction !== "up") {
-            direction = "down";
-          }
-        } else {
+          if (direction == "up") direction = "left";
+          else if (direction == "down") direction = "right";
+          else if (direction == "left") direction = "down";
+          else direction = "up";
+        } 
+        else if (dataRx == "D") {
+          if (direction == "up") direction = "right";
+          else if (direction == "down") direction = "left";
+          else if (direction == "left") direction = "up";
+          else direction = "down";
+        } 
+        else {
         }
       }
     }
@@ -190,12 +194,14 @@ function keyPressed() {
       else if (direction == "left") direction = "down";
       else direction = "up";
       break;
+      
     case 68: // D
       if (direction == "up") direction = "right";
       else if (direction == "down") direction = "left";
       else if (direction == "left") direction = "up";
       else direction = "down";
       break;
+      
       case 80:// Pause
       if (pause == false) pause = true;
       else pause = false;
@@ -210,3 +216,8 @@ function connectBtnClick() {
     port.close();
   }
 }
+
+function sendData() {
+  port.write('h');
+}
+ 
