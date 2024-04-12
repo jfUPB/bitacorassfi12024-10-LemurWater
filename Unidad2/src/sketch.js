@@ -16,6 +16,10 @@ let xFruit = 0;
 let yFruit = 0;
 let scoreElem;
 
+
+let state = 0;
+
+
 function setup() {
   port = createSerial();
   connectBtn = createButton("Connect to micro:bit");
@@ -40,14 +44,18 @@ function setup() {
 }
 
 function draw() {
-  background(0);
-  for (let i = 0; i < numSegments - 1; i++) {
-    line(xCor[i], yCor[i], xCor[i + 1], yCor[i + 1]);
+  if (state == 0) {
+    textOutput("Snake Game - Press ?]");
   }
-  updateSnakeCoordinates();
-  checkGameStatus();
-  checkForFruit();
-
+  if (state == 1) {
+      background(0);
+      for (let i = 0; i < numSegments - 1; i++) {
+        line(xCor[i], yCor[i], xCor[i + 1], yCor[i + 1]);
+      }
+      updateSnakeCoordinates();
+      checkGameStatus();
+      checkForFruit();
+  }
   if (port.availableBytes() > 0) {
     let dataRx = port.read(1);
     if (dataRx == "A") {
@@ -68,6 +76,7 @@ function draw() {
     connectBtn.html("Connect to micro:bit");
   } else {
     connectBtn.html("Disconnect");
+    state = 1;
   }
 }
 
@@ -123,6 +132,9 @@ function checkGameStatus() {
     //noLoop();
     const scoreVal = parseInt(scoreElem.html().substring(8));
     scoreElem.html("Game ended! Your score was : " + scoreVal);
+    
+    state = 0;
+    setup();
   }
 }
 
