@@ -329,4 +329,10 @@ El codigo no funciona, la fusion del codigo de serializado base y el juego snake
 ----
 ### REPOSICION SEMANA 8: Sesion 3
 
+#### Micro-sesión 1: Apertura
+
+El plan es realizar modificaciones al codigo base; adaptarlo al proyecto. Que la *snake* se mueva con el movimiento de los botones **A** y **B** de **micro:bit**.
+
+NOTA: se debe adaptar porque el input original es de 4 botones y se va a reducir a 2. En la logica del codigo se debe poner estas opciones.
+
 ----
