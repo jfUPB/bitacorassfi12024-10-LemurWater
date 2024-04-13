@@ -59,24 +59,34 @@ function draw() {
     }
 
     if (port.availableBytes() > 0) {
-      let dataRx = port.read(1);
+      let dataRx = port.read(4); //1
+
       if (pause == false) {
-        if (dataRx == "A") {
+        if (port[0] == "P") {
+          pause = true;
+          return;
+        } else if (port[0] == "p") {
+          pause = false;
+        }
+
+        
+        if (port[3] == "X") {
+        }
+
+        
+        if (dataRx[1] == "A") {
           if (direction == "up") direction = "left";
           else if (direction == "down") direction = "right";
           else if (direction == "left") direction = "down";
           else direction = "up";
-        } else if (dataRx == "D") {
+        }
+        
+        if (dataRx[2] == "D") {
           if (direction == "up") direction = "right";
           else if (direction == "down") direction = "left";
           else if (direction == "left") direction = "up";
           else direction = "down";
         }
-      }
-      if (dataRx == "X") {
-        pause = !pause;
-        //dataRx = "Y";
-      } else {
       }
     }
   }
@@ -85,6 +95,7 @@ function draw() {
     connectBtn.html("Connect to micro:bit");
   } else {
     connectBtn.html("Disconnect");
+    state = 1;
   }
 }
 
@@ -205,7 +216,8 @@ function keyPressed() {
       break;
 
     case 80: // Pause
-      pause = !pause;
+      if (pause == false) pause = true;
+      else pause = false;
       break;
   }
 }
