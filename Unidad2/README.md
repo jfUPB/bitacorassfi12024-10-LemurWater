@@ -380,6 +380,34 @@ La proxima sesion se planea implementar la reception e interpretacion de datos e
 El plan va a ser organizar el envio/recepcion de datos, que ya esta, pero falta empaquetarlos en un solo mensaje.
 
 #### Micro-sesión 2:
+
+Enviado de mensaje en un solo tajo
+
+```python
+while True:
+    # Pause
+    if pin_logo.is_touched(): uart_buffer = 'P'
+    else : uart_buffer = 'p'
+        
+    # Accelerometer  
+    if accelerometer.was_gesture('shake'): uart_buffer = uart_buffer + 'X'
+    else: uart_buffer = uart_buffer + 'x'   
+    
+   
+    # Button press
+    if button_a.was_pressed(): uart_buffer = uart_buffer + 'A'
+    else : uart_buffer = uart_buffer + 'a'
+    
+    if button_b.was_pressed(): uart_buffer = uart_buffer + 'D'
+    else : uart_buffer = uart_buffer + 'd'
+
+
+    
+    # Send
+    uart.write(uart_buffer)
+    uart_buffer = ''
+```
+
 #### Micro-sesión 3:
 #### Micro-sesión 4:
 #### Micro-sesión 5 (Cierre):
