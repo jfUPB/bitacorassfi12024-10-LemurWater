@@ -377,6 +377,11 @@ La proxima sesion se planea implementar la reception e interpretacion de datos e
 
 #### Micro-sesión 1:
 
+El plan va a ser organizar el envio/recepcion de datos, que ya esta, pero falta empaquetarlos en un solo mensaje.
 
+#### Micro-sesión 2:
+#### Micro-sesión 3:
+#### Micro-sesión 4:
+#### Micro-sesión 5 (Cierre):
 
 ----
