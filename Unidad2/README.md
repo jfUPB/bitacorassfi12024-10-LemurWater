@@ -448,6 +448,18 @@ if (port.availableBytes() > 0) {
     }
 ```
 #### Micro-sesión 4:
+
+Estructura para la lectura de datos (un solo mensaje, se utilizan las potentes librerias de *js* para detectar los caracteres necesarios, a diferencia de deparar el string con un metodo mas tradicional y lento de escribir)
+
+```javascript
+if (dataRx.includes("A")) {
+          if (direction == "up") direction = "left";
+          else if (direction == "down") direction = "right";
+          else if (direction == "left") direction = "down";
+          else direction = "up";
+        }
+```
+
 #### Micro-sesión 5 (Cierre):
 
 ----
