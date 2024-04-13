@@ -64,15 +64,15 @@ function draw() {
       print("port[0]: " + port[0]);
 
       if (pause == false) {
-        if (port[0] == "P") {
+        if (dataRx.includes("P")) {
           pause = true;
           return;
-        } else if (port[0] == "p") {
+        } else if (dataRx.includes("p")) {
           pause = false;
         }
 
         
-        if (port[1] == "X") {
+        if (dataRx.includes("X")) {
         }
 
         
@@ -83,7 +83,7 @@ function draw() {
           else direction = "up";
         }
         
-        if (dataRx[3] == "D") {
+        if (dataRx.includes("D")) {
           if (direction == "up") direction = "right";
           else if (direction == "down") direction = "left";
           else if (direction == "left") direction = "up";
