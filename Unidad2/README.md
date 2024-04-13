@@ -416,13 +416,21 @@ leyendo mensaje en **p5.js**
 
 ```javascript
  if (port.availableBytes() > 0) {
-      let dataRx = port.read(4);//1
-      print("port.read(4): " + port.read(4));
-      print("dataRx[0]: " + dataRx[0]);
-      print("dataRx[1]: " + dataRx[1]);
-      print("dataRx[2]: " + dataRx[2]);
-      print("dataRx[3]: " + dataRx[3]);
+      let dataRx = port.read(4); //1
+
       if (pause == false) {
+        if (port[0] == "P") {
+          pause = true;
+          return;
+        } else {
+          pause = false;
+        }
+
+        
+        if (port[3] == "X") {
+        }
+
+        
         if (dataRx[1] == "A") {
           if (direction == "up") direction = "left";
           else if (direction == "down") direction = "right";
@@ -434,13 +442,6 @@ leyendo mensaje en **p5.js**
           else if (direction == "left") direction = "up";
           else direction = "down";
         }
-      }
-      if (port[3] == "X") {
-        pause = true;
-      } else if (port[0] == "P") {
-        pause = false;
-      } else {
-        
       }
     }
 ```
