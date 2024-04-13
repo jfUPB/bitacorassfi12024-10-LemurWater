@@ -1,4 +1,5 @@
 from microbit import *
+import music
 
 uart.init(baudrate=115200)
 display.show(Image.SAD)
@@ -44,16 +45,15 @@ while True:
         send = False
         
 
-    # Read
+    # Read mfp0
     if uart.any():
         display.show(Image.HAPPY)
         data = uart.read(1)
         if data:
-            if data[0] == ord('h'):
-                display.show(Image.HAPPY)
-                
-            #if data[0] == ord('\n'):
-            #   v end = 0
-            #else:
-             #   buffer[end] = data[0]
-             #   end +=1
+            if data[0] == ord('M'):
+                music.play(music.PYTHON)
+            if data[1] == ord('F'):
+                music.play(['e'])
+                # display.scroll(data[3])
+            if data[2] == ord('P'):
+                music.play(['c'])
