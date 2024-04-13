@@ -415,7 +415,7 @@ while True:
 leyendo mensaje en **p5.js**
 
 ```javascript
- if (port.availableBytes() > 0) {
+if (port.availableBytes() > 0) {
       let dataRx = port.read(4); //1
 
       if (pause == false) {
@@ -436,7 +436,9 @@ leyendo mensaje en **p5.js**
           else if (direction == "down") direction = "right";
           else if (direction == "left") direction = "down";
           else direction = "up";
-        } else if (dataRx[2] == "D") {
+        } 
+        
+        else if (dataRx[2] == "D") {
           if (direction == "up") direction = "right";
           else if (direction == "down") direction = "left";
           else if (direction == "left") direction = "up";
