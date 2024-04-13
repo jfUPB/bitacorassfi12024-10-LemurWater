@@ -1,37 +1,45 @@
 from microbit import *
 
 uart.init(baudrate=115200)
-display.show(Image.BUTTERFLY)
+display.show(Image.SAD)
+
 uart_buffer =''
+BUFFER_SIZE = 256
+buffer = bytearray(BUFFER_SIZE)
+end = 0
+
 
 while True:
     # Pause
-    if pin_logo.is_touched():
-        uart_buffer = uart_buffer + 'P'
-        # uart.write('P')
+    if pin_logo.is_touched(): uart_buffer = 'P'
+    else : uart_buffer = 'p'
         
     # Accelerometer  
-    if accelerometer.was_gesture('shake'):
-         x_strength = accelerometer.get_x()
-         uart_buffer = uart_buffer + 'X'
-         # uart.write('X')
+    if accelerometer.was_gesture('shake'): uart_buffer = uart_buffer + 'X'
+    else: uart_buffer = uart_buffer + 'x'   
+    
    
     # Button press
-    if button_a.was_pressed():
-        uart_buffer = uart_buffer + 'A'
-        # uart.write('A')
-    if button_b.was_pressed():
-        uart_buffer = uart_buffer + 'D'
-        # uart.write('D')
+    if button_a.was_pressed(): uart_buffer = uart_buffer + 'A'
+    else : uart_buffer = uart_buffer + 'a'
+    
+    if button_b.was_pressed(): uart_buffer = uart_buffer + 'D'
+    else : uart_buffer = uart_buffer + 'd'
+
+
     
     # Send
-    if len(uart_buffer) > 0:
-        uart.write(uart_buffer)
-        uart_buffer = ''
+    uart.write(uart_buffer)
+    uart_buffer = ''
+        
 
     # Read
     if uart.any():
         data = uart.read(1)
         if data:
-            if data[0] == ord('h'):
-                display.show(Image.HEART)
+            display.show(Image.HAPPY)
+            if data[0] == ord('\n'):
+                end = 0
+            else:
+                buffer[end] = data[0]
+                end +=1
