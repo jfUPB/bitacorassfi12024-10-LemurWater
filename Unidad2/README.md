@@ -13,6 +13,8 @@ DURACION: Semana 6-9
 
 REFERENCIAS:
 
+[MD](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
 [WEB del curso](https://sistemasfisicosinteractivos1.readthedocs.io/)
 
 [p5.js](https://p5js.org/)
@@ -409,6 +411,39 @@ while True:
 ```
 
 #### Micro-sesión 3:
+
+leyendo mensaje en **p5.js**
+
+```javascript
+ if (port.availableBytes() > 0) {
+      let dataRx = port.read(4);//1
+      print("port.read(4): " + port.read(4));
+      print("dataRx[0]: " + dataRx[0]);
+      print("dataRx[1]: " + dataRx[1]);
+      print("dataRx[2]: " + dataRx[2]);
+      print("dataRx[3]: " + dataRx[3]);
+      if (pause == false) {
+        if (dataRx[1] == "A") {
+          if (direction == "up") direction = "left";
+          else if (direction == "down") direction = "right";
+          else if (direction == "left") direction = "down";
+          else direction = "up";
+        } else if (dataRx[2] == "D") {
+          if (direction == "up") direction = "right";
+          else if (direction == "down") direction = "left";
+          else if (direction == "left") direction = "up";
+          else direction = "down";
+        }
+      }
+      if (port[3] == "X") {
+        pause = true;
+      } else if (port[0] == "P") {
+        pause = false;
+      } else {
+        
+      }
+    }
+```
 #### Micro-sesión 4:
 #### Micro-sesión 5 (Cierre):
 
