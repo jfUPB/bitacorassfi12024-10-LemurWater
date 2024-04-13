@@ -25,7 +25,6 @@ function setup() {
   connectBtn.position(80, 500);
   connectBtn.mousePressed(connectBtnClick);
   sendData();
-  
 
   scoreElem = createDiv("Score = 0");
   scoreElem.position(20, 20);
@@ -49,31 +48,35 @@ function draw() {
     textOutput("Snake Game - Press [?]");
   }
   if (state == 1) {
+    background(0);
+    for (let i = 0; i < numSegments - 1; i++) {
+      line(xCor[i], yCor[i], xCor[i + 1], yCor[i + 1]);
+    }
     if (pause == false) {
-      background(0);
-      for (let i = 0; i < numSegments - 1; i++) {
-        line(xCor[i], yCor[i], xCor[i + 1], yCor[i + 1]);
-      }
       updateSnakeCoordinates();
       checkGameStatus();
       checkForFruit();
+    }
 
-      if (port.availableBytes() > 0) {
-        let dataRx = port.read(1);
+    if (port.availableBytes() > 0) {
+      let dataRx = port.read(1);
+      if (pause == false) {
         if (dataRx == "A") {
           if (direction == "up") direction = "left";
           else if (direction == "down") direction = "right";
           else if (direction == "left") direction = "down";
           else direction = "up";
-        } 
-        else if (dataRx == "D") {
+        } else if (dataRx == "D") {
           if (direction == "up") direction = "right";
           else if (direction == "down") direction = "left";
           else if (direction == "left") direction = "up";
           else direction = "down";
-        } 
-        else {
         }
+      }
+      if (dataRx == "X") {
+        pause = !pause;
+        //dataRx = "Y";
+      } else {
       }
     }
   }
@@ -82,7 +85,6 @@ function draw() {
     connectBtn.html("Connect to micro:bit");
   } else {
     connectBtn.html("Disconnect");
-    state = 1;
   }
 }
 
@@ -194,17 +196,16 @@ function keyPressed() {
       else if (direction == "left") direction = "down";
       else direction = "up";
       break;
-      
+
     case 68: // D
       if (direction == "up") direction = "right";
       else if (direction == "down") direction = "left";
       else if (direction == "left") direction = "up";
       else direction = "down";
       break;
-      
-      case 80:// Pause
-      if (pause == false) pause = true;
-      else pause = false;
+
+    case 80: // Pause
+      pause = !pause;
       break;
   }
 }
@@ -218,6 +219,5 @@ function connectBtnClick() {
 }
 
 function sendData() {
-  port.write('h');
+  port.write("h");
 }
- 
