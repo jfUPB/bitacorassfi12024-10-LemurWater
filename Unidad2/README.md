@@ -353,5 +353,30 @@ FALTA: Enviar informacion al **micro:bit**
 
 
 #### Micro-sesión 4:
+
+Agregado fundaciones del sistema de pausa.
+
+NOTA: Al pausar, la coneccion de serializacion se dana y deja de funcionar el intercambio de datos.
+
 #### Micro-sesión 5 (Cierre):
+
+Se a pensado implementar como sensores: 
+1 los botones
+2 el accelerometro.
+
+como actuadores:
+1 sonido
+2 pantalla (dot matrix) mostrando informacion como puntaje y otros.
+
+Esta ese error pero voy a continuar e intentar correjirlo para el final, ya que el sistema de pausa no es necesario para el desarrollo del proyecto.
+La proxima sesion se planea implementar la reception e interpretacion de datos en el *micro:bit*.
+
+----
+
+### REPOSICION SEMANA 9: Sesion 1
+
+#### Micro-sesión 1:
+
+
+
 ----
