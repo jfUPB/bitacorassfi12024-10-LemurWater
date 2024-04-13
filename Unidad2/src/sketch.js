@@ -60,6 +60,8 @@ function draw() {
 
     if (port.availableBytes() > 0) {
       let dataRx = port.read(4); //1
+      print("dataRx: " + dataRx);
+      print("port[0]: " + port[0]);
 
       if (pause == false) {
         if (port[0] == "P") {
@@ -70,18 +72,18 @@ function draw() {
         }
 
         
-        if (port[3] == "X") {
+        if (port[1] == "X") {
         }
 
         
-        if (dataRx[1] == "A") {
+        if (dataRx.includes("A")) {
           if (direction == "up") direction = "left";
           else if (direction == "down") direction = "right";
           else if (direction == "left") direction = "down";
           else direction = "up";
         }
         
-        if (dataRx[2] == "D") {
+        if (dataRx[3] == "D") {
           if (direction == "up") direction = "right";
           else if (direction == "down") direction = "left";
           else if (direction == "left") direction = "up";
@@ -95,7 +97,6 @@ function draw() {
     connectBtn.html("Connect to micro:bit");
   } else {
     connectBtn.html("Disconnect");
-    state = 1;
   }
 }
 
@@ -225,8 +226,10 @@ function keyPressed() {
 function connectBtnClick() {
   if (!port.opened()) {
     port.open("MicroPython", 115200);
+    state = 1;
   } else {
     port.close();
+    state = 0;
   }
 }
 
