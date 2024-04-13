@@ -1,6 +1,12 @@
 let port;
 let connectBtn;
 
+let state = 0;
+let pause = false;
+let send = false;
+
+let sendBuffer = "mfp0";
+
 // the snake is divided into small segments, which are drawn and edited on each 'draw' call
 let numSegments = 10;
 let direction = "right";
@@ -16,15 +22,13 @@ let xFruit = 0;
 let yFruit = 0;
 let scoreElem;
 
-let state = 0;
-let pause = false;
+
 
 function setup() {
   port = createSerial();
   connectBtn = createButton("Connect to micro:bit");
   connectBtn.position(80, 500);
   connectBtn.mousePressed(connectBtnClick);
-  sendData();
 
   scoreElem = createDiv("Score = 0");
   scoreElem.position(20, 20);
@@ -47,7 +51,14 @@ function draw() {
   if (state == 0) {
     textOutput("Snake Game - Press [?]");
   }
-  if (state == 1) {
+  else if (state == 1) {
+    //setup();
+    //sendBuffer = "m";
+    //sendData();
+    state = 2;
+    return;
+  }
+  else if (state == 2) {
     background(0);
     for (let i = 0; i < numSegments - 1; i++) {
       line(xCor[i], yCor[i], xCor[i + 1], yCor[i + 1]);
@@ -56,16 +67,22 @@ function draw() {
       updateSnakeCoordinates();
       checkGameStatus();
       checkForFruit();
+      
+      sendBuffer[0] = "M";
+      
+      sendData();
+      sendBuffer = "mfp0";
     }
 
     if (port.availableBytes() > 0) {
       let dataRx = port.read(4); //1
       print("dataRx: " + dataRx);
-      print("port[0]: " + port[0]);
 
       if (pause == false) {
         if (dataRx.includes("P")) {
           pause = true;
+          sendBuffer[0] = "m";
+          //send = true;
           return;
         } else if (dataRx.includes("p")) {
           pause = false;
@@ -90,6 +107,11 @@ function draw() {
           else direction = "down";
         }
       }
+    }
+    if (send == true) {
+      sendData();
+    } else {
+      sendBuffer = "mfp0";
     }
   }
 
@@ -153,7 +175,6 @@ function checkGameStatus() {
     const scoreVal = parseInt(scoreElem.html().substring(8));
     scoreElem.html("Game ended! Your score was : " + scoreVal);
 
-    state = 0;
     setup();
   }
 }
@@ -185,6 +206,10 @@ function checkForFruit() {
     xCor.unshift(xCor[0]);
     yCor.unshift(yCor[0]);
     numSegments++;
+    
+    sendBuffer[1] = "F";
+    sendBuffer[4] = (prevScore + 1).toString();
+    
     updateFruitCoordinates();
   }
 }
@@ -201,6 +226,8 @@ function updateFruitCoordinates() {
 }
 
 function keyPressed() {
+  sendBuffer = "P";
+  send = true;
   switch (keyCode) {
     case 65: // A
       if (direction == "up") direction = "left";
@@ -226,7 +253,7 @@ function keyPressed() {
 function connectBtnClick() {
   if (!port.opened()) {
     port.open("MicroPython", 115200);
-    state = 1;
+    state = 2;
   } else {
     port.close();
     state = 0;
@@ -234,5 +261,7 @@ function connectBtnClick() {
 }
 
 function sendData() {
-  port.write("h");
+  port.write(sendBuffer);
+  sendBuffer = "mfp0";
+  send = false;
 }
