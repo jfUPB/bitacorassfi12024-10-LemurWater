@@ -57,3 +57,17 @@ while True:
                 display.scroll(data[3])
             if data[2] == ord('P'):
                 music.play(['c'])
+                
+    if uart.any():
+       message = uart.readline()
+       display.scroll(message)
+       if message == ord('M'):
+           music.play(music.PYTHON)
+       if data[1] == ord('F'):
+           music.play(['e'])
+           display.scroll(data[3])
+       if data[2] == ord('P'):
+           music.play(['c'])
+
+
+
