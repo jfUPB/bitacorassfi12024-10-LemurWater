@@ -390,3 +390,10 @@ REFERENCIAS:
 4. ¿Cuáles son los pasos siguientes para continuar avanzando en el proyecto?
 
 > Escribe aquí
+
+
+
+# Abril 17 Miercoles
+
+El profesor dio una completa explicacion sonbre el serializado en binario, temas a tener en cuenta y otros temas relacionados con el curso.
+
