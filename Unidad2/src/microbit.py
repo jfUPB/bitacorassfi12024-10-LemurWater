@@ -48,7 +48,7 @@ while True:
     # Read mfp0
     if uart.any():
         display.show(Image.HAPPY)
-        data = uart.read(1)
+        data = uart.readline()#uart.read(1)
         if data:
             if data[0] == ord('M'):
                 music.play(music.PYTHON)
@@ -58,16 +58,3 @@ while True:
             if data[2] == ord('P'):
                 music.play(['c'])
                 
-    if uart.any():
-       message = uart.readline()
-       display.scroll(message)
-       if message == ord('M'):
-           music.play(music.PYTHON)
-       if data[1] == ord('F'):
-           music.play(['e'])
-           display.scroll(data[3])
-       if data[2] == ord('P'):
-           music.play(['c'])
-
-
-
