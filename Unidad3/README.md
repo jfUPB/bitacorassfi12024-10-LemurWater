@@ -140,6 +140,12 @@ while True:
 # loop repeats forever ----------------------
 ```
 
+#GIGANOTA:
+Algo a resaltar esque la matematica es el alfabeto en el que esta escrito el mundo...
+Siento, que estoy en un punto donde conceptos tan altos como mover una mano para hacer sonar el instrumento, rapidamente, los llevo a un bajo nivel donde estan compuestos por vectores y luego es facilmente simularlo en un dispositivo de computo.
+
+- Tambien a resaltar (y parte de lo mismo) es que conceptos de fisica como hondas de radio y frecuencia. para tomar como referencia el punto inicial donde se activo el **micro:theremin** y leyendo que tanto se aleja de ese punto, para simular la antena y las hondas de radio ... 🤯
+
 #### Micro-sesión 2 (25 minutos)
 
 **Trabajo en concentración**
