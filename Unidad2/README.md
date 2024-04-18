@@ -462,4 +462,8 @@ if (dataRx.includes("A")) {
 
 #### Micro-sesión 5 (Cierre):
 
+![semana 8 sesion 3 ms 2](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/0968d981-66e5-412f-b3cf-7182659cd6db)
+
+![2](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/cc7ae516-e0eb-491c-859d-e402a99eb547)
+
 ----
