@@ -89,7 +89,7 @@ REFERENCIAS:
 9. ¿Qué he aprendido o reforzado en esta micro-sesión?
    Altamente los conceptos de **maquina de estados** y **programacion por eventos**
 
-
+```python
    # Imports go at the top
 from microbit import *
 import music
@@ -138,6 +138,7 @@ while True:
             theremin_2()
             break
 # loop repeats forever ----------------------
+```
 
 #### Micro-sesión 2 (25 minutos)
 
