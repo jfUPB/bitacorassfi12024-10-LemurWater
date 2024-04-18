@@ -19,7 +19,7 @@ stateDiagram {
 
 [*] -> setup : Entry point
 
-state setup ##[bold]yellow {
+state setup ##[bold]cyan {
  [*] --> select_octave : Entry point
  select_octave: 1 to 7
  select_octave --> select_note : Succeeded
@@ -31,7 +31,7 @@ state setup ##[bold]yellow {
 setup -> set_world_position : Succeeded
 
 
-state set_world_position ##[bold]cyan {
+state set_world_position ##[bold]magenta {
  set_world_position: map current x, y, z
  set_world_position: movement values to 0
  set_world_position: in retalion of physical world
@@ -40,7 +40,7 @@ set_world_position -> play_insturment : Succeeded
 
 
 
-state play_insturment ##[bold]magenta {
+state play_insturment ##[bold]yellow {
  state sense_movement ##[bold]red {
   [*] --> x_movement : Entry point
   x_movement -> y_movement: Succeeded
