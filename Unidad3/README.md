@@ -8,6 +8,8 @@ REFERENCIAS:
 
 [IEEE-754 Floating Point Converter](https://www.h-schmidt.net/FloatConverter/IEEE754.html)
 
+[PUML Online](https://www.plantuml.com/plantuml/uml/SyfFKj2rKt3CoKnELR1Io4ZDoSa70000)
+
 ---
 
 # Bitácora de aprendizaje
