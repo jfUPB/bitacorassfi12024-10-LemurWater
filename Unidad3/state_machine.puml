@@ -1,11 +1,11 @@
 @startuml
 
-scale 1024 width
+scale 1920 width
 
-[*] -> setup
+[*] -> setup : Entry point
 
 state setup {
- [*] --> select_octave
+ [*] --> select_octave : Entry point
  select_octave: 1 to 7
  select_octave --> select_note : Succeeded
  select_note: C, C#, D, D#, E, F, F#, G, G#, A, A#, B
@@ -24,17 +24,20 @@ state set_world_position {
 set_world_position -> play_insturment : Succeeded
 
 
-state play_insturment {
- [*] --> x_movement
- x_movement --> y_movement: Succeeded
- y_movement --> z_movement: Succeeded
- z_movement --> x_rotation: Succeeded
- x_rotation --> y_rotation: Succeeded
- y_rotation --> z_rotation: Succeeded
- z_rotation --> process_sound : Succeeded
- process_sound --> play_sound: Succeeded
 
- play_sound --> x_movement: Succeeded
+state play_insturment {
+ state sense_movement {
+  [*] --> x_movement : Entry point
+  x_movement -> y_movement: Succeeded
+  y_movement -> z_movement: Succeeded
+  z_movement -> x_rotation: Succeeded
+  x_rotation -> y_rotation: Succeeded
+  y_rotation -> z_rotation: Succeeded
+  z_rotation --> [*]: Succeeded
+ }
+ sense_movement --> process_sound : Succeeded
+ process_sound --> play_sound : Succeeded
+ play_sound --> sense_movement: Succeeded
 }
 
 play_insturment -> [*] : Disconected
