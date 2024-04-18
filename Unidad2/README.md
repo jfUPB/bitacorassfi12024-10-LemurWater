@@ -466,5 +466,8 @@ if (dataRx.includes("A")) {
 
 ![2](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/cc7ae516-e0eb-491c-859d-e402a99eb547)
 
-**NOTA:** Considero el proyecto en gran medida terminado; se debe hablar con el profesor para evaluar el proyecto.
+**NOTA:** 
+
+- Considero el proyecto en gran medida terminado; se debe hablar con el profesor para evaluar el proyecto.
+- Falta *preguntar por los datos*
 ----
