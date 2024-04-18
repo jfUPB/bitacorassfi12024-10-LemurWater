@@ -176,7 +176,7 @@ Le e trabajado a la maquina de estados, aprendiendo un poco el lenguaje de diagr
 
 ![state_machine_1](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/8b092149-3668-4494-809c-684fba7bae57)
 
-![state_machine_2](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/acdefcb4-483e-455e-aaaa-450dfd84f5f8)
+![state_machine_2](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/c1a0f94a-60a3-4054-9ebd-d2d9cda472ce)
 
 
 **Trabajo en concentración**
