@@ -171,6 +171,12 @@ Referencias:
 
 https://en.wikipedia.org/wiki/State_diagram
 
+
+Le e trabajado a la maquina de estados, aprendiendo un poco el lenguaje de diagramacion y estructurando (y re-estructurando) como podria ser la maquina de estados.
+
+![state_machine_1](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/8b092149-3668-4494-809c-684fba7bae57)
+
+
 **Trabajo en concentración**
 
 **Meta-aprendizaje:**
