@@ -148,10 +148,14 @@ Siento, que estoy en un punto donde conceptos tan altos como mover una mano para
 
 #### Micro-sesión 2 (25 minutos)
 
-![3](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/ec58a13b-cca1-43f3-b367-7cc81a9fa177)
-
 ![2](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/24807365-958b-42b6-b36c-a6b4e8b5110b)
 
+Posibles ejes de movimiento para utilizar como datos (punto flotante)
+
+![3](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/ec58a13b-cca1-43f3-b367-7cc81a9fa177)
+
+se puede expandir a 6 gestos + 3 (4 con touch) botones para mapear los controles del sonido...
+NOTA: Me parece gran cantidad de de inputs, almenos a comparacion del **Theremin** original, que solo utiliza 2, una mano para el **pitch** y la otra para el **volumen**
 
 **Trabajo en concentración**
 
