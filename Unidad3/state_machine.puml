@@ -1,8 +1,8 @@
 @startuml
 
-scale 350 width
+scale 1024 width
 
-[*] --> setup
+[*] -> setup
 
 state setup {
  [*] --> select_octave
@@ -13,8 +13,30 @@ state setup {
  show_hz: microbit display
  show_hz --> [*] : Succeeded
 }
+setup -> set_world_position : Succeeded
 
-setup-> State2 : Succeeded
-State2 --> [*]
+
+state set_world_position {
+ set_world_position: map current x, y, z
+ set_world_position: movement values to 0
+ set_world_position: in retalion of physical world
+}
+set_world_position -> play_insturment : Succeeded
+
+
+state play_insturment {
+ [*] --> x_movement
+ x_movement --> y_movement: Succeeded
+ y_movement --> z_movement: Succeeded
+ z_movement --> x_rotation: Succeeded
+ x_rotation --> y_rotation: Succeeded
+ y_rotation --> z_rotation: Succeeded
+ z_rotation --> process_sound : Succeeded
+ process_sound --> play_sound: Succeeded
+
+ play_sound --> x_movement: Succeeded
+}
+
+play_insturment -> [*] : Disconected
 
 @enduml
