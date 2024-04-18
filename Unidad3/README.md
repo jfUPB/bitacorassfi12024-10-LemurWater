@@ -157,6 +157,11 @@ Posibles ejes de movimiento para utilizar como datos (punto flotante)
 se puede expandir a 6 gestos + 3 (4 con touch) botones para mapear los controles del sonido...
 NOTA: Me parece gran cantidad de de inputs, almenos a comparacion del **Theremin** original, que solo utiliza 2, una mano para el **pitch** y la otra para el **volumen**
 
+- Inclusive se puede dar la posiblidad al usuario para elejir en que nota se quiere "afinar" el "instrumento", mostrando la nota (y puede ser los Hz) en la pantalla del **micro:"bit**.
+```python
+music.set_tempo(bpm=120)
+```
+  
 **Trabajo en concentración**
 
 **Meta-aprendizaje:**
