@@ -2,9 +2,24 @@
 
 scale 1920 width
 
+<style>
+stateDiagram {
+  BackgroundColor grey
+  'LineColor white
+  FontName Impact
+  FontColor white
+  arrow {
+    FontSize 13
+    LineColor black
+  }
+}
+</style>
+
+
+
 [*] -> setup : Entry point
 
-state setup {
+state setup ##[bold]yellow {
  [*] --> select_octave : Entry point
  select_octave: 1 to 7
  select_octave --> select_note : Succeeded
@@ -16,7 +31,7 @@ state setup {
 setup -> set_world_position : Succeeded
 
 
-state set_world_position {
+state set_world_position ##[bold]cyan {
  set_world_position: map current x, y, z
  set_world_position: movement values to 0
  set_world_position: in retalion of physical world
@@ -25,8 +40,8 @@ set_world_position -> play_insturment : Succeeded
 
 
 
-state play_insturment {
- state sense_movement {
+state play_insturment ##[bold]magenta {
+ state sense_movement ##[bold]red {
   [*] --> x_movement : Entry point
   x_movement -> y_movement: Succeeded
   y_movement -> z_movement: Succeeded
@@ -36,7 +51,16 @@ state play_insturment {
   z_rotation --> [*]: Succeeded
  }
  sense_movement --> process_sound : Succeeded
+ 
+
+state process_sound ##[bold]green {
+ }
  process_sound --> play_sound : Succeeded
+ 
+
+
+state play_sound ##[bold]blue {
+ }
  play_sound --> sense_movement: Succeeded
 }
 
