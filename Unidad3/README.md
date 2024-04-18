@@ -10,6 +10,7 @@ REFERENCIAS:
 
 [PUML Online](https://www.plantuml.com/plantuml/uml/SyfFKj2rKt3CoKnELR1Io4ZDoSa70000)
 
+[State Diagram](https://en.wikipedia.org/wiki/State_diagram)
 ---
 
 # Bitácora de aprendizaje
@@ -165,6 +166,10 @@ music.set_tempo(bpm=120)
 ```
 
 ![image](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/7f88e2b3-4421-4913-b201-c82ffd7bbd5a)
+
+Referencias:
+
+https://en.wikipedia.org/wiki/State_diagram
 
 **Trabajo en concentración**
 
