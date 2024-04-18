@@ -57,16 +57,87 @@ REFERENCIAS:
 **Planeación:**
 
 1. ¿Qué voy a trabajar hoy?
-2. ¿Cuál es mi objetivo principal para esta sesión?
+   Voy a investigar informacion relacionada con el *Theremin*
+3. ¿Cuál es mi objetivo principal para esta sesión?
+   Conocer el instrumento, saber si es viable realizarlo como proyecto en el **micro:bit + p5.js**
 
 **Trabajo en concentración**
 
 **Meta-aprendizaje:**
 
-3. ¿Qué he logrado en esta micro-sesión de trabajo?
-4. ¿Con qué dificultades me encontré y cómo las abordé?
-5. ¿Estoy más cerca de alcanzar el objetivo de la sesión? ¿Qué falta por hacer?
-6. ¿Qué he aprendido o reforzado en esta micro-sesión? 
+3. ¿Qué he logrado en esta micro-sesión de trabajo
+   He logrado hacerme una idea basica de como seria el proyecto, un esquema en la cabeza. Me parece muy sensillo.
+   Se podria realizar con el *Acelerometro* del **micro:bit** tomando los 3 vectores (x, y, z) y dandole a cada dimension una propiedad en el instrumento, ej:
+   - la *aceleracion* en **x** puede controlar: la frecuencia del sonido.
+   - la *aceleracion* en **y** puede controlar: el volumen.
+   - la *aceleracion* en **z** puede controlar: el tipo de sonido,efecto, "color".
+
+   Esa es la idea basica principal e inicial.
+   Leyendo mas sobre el instrumento, entendi que se usan las dos manos:
+   - una para el **volumen**
+   - y la otra para el **"color"**
+
+   Asi que me gustaria realizar el ejercicio con **2 micro:bit**, para que el ejercicio sea mas fiel al instrumento original y tenga mas alcance, pero esta la idea simple de uno por facilidad (el problema esque el cambio en sonido es mas limitado porque solo se puede realizar pulsando 2 botones envez de un valor en     punto flotante dictado por una dimension del acelerometro).
+   
+5. ¿Con qué dificultades me encontré y cómo las abordé?
+   Mis dificultades fueron desiciones de de complejidad y alcance del proyecto.
+   Las aborde empujando (y limitando) todas mis opciones a dos extremos opuestos, elijiendo una y dejando la otra como **Plan B (emergencia)**
+   
+7. ¿Estoy más cerca de alcanzar el objetivo de la sesión? ¿Qué falta por hacer?
+   Falta ver un video de como funciona el **Theremin**, ver una persona usarlo y desidir que tan adaptable es a los acelerometros.
+   
+9. ¿Qué he aprendido o reforzado en esta micro-sesión?
+   Altamente los conceptos de **maquina de estados** y **programacion por eventos**
+
+
+   # Imports go at the top
+from microbit import *
+import music
+
+# Variables ---------------------------------
+uart.init(baudrate=115200)
+theremin_mode = 0
+state = 1;
+# Variables ---------------------------------
+
+# States ------------------------------------
+def state_1():
+    if button_a.was_pressed():
+        theremin_mode = 1
+    if button_b.was_pressed():
+        theremin_mode = 2
+
+def theremin_1():
+    music.set_tempo(bpm=120)
+
+    x_strength = accelerometer.get_x()
+    # x_strength *= 10
+    display.scroll(x_strength)
+    print(x_strength)
+
+def theremin_2():
+    music.set_tempo(bpm=120)
+# States ------------------------------------
+    
+
+# Setup -------------------------------------
+display.show(Image.SILLY)
+# Setup -------------------------------------
+
+
+# loop repeats forever ----------------------
+while True:
+    if state == 1: 
+        state_1()
+        break
+    elif state == 2:
+        if theremin_mode == 1:
+            theremin_1()
+            break
+        else:
+            theremin_2()
+            break
+# loop repeats forever ----------------------
 
 #### Micro-sesión 2 (25 minutos)
 
