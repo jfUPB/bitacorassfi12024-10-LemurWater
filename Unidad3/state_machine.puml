@@ -1,0 +1,11 @@
+@startuml
+
+[*] --> state_setup
+state_setup--> [*]
+state_setup: this is a string
+state_setup: this is another string
+
+state_setup-> State2 : Succeeded
+State2 --> [*]
+
+@enduml
