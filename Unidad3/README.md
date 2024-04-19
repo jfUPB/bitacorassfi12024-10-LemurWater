@@ -149,6 +149,12 @@ Siento, que estoy en un punto donde conceptos tan altos como mover una mano para
 
 - Tambien a resaltar (y parte de lo mismo) es que conceptos de fisica como hondas de radio y frecuencia. para tomar como referencia el punto inicial donde se activo el **micro:theremin** y leyendo que tanto se aleja de ese punto, para simular la antena ... 🤯
 
+
+![Theramin-Alexandra-Stepanoff-1930](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/313b9973-4c05-407e-ab2e-943e78266656)
+
+![Moog_Theremin_Bausatz](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/4effda4e-5de6-4aa3-947f-7981fb4535c7)
+
+
 #### Micro-sesión 2 (25 minutos)
 
 ![2](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/24807365-958b-42b6-b36c-a6b4e8b5110b)  ![3](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/ec58a13b-cca1-43f3-b367-7cc81a9fa177)
