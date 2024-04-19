@@ -164,6 +164,8 @@ The components of a modern Moog theremin, in kit form
 
 Posibles ejes de movimiento para utilizar como datos (punto flotante)
 
+![Theramin-Alexandra-Stepanoff-1930 - diagram](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/bfac0a3e-c3a7-4923-9025-9d6c19b0f0de)
+
 
 
 se puede expandir a 6 gestos + 3 (4 con touch) botones para mapear los controles del sonido...
