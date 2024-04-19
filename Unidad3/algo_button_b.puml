@@ -1,0 +1,32 @@
+@startuml
+
+
+!theme amiga
+
+
+!$grey1 = "303030"
+!$grey2 = "4d4d4d"
+!$grey3 = "808080"
+
+!$error = "cc5047"
+!$confirm = "3dad60"
+
+
+#green:entry;
+
+#$grey1:if (button **b** pressed?) then (yes)
+ #$grey2:if (__octave__ <= 1) then (yes)
+  #$grey3:__octave__ = 1;
+  #$error:error sound;
+ else (no)
+  #$grey3:__octave__++;
+  #$confirm:confirm sound;
+
+endif
+else (no)
+ #purple:return;
+endif
+
+#red:exit;
+
+@enduml
