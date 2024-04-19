@@ -12,8 +12,8 @@
 #green:entry;
 
 #$grey1:if (button **a** pressed?) then (yes)
- #$grey2:if (__octave__ >= max) then (yes)
-  #$grey3:__octave__ = max;
+ #$grey2:if (__octave__ >= 7) then (yes)
+  #$grey3:__octave__ = 7;
  else (no)
   #$grey3:__octave__++;
 
