@@ -14,6 +14,7 @@
 !$button = "b"
 !$variable = "__note__"
 !$operation = ">="
+!$operation2 = "++"
 !$max_value = 12
 
 #green:entry;
@@ -24,7 +25,7 @@ note right: SETUP: tune_note
     #$grey3:$variable = 1;
     #$error:error sound;
  else (no)
-    #$grey3:$variable++;
+    #$grey3:$variable $operation2;
     #$confirm:confirm sound;
 
 endif
