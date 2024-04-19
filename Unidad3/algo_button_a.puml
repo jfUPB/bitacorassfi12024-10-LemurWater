@@ -13,6 +13,7 @@
 
 
 #green:entry;
+note left: SETUP: select_octave
 
 #$grey1:if (button **a** pressed?) then (yes)
  #$grey2:if (__octave__ >= 7) then (yes)
