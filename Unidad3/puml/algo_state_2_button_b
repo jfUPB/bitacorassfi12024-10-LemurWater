@@ -16,14 +16,16 @@
 !$operation = ">="
 !$operation2 = "++"
 !$max_value = 12
+!$assigned_value = 1
+
 
 #green:entry;
 note right: SETUP: tune_note
 
 #$grey1:if (button **$button** pressed?) then (yes)
     #$grey2:if ($variable $operation $max_value) then (yes)
-    #$grey3:$variable = 1;
-    #$error:error sound;
+    #$grey3:$variable = $assigned_value;
+    #$confirm:confirm sound;
  else (no)
     #$grey3:$variable $operation2;
     #$confirm:confirm sound;
