@@ -45,37 +45,38 @@ setup -> origin : Succeeded
 
 
 state origin ##[bold]magenta {
- origin: map current x, y, z
- origin: movement values to 0
- origin: in retalion of physical world
+    origin: map current x, y, z
+    origin: movement values to 0
+    origin: in retalion of physical world
 }
 origin -> play : Succeeded
 
 
 
 state play ##[bold]yellow {
- state sense ##[bold]red {
-  [*] --> x_movement : Entry point
-  x_movement -> y_movement: Succeeded
-  y_movement -> z_movement: Succeeded
-  z_movement --> x_rotation: Succeeded
-  x_rotation -> y_rotation: Succeeded
-  y_rotation -> z_rotation: Succeeded
-  z_rotation --> [*]: Succeeded
- }
- sense --> process : Succeeded
+    note2: loop
+    state sense ##[bold]red {
+    [*] --> x_movement : Entry point
+    x_movement -> y_movement: Succeeded
+    y_movement -> z_movement: Succeeded
+    z_movement --> x_rotation: Succeeded
+    x_rotation -> y_rotation: Succeeded
+    y_rotation -> z_rotation: Succeeded
+    z_rotation --> [*]: Succeeded
+    }
+    sense --> process : Succeeded
  
 
-state process ##[bold]green {
- }
- process --> sound : Succeeded
+    state process ##[bold]green {
+    }
+    process --> sound : Succeeded
  
 
-
-state sound ##[bold]blue {
- }
- sound --> sense: Succeeded
+    state sound ##[bold]blue {
+    }
+    sound --> sense: Succeeded
 }
 
 play -> [*] : Disconected
+
 @enduml
