@@ -176,6 +176,8 @@ NOTA: Me parece gran cantidad de de inputs, almenos a comparacion del **Theremin
 music.set_tempo(bpm=120)
 ```
 
+tabla frecuencia (Hz) en relacion con la escala musical
+
 ![image](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/7f88e2b3-4421-4913-b201-c82ffd7bbd5a)
 
 Referencias:
