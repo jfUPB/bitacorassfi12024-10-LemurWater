@@ -149,8 +149,11 @@ Siento, que estoy en un punto donde conceptos tan altos como mover una mano para
 
 - Tambien a resaltar (y parte de lo mismo) es que conceptos de fisica como hondas de radio y frecuencia. para tomar como referencia el punto inicial donde se activo el **micro:theremin** y leyendo que tanto se aleja de ese punto, para simular la antena ... 🤯
 
+Alexandra Stepanoff playing the theremin on NBC Radio, 1930
 
 ![Theramin-Alexandra-Stepanoff-1930](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/313b9973-4c05-407e-ab2e-943e78266656)
+
+The components of a modern Moog theremin, in kit form
 
 ![Moog_Theremin_Bausatz](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/4effda4e-5de6-4aa3-947f-7981fb4535c7)
 
