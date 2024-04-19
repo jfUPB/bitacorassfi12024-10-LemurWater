@@ -176,7 +176,11 @@ Le e trabajado a la maquina de estados, aprendiendo un poco el lenguaje de diagr
 
 ![state_machine_1](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/8b092149-3668-4494-809c-684fba7bae57)
 
-![state_machine_2](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/c1a0f94a-60a3-4054-9ebd-d2d9cda472ce)
+![state_machine_2](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/9685d5ee-9602-4305-9b19-674a03858bd9)
+
+algoritmo: estado 1 - boton a ( seleccionar octava)
+
+![algo state1 - button_a](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/99e54026-4322-41a6-9aaa-e153da9bc7cd)
 
 
 **Trabajo en concentración**
@@ -189,6 +193,8 @@ Le e trabajado a la maquina de estados, aprendiendo un poco el lenguaje de diagr
 4. ¿Qué he aprendido o reforzado en esta micro-sesión? 
 
 #### Micro-sesión 3 (25 minutos)
+
+
 
 **Trabajo en concentración**
 
