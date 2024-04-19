@@ -180,9 +180,7 @@ Le e trabajado a la maquina de estados, aprendiendo un poco el lenguaje de diagr
 
 algoritmo: estado 1 - boton a ( seleccionar octava)
 
-![algo state1 - button_a](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/756b100e-6c51-455f-ad02-059eb758cceb)
-
-![algo state1 - button_b](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/9a1f3cad-78b2-458e-a576-d1422757ab62)
+![algo state1 - button_a](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/756b100e-6c51-455f-ad02-059eb758cceb) ![algo state1 - button_b](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/9a1f3cad-78b2-458e-a576-d1422757ab62)
 
 
 
