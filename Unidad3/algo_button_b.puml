@@ -16,8 +16,8 @@
 note right: SETUP: select_octave
 
 #$grey1:if (button **b** pressed?) then (yes)
- #$grey2:if (__octave__ <= 1) then (yes)
-  #$grey3:__octave__ = 1;
+ #$grey2:if (__octave__ >= 7) then (yes)
+  #$grey3:__octave__ = 7;
   #$error:error sound;
  else (no)
   #$grey3:__octave__++;
