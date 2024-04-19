@@ -8,14 +8,19 @@
 !$grey2 = "4d4d4d"
 !$grey3 = "808080"
 
+!$error = "cc5047"
+!$confirm = "3dad60"
+
 
 #green:entry;
 
 #$grey1:if (button **a** pressed?) then (yes)
  #$grey2:if (__octave__ >= 7) then (yes)
   #$grey3:__octave__ = 7;
+  #$error:error sound;
  else (no)
   #$grey3:__octave__++;
+  #$confirm:confirm sound;
 
 endif
 else (no)
