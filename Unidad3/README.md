@@ -199,6 +199,7 @@ algoritmo: estado 1 - seleccionar octava: boton a & b ( seleccionar octava)
 ![algo state2 - button_a](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/46f5c158-c325-405a-8671-cc3e9da3a299) ![algo state2 - button_b](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/c0aa17c8-e441-494b-89ba-8f698dbe8fe9)
 
 
+![state_machine_3](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/95b9ad93-9c2e-4076-8a3d-aca40e2a0837)
 
 
 **Trabajo en concentración**
