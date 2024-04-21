@@ -20,9 +20,13 @@
 ![image](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/71bbbf52-389e-48b9-aa31-73609260568a)
 
 ![image](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/9652aac3-4347-47c0-9471-47c3615368aa)
+
 [speaker 1](https://microbit.org/projects/make-it-code-it/make-some-noise/)
+
 [speaker 2](https://microbit.org/projects/make-it-code-it/guitar-2-chords/)
+
 [speaker 3](https://microbit.org/projects/make-it-code-it/guitar-1-touch-tunes/)
+
 ---
 
 # Bitácora de aprendizaje
