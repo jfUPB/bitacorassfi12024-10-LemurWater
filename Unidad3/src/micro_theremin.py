@@ -8,6 +8,9 @@ uart.init(baudrate=115200)
 state = 1
 octave = 1
 tune = 1
+
+volume = 0
+pitch = 0
 # Variables ---------------------------------
 # standar ---------------------------
 def error_sound():
@@ -48,6 +51,7 @@ def state_2_tune():
     
     if pin_logo.is_touched():
         state = 3
+        speech.say('Play')
     if button_a.was_pressed():
         if tune <= 1:
             tune = 12
@@ -79,21 +83,27 @@ def state_2_tune():
         elif tune == 11: display.scroll('A#', wait=False)
         elif tune == 12: display.show('B')
 # Play --------------------------------------
-def sense_movement():
-    x_strength = accelerometer.get_x()
-    display.scroll(x_strength)
-    music.pitch(440)
-    music.play(music.WAWAWAWAA)
+def sense():
+    global volume
+    global pitch
     
+    volume += accelerometer.get_x()
+    pitch += accelerometer.get_y()
+
+def process():
+    global volume
+    global pitch
     
+    set_volume(volume)
+    music.pitch(pitch)
+
+def sound():
+    music.play(music.RINGTONE, loop=True, wait=False)
 # Play --------------------------------------
 def play():
-    music.set_tempo(bpm=120)
-
-    x_strength = accelerometer.get_x()
-    # x_strength *= 10
-    display.scroll(x_strength)
-    print(x_strength)
+    sense()
+    #process()
+    #sound()
 # States ------------------------------------
 # Setup -------------------------------------
 def setup():
