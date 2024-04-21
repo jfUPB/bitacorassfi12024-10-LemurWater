@@ -23,9 +23,11 @@
 
 [speaker 1](https://microbit.org/projects/make-it-code-it/make-some-noise/)
 
-[speaker 2](https://microbit.org/projects/make-it-code-it/guitar-2-chords/)
+[speaker 2](https://microbit.org/projects/make-it-code-it/guitar-1-touch-tunes/)
 
-[speaker 3](https://microbit.org/projects/make-it-code-it/guitar-1-touch-tunes/)
+[speaker 3](https://microbit.org/projects/make-it-code-it/guitar-2-chords/)
+
+
 
 ---
 
