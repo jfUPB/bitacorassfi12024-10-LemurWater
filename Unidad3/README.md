@@ -17,17 +17,15 @@
 
 ![image](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/1e98138b-8a07-4360-846b-3aec30270aca)
 
-![image](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/71bbbf52-389e-48b9-aa31-73609260568a)
-
-![image](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/9652aac3-4347-47c0-9471-47c3615368aa)
-
 [speaker 1](https://microbit.org/projects/make-it-code-it/make-some-noise/)
+
+![image](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/71bbbf52-389e-48b9-aa31-73609260568a)
 
 [speaker 2](https://microbit.org/projects/make-it-code-it/guitar-1-touch-tunes/)
 
+![image](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/9652aac3-4347-47c0-9471-47c3615368aa)
+
 [speaker 3](https://microbit.org/projects/make-it-code-it/guitar-2-chords/)
-
-
 
 ---
 
