@@ -215,7 +215,7 @@ algoritmo: estado 1 - seleccionar octava: boton a & b ( seleccionar octava)
 
 #### Micro-sesión 3 (25 minutos)
 
-
+voy a disenar como va a ser la sensada del movimiento
 
 **Trabajo en concentración**
 
