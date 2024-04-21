@@ -244,6 +244,11 @@ voy a disenar como va a ser la sensada del movimiento
 
 #### Micro-sesión 4. (25 minutos)
 
+Trabaje en el codigo del microbit.
+NOTA:
+- falta serializado.
+- hay un error en el sonido (de como funciona en loop)
+
 **Trabajo en concentración**
 
 **Meta-aprendizaje:**
@@ -265,6 +270,11 @@ voy a disenar como va a ser la sensada del movimiento
 #### Micro-sesión 1 (25 minutos)
 
 **Planeación:**
+
+invetigue uno poco sobre un concepto que vi y me parecio interesante:
+
+[Cyber–physical system](https://en.wikipedia.org/wiki/Cyber%E2%80%93physical_system)
+
 
 1. ¿Qué voy a trabajar hoy?
 2. ¿Cuál es mi objetivo principal para esta sesión?
