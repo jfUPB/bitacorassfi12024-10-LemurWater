@@ -10,7 +10,7 @@ octave = 1
 tune = 1
 
 volume = 255
-pitch = 1
+pitch = 220
 
 music_note = ('00900:'
               '00990:'
@@ -60,8 +60,7 @@ def state_2_tune():
     if pin_logo.is_touched():
         state = 3
         display.show(Image(music_note))
-        #speech.say('Play')
-        music.play('c', loop=True, wait=False)
+        speech.say('Play')
         return
     if button_a.was_pressed():
         if tune <= 1:
@@ -107,19 +106,19 @@ def process():
     set_volume(volume)
     music.pitch(pitch)
 
-#def sound():
-    #music.play('c', loop=True, wait=False)
+def sound():
+    music.play('c', loop=False, wait=False)
 # Play --------------------------------------
 def play():
     sense()
     process()
-    #sound()
+    sound()
 # States ------------------------------------
 # Setup -------------------------------------
 def setup():
     display.show(Image.SILLY)
     speech.say('Select octave')
-    accelerometer.set_range(2)
+    accelerometer.set_range(4)
 # Setup -------------------------------------
 
 setup()
