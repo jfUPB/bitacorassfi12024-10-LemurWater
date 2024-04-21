@@ -9,8 +9,15 @@ state = 1
 octave = 1
 tune = 1
 
-volume = 0
-pitch = 0
+volume = 255
+pitch = 1
+
+music_note = ('00900:'
+              '00990:'
+              '00909:'
+              '99900:'
+              '99900')
+
 # Variables ---------------------------------
 # standar ---------------------------
 def error_sound():
@@ -27,6 +34,7 @@ def state_1_octave():
     if accelerometer.was_gesture('shake'):
         state = 2
         speech.say('Select tune')
+        return
     elif button_a.was_pressed():
         if octave <= 1:
             octave = 1
@@ -51,7 +59,10 @@ def state_2_tune():
     
     if pin_logo.is_touched():
         state = 3
-        speech.say('Play')
+        display.show(Image(music_note))
+        #speech.say('Play')
+        music.play('c', loop=True, wait=False)
+        return
     if button_a.was_pressed():
         if tune <= 1:
             tune = 12
@@ -69,7 +80,6 @@ def state_2_tune():
             _gate = True
             confirm_sound()
     if _gate:
-        display.show(Image.HAPPY)
         if tune == 1: display.show('C')
         elif tune == 2: display.scroll('C#', wait=False)
         elif tune == 3: display.show('D')
@@ -97,18 +107,19 @@ def process():
     set_volume(volume)
     music.pitch(pitch)
 
-def sound():
-    music.play(music.RINGTONE, loop=True, wait=False)
+#def sound():
+    #music.play('c', loop=True, wait=False)
 # Play --------------------------------------
 def play():
     sense()
-    #process()
+    process()
     #sound()
 # States ------------------------------------
 # Setup -------------------------------------
 def setup():
     display.show(Image.SILLY)
     speech.say('Select octave')
+    accelerometer.set_range(2)
 # Setup -------------------------------------
 
 setup()
