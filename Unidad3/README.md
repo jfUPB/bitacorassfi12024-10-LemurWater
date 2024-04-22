@@ -327,6 +327,13 @@ Algoritmo para cambiar el color segun la posicion del cursor
 
 ![regla de tres](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/b6e3a5eb-45d3-4476-bada-d0d47ddab29d)
 
+![10](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/b096ef94-1978-4af0-ad22-9417e3813954)
+
+![11](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/44d8e351-3c5b-4a6d-900a-01c62970c704)
+
+![12](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/f5fb4e31-356a-4e1e-bc08-9239c70992dc)
+
+![13](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/9c392d34-449d-41af-b12b-deb08e701113)
 
 
 **Trabajo en concentración**
