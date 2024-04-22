@@ -316,6 +316,9 @@ invetigue uno poco sobre un concepto que vi y me parecio interesante:
 
 #### Micro-sesión 4. (25 minutos)
 
+![state_machine_5](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/5c6341c2-86e0-4e02-a561-f0fb947b583c)
+
+
 **Trabajo en concentración**
 
 **Meta-aprendizaje:**
