@@ -320,6 +320,9 @@ invetigue uno poco sobre un concepto que vi y me parecio interesante:
 
 [Aprendiendo a usar p5.js](https://p5js.org/get-started/)
 
+![1](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/6e0027ea-9d43-4e38-a17f-da567e19dee9) ![2](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/c3a8a1a1-c2e5-4ec0-9d8f-bdf6bd41aa81)
+
+
 **Trabajo en concentración**
 
 **Meta-aprendizaje:**
