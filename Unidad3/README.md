@@ -8,10 +8,14 @@
 
 [IEEE-754 Floating Point Converter](https://www.h-schmidt.net/FloatConverter/IEEE754.html)
 
+
 [PUML Online](https://www.plantuml.com/plantuml/uml/SyfFKj2rKt3CoKnELR1Io4ZDoSa70000)
 
 [State Diagram](https://en.wikipedia.org/wiki/State_diagram)
 
+[ELECTRONICOS FANTASTICOS](https://www.youtube.com/watch?v=IRityYw-IfI)
+
+![ELECTRONICOS FANTASTICOS](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/0162e8f3-f966-458e-8bfd-297cef3bc075)
 
 ## [Musica & micro:bit](https://www.youtube.com/watch?v=3lZOkUlGsdQ)
 
