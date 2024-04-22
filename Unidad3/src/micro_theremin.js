@@ -1,8 +1,9 @@
-let canvasX = 600;
-let canvasY = 400;
+// --------------------------------------------------
+let canvasWidth = 600;
+let canvasHeight = 400;
 
 let cursorSize = 40
-
+const cursorObj = {x:0, y:0};
 // --------------------------------------------------
 function setup() {
   generateCanvas()
@@ -18,14 +19,17 @@ function draw() {
 
 // --------------------------------------------------
 function generateCanvas() {
-  createCanvas(canvasX, canvasY);
+  //createCanvas(canvasX, canvasY);
+  createCanvas(canvasWidth, canvasHeight, WEBGL);
   background(200);
 }
 function axis() {
-  stroke('magenta');
+  stroke('black');
   strokeWeight(5);
-  line(0, canvasY/2, canvasX, canvasY/2);
-  line(canvasX, canvasY/2, canvasX, canvasY/2);
+  //line(0, canvasY/2, canvasX, canvasY/2);
+  //line(canvasX/2, 0, canvasX/2, canvasY);
+  line(-canvasWidth/2, 0, 0, canvasWidth/2, 0, 0);
+  line(0, -canvasWidth/2, 0, 0, canvasWidth/2, 0);
   stroke('cyan')
 }
 
@@ -35,6 +39,9 @@ function renderCursor() {
   } else {
     fill(255);
   }
-  ellipse(mouseX, mouseY, 80, 80);
+  //ellipse(mouseX, mouseY, 80, 80, 3);
+  let webglX = mouseX - canvasWidth / 2;
+  let webglY = mouseY - canvasHeight / 2;
+  ellipse(webglX, webglY, cursorSize, cursorSize, 14);
 }
 // --------------------------------------------------
