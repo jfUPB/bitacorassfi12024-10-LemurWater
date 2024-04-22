@@ -223,12 +223,6 @@ algoritmo: estado 1 - seleccionar octava: boton a & b ( seleccionar octava)
 
 ![state_machine_4](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/dec1d98d-6560-4e55-84ce-312b5e8cee89)
 
-Algoritmo para cambiar el color segun la posicion del cursor
-
-![algo cursor_color](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/765d132f-1b58-470d-a52e-20d9e37b19c2)
-
-![regla de tres](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/b6e3a5eb-45d3-4476-bada-d0d47ddab29d)
-
 
 **Trabajo en concentración**
 
@@ -285,7 +279,6 @@ invetigue uno poco sobre un concepto que vi y me parecio interesante:
 
 [Cyber–physical system](https://en.wikipedia.org/wiki/Cyber%E2%80%93physical_system)
 
-
 1. ¿Qué voy a trabajar hoy?
 2. ¿Cuál es mi objetivo principal para esta sesión?
 
@@ -327,6 +320,13 @@ invetigue uno poco sobre un concepto que vi y me parecio interesante:
 [Aprendiendo a usar p5.js](https://p5js.org/get-started/)
 
 ![1](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/6e0027ea-9d43-4e38-a17f-da567e19dee9) ![2](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/c3a8a1a1-c2e5-4ec0-9d8f-bdf6bd41aa81)
+
+Algoritmo para cambiar el color segun la posicion del cursor
+
+![algo cursor_color](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/765d132f-1b58-470d-a52e-20d9e37b19c2)
+
+![regla de tres](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/b6e3a5eb-45d3-4476-bada-d0d47ddab29d)
+
 
 
 **Trabajo en concentración**
