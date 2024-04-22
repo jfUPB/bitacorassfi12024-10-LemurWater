@@ -4,6 +4,8 @@ let canvasHeight = 400;
 
 let cursorSize = 40
 const cursorObj = {x:0, y:0};
+let webglX = 0;
+let webglY = 0;
 // --------------------------------------------------
 function setup() {
   generateCanvas()
@@ -13,7 +15,9 @@ function setup() {
 
 // --------------------------------------------------
 function draw() {
-  renderCursor()
+  cursorPosition();
+  cursorColor();
+  renderCursor();
 }
 // --------------------------------------------------
 
@@ -33,15 +37,24 @@ function axis() {
   stroke('cyan')
 }
 
+function cursorPosition(){
+  //ellipse(mouseX, mouseY, 80, 80, 3);
+  webglX = mouseX - canvasWidth / 2;
+  webglY = mouseY - canvasHeight / 2;
+}
+function cursorColor() {
+  if (webglX  > 0) {
+    stroke('red');
+  } else {
+    stroke('pink');
+  }
+}
 function renderCursor() {
   if (mouseIsPressed) {
     fill(0);
   } else {
     fill(255);
   }
-  //ellipse(mouseX, mouseY, 80, 80, 3);
-  let webglX = mouseX - canvasWidth / 2;
-  let webglY = mouseY - canvasHeight / 2;
   ellipse(webglX, webglY, cursorSize, cursorSize, 14);
 }
 // --------------------------------------------------
