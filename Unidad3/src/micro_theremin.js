@@ -55,7 +55,6 @@ function cursorColor() {
     
   }
   cColor[0] = cPosition[0];
-  print(cPosition[0]);
   stroke(cColor);
 }
 function cursorRender() {
