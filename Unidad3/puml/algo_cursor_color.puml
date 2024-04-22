@@ -1,0 +1,25 @@
+@startuml
+
+
+!theme amiga
+
+
+!$grey1 = "303030"
+!$grey2 = "4d4d4d"
+!$grey3 = "808080"
+
+!$error = "cc5047"
+!$confirm = "3dad60"
+
+!$cursor = "cursor_x"
+
+#green:entry;
+note left: CURSOR_COLOR:
+
+:color_x = cursor_x / 255;
+:color_y = cursor_y / 255;
+
+
+#red:exit;
+
+@enduml
