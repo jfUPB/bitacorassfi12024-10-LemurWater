@@ -9,52 +9,39 @@ BUFFER_SIZE = 256
 buffer = bytearray(BUFFER_SIZE)
 end = 0
 send = False
-
+questionCounter = 0
 
 while True:
-    # Pause
-    if pin_logo.is_touched(): 
-        uart_buffer = 'P'
-        # send = True
-    else : uart_buffer = 'p'
-        
-    # Accelerometer  
-    if accelerometer.was_gesture('shake'):
-        uart_buffer = uart_buffer + 'X'
-        # send = True
-    else: uart_buffer = uart_buffer + 'x'   
-    
-   
-    # Button press
-    if button_a.was_pressed():
-        uart_buffer = uart_buffer + 'A'
-        send = True
-    else : uart_buffer = uart_buffer + 'a'
-    
-    if button_b.was_pressed():
-        uart_buffer = uart_buffer + 'D'
-        send = True
-    else : uart_buffer = uart_buffer + 'd'
-
-
-    
-    # Send
-    if send == True:
-        uart.write(uart_buffer)
-        send = False
-    uart_buffer = ''
-        
-
-    # Read mfp0
+    questionCounter++
+    if questionCounter == 20:
+        uart.write("Q\n")
+        questionCounter = 0
     if uart.any():
         display.show(Image.HAPPY)
-        data = uart.readline()#uart.read(1)
+        data = uart.readline()
         if data:
-            if data[0] == ord('M'):
-                music.play(music.PYTHON)
-            if data[1] == ord('F'):
-                music.play(['e'])
-                display.scroll(data[3])
-            if data[2] == ord('P'):
-                music.play(['c'])
+            if data[0] == ord('Q'):
+                uart_buffer = ''
+                if accelerometer.was_gesture('shake'):
+                    uart_buffer = uart_buffer + 'P'
+                    # send = True
+                else: uart_buffer = uart_buffer + 'p' 
+                    
+                # Button press
+                if button_a.was_pressed():
+                    uart_buffer = uart_buffer + 'A'
+                    send = True
+                else : uart_buffer = uart_buffer + 'a'
+                
+                if button_b.was_pressed():
+                    uart_buffer = uart_buffer + 'D'
+                    send = True
+                else : uart_buffer = uart_buffer + 'd'
+                uart.write(uart_buffer)
+            else:
+                if data[0] == ord('M'):
+                    music.play(['e'],wait=False)
+                if data[1] == ord('F'):
+                    display.scroll(data[2])
+
                 
