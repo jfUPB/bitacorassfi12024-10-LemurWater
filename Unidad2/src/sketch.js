@@ -5,7 +5,7 @@ let state = 0;
 let pause = false;
 let send = false;
 
-let sendBuffer = "mfp0";
+let sendBuffer = "mf";
 
 // the snake is divided into small segments, which are drawn and edited on each 'draw' call
 let numSegments = 10;
@@ -21,8 +21,7 @@ let yCor = [];
 let xFruit = 0;
 let yFruit = 0;
 let scoreElem;
-
-
+let counterQuestion = 0;
 
 function setup() {
   port = createSerial();
@@ -49,29 +48,35 @@ function setup() {
 
 function draw() {
   if (state == 0) {
-    textOutput("Snake Game - Press [?]");
-  }
-  else if (state == 1) {
-    //setup();
-    //sendBuffer = "m";
-    //sendData();
+    if (port.opened()) {
+      state = 2;
+    }
+  } else if (state == 1) {
+    setup();
     state = 2;
-    return;
-  }
-  else if (state == 2) {
+  } else if (state == 2) {
     background(0);
     for (let i = 0; i < numSegments - 1; i++) {
       line(xCor[i], yCor[i], xCor[i + 1], yCor[i + 1]);
     }
+
     if (pause == false) {
+      counterQuestion++;
+      if (counterQuestion === 5) {
+        if (port.opened()) {
+          port.write("Q\n");
+        }
+        counterQuestion = 0;
+      }
+
       updateSnakeCoordinates();
       checkGameStatus();
       checkForFruit();
-      
-      sendBuffer[0] = "M";
-      
-      sendData();
-      sendBuffer = "mfp0";
+
+      //sendBuffer[0] = "M";
+
+      //sendData();
+      //sendBuffer = "mfp0";
     }
 
     if (port.availableBytes() > 0) {
@@ -81,37 +86,27 @@ function draw() {
       if (pause == false) {
         if (dataRx.includes("P")) {
           pause = true;
-          sendBuffer[0] = "m";
-          //send = true;
-          return;
-        } else if (dataRx.includes("p")) {
-          pause = false;
+          //sendBuffer[0] = "m";
         }
 
-        
-        if (dataRx.includes("X")) {
-        }
-
-        
         if (dataRx.includes("A")) {
           if (direction == "up") direction = "left";
           else if (direction == "down") direction = "right";
           else if (direction == "left") direction = "down";
           else direction = "up";
         }
-        
+
         if (dataRx.includes("D")) {
           if (direction == "up") direction = "right";
           else if (direction == "down") direction = "left";
           else if (direction == "left") direction = "up";
           else direction = "down";
         }
+
+        if (dataRx.includes("Q")) {
+          
+        }
       }
-    }
-    if (send == true) {
-      sendData();
-    } else {
-      sendBuffer = "mfp0";
     }
   }
 
@@ -206,10 +201,10 @@ function checkForFruit() {
     xCor.unshift(xCor[0]);
     yCor.unshift(yCor[0]);
     numSegments++;
-    
+
     sendBuffer[1] = "F";
     sendBuffer[4] = (prevScore + 1).toString();
-    
+
     updateFruitCoordinates();
   }
 }
@@ -226,8 +221,6 @@ function updateFruitCoordinates() {
 }
 
 function keyPressed() {
-  sendBuffer = "P";
-  send = true;
   switch (keyCode) {
     case 65: // A
       if (direction == "up") direction = "left";
@@ -253,7 +246,6 @@ function keyPressed() {
 function connectBtnClick() {
   if (!port.opened()) {
     port.open("MicroPython", 115200);
-    state = 2;
   } else {
     port.close();
     state = 0;
@@ -261,7 +253,7 @@ function connectBtnClick() {
 }
 
 function sendData() {
-  port.write(sendBuffer);
-  sendBuffer = "mfp0";
-  send = false;
+  if (port.opened()) {
+    port.write(sendBuffer);
+  }
 }
