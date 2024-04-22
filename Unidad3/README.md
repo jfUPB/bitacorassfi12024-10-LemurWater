@@ -223,6 +223,10 @@ algoritmo: estado 1 - seleccionar octava: boton a & b ( seleccionar octava)
 
 ![state_machine_4](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/dec1d98d-6560-4e55-84ce-312b5e8cee89)
 
+Algoritmo para cambiar el color segun la posicion del cursor
+
+![algo cursor_color](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/765d132f-1b58-470d-a52e-20d9e37b19c2)
+
 
 **Trabajo en concentración**
 
