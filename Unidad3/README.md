@@ -227,6 +227,8 @@ Algoritmo para cambiar el color segun la posicion del cursor
 
 ![algo cursor_color](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/765d132f-1b58-470d-a52e-20d9e37b19c2)
 
+![regla de tres](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/b6e3a5eb-45d3-4476-bada-d0d47ddab29d)
+
 
 **Trabajo en concentración**
 
