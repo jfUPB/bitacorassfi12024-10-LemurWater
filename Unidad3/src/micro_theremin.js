@@ -1,11 +1,12 @@
 // --------------------------------------------------
-let canvasWidth = 600;
-let canvasHeight = 400;
+let canvasWidth = 510;
+let canvasHeight = 510;
 
-let cursorSize = 40
-const cursorObj = {x:0, y:0};
-let webglX = 0;
-let webglY = 0;
+let cSize = 40
+let cColor = [127, 127, 127]
+const cObj = {x:0, y:0};
+let cPosition = [0, 0];
+
 // --------------------------------------------------
 function setup() {
   generateCanvas()
@@ -17,7 +18,7 @@ function setup() {
 function draw() {
   cursorPosition();
   cursorColor();
-  renderCursor();
+  cursorRender();
 }
 // --------------------------------------------------
 
@@ -39,22 +40,30 @@ function axis() {
 
 function cursorPosition(){
   //ellipse(mouseX, mouseY, 80, 80, 3);
-  webglX = mouseX - canvasWidth / 2;
-  webglY = mouseY - canvasHeight / 2;
+  cPosition[0] = mouseX - canvasWidth / 2;
+  cPosition[1] = mouseY - canvasHeight / 2;
 }
 function cursorColor() {
-  if (webglX  > 0) {
-    stroke('red');
+  if (cPosition[0] > 0) {
+    cColor[0] = cPosition[0];
   } else {
-    stroke('pink');
+    
   }
+  if (cPosition[1] > 0) {
+    cColor[1] = cPosition[1];
+  } else {
+    
+  }
+  cColor[0] = cPosition[0];
+  print(cPosition[0]);
+  stroke(cColor);
 }
-function renderCursor() {
+function cursorRender() {
   if (mouseIsPressed) {
     fill(0);
   } else {
     fill(255);
   }
-  ellipse(webglX, webglY, cursorSize, cursorSize, 14);
+  ellipse(cPosition[0], cPosition[1], cSize, cSize, 14);
 }
 // --------------------------------------------------
