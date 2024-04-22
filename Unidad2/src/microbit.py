@@ -41,8 +41,8 @@ while True:
     # Send
     if send == True:
         uart.write(uart_buffer)
-        uart_buffer = ''
         send = False
+    uart_buffer = ''
         
 
     # Read mfp0
