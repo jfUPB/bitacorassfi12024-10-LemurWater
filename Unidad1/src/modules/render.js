@@ -26,6 +26,11 @@ function intro() {
 function bomb() {
   // Background
   background(40);
+  fill(color(80));
+  triangle(0, canvasHeight, canvasWidth, 0, canvasWidth, canvasHeight);
+  
+  // Graphics
+  fill(color(102, 255, 204));
   textSize(300);
   text("🧨", 250, 270);
   strokeWeight(15);
@@ -50,7 +55,6 @@ function bomb() {
   text("0", 414, 222);
   text("1", 470, 222);
   text("0", 525, 222);
-  fill(color(102, 255, 204));
 }
 
 function score() {}
