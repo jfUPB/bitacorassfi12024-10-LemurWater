@@ -354,6 +354,8 @@ Estaba investigando un poco sobre los cursores
 ![Blender3DCursor](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/f6989d9e-9467-47fb-86f0-b2f5f4c5fbb1)
 
 
+NOTA: E estado aprendiendo como usar el sistema de renderizado de __p5.js__ , diferentes formas y colores.
+
 **Trabajo en concentración**
 
 **Meta-aprendizaje:**
@@ -377,7 +379,11 @@ Estaba investigando un poco sobre los cursores
 **Planeación:**
 
 1. ¿Qué voy a trabajar hoy?
-2. ¿Cuál es mi objetivo principal para esta sesión?
+
+   Repaso de JavaScript
+   
+3. ¿Cuál es mi objetivo principal para esta sesión?
+     aprender un poco de *javaScript* en general y muy __muy importante__, como separar el proyecto en varios archivos
 
 **Trabajo en concentración**
 
