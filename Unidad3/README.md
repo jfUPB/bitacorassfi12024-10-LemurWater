@@ -414,6 +414,7 @@ Referencias:
 ![linux WebUSB](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/5d402633-dad4-4b1a-8c15-c7ec209ccc61)
 
 
+😃👍
 
 **Planeación:**
 
