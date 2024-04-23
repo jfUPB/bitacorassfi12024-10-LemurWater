@@ -439,6 +439,79 @@ Referencias:
 
 **Trabajo en concentración**
 
+
+
+[How to Connect Godot to an Arduino](https://www.youtube.com/watch?v=nOKno82_gd0)
+
+PC/Godot script:
+
+```cs
+using Godot;
+using System;
+using Sytem.IO.Ports;
+
+public partial class Arduino : Node2D
+{
+  SerialPort serialPort;
+  RichTextLabel text;
+  
+  public override void _Ready()
+  {
+    text = GetNode<RichTextLabel>("RichTextLabel");
+    serialPort = new SerialPort();
+    serialPort.PortName = "COM3";
+    serialPort.Baurate = 9600;
+    serialPort.Open();
+  }
+  public override void _Process(double delta)
+  {
+    if(!serialPort.IsOpen) return;
+  
+    string serialMessage = serialPort.ReadExisting();
+
+    if(serialMessage = "Hey Godot"){
+      text.Text = "Hello Arduino, I hear you :)";
+      hasHeadFromArduino = true;
+      timer = Time.GetThicksMsec();
+    }
+
+    if(hasHeadFromArduino && Time.GetThicksMsec() - timer > 3000){
+      text.Text = "\n Turning on the Light for your :D";
+      serialPort.Write("1");
+      hasHeardFromArduino = false;
+    }
+  }
+}
+```
+
+Arduino script:
+
+```c
+const int buttonPin = 4;
+const int ledPin = 10;
+
+int buttonState = 0;
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(ledPin, OUTPUT);
+  pinMode(buttonPin, INPUT);
+}
+
+void loop() {
+  buttonState = digitalRead(buttonPin);
+
+  if(buttonState == HIGH) {
+    Serial.println("Hello Godot");
+  }
+
+  if(Serial.read() == '1') {
+    digitalWrite(ledPin, HIGH);
+  }
+}
+```
+
+
 **Meta-aprendizaje:**
 
 1. ¿Qué he logrado en esta micro-sesión de trabajo?
