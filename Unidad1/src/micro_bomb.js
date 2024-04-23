@@ -70,9 +70,14 @@ function bomb() {
   rect(520, 173, 45, 55);
 
   // Text
-  fill(color(85, 85, 43));
-  textSize(60);
-  text("X X X", 325, 225);
+  fill(color(0, 102, 82));
+  textSize(55);
+  text("?", 249, 222);
+  text("=", 306, 222);
+  text("A", 359, 222);
+  text("X", 414, 222);
+  text("Y", 470, 222);
+  text("Z", 525, 222);
   fill(color(102, 255, 204));
 }
 function score() {}
