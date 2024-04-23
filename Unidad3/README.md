@@ -376,8 +376,6 @@ NOTA: E estado aprendiendo como usar el sistema de renderizado de __p5.js__ , di
 
 #### Micro-sesión 1 (25 minutos)
 
-[serial connection __micro:bit__ in GNU/Linux](https://youtu.be/n12hKIMMhLA)
-
 con los conocimientos obtenidos hasta el momento, de otras materias (sistemas computacionales); e logrado hacer un alto y pensar con cabeza fria...
 
 Al intentar conectar el __micro:bit__ al __PC__ me salio el error:
@@ -399,6 +397,9 @@ IIRC, serial ports belong to group uucp in Arch Linux.
 __recorde__ (platonicamente) que los usuarios pertenecen a grupos y estos les dan los permisos, entonces (como siempre) _clickee_ el link a la __Wikipedia__ de __Arch__ Linux, a leer un poco sobre _users_.
 
 y asi fue como logre __NO__ usar _Windows_.
+
+
+[serial connection __micro:bit__ in GNU/Linux](https://youtu.be/n12hKIMMhLA)
 
 
 Referencias:
