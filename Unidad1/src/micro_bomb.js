@@ -22,10 +22,12 @@ function setup() {
 
 // --------------------------------------------------------------------
 function draw() {
-  if (!port.opened()) {
-    connectBtn.html("Connect to micro:bit");
-  } else {
-    connectBtn.html("Disconnect");
+  checkPortState();
+
+  switch (state) {
+    case 0:
+
+    case 1:
   }
 }
 // --------------------------------------------------------------------
@@ -49,6 +51,16 @@ function connectBtnClick() {
     port.open("MicroPython", 115200);
   } else {
     port.close();
+  }
+}
+function checkPortState() {
+  if (!port.opened()) {
+    connectBtn.position(300, 345);
+    connectBtn.html("Connect to micro:bit");
+  } else {
+    state = 1;
+    connectBtn.position(320, 345);
+    connectBtn.html("Disconnect");
   }
 }
 
