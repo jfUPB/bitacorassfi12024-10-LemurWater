@@ -403,7 +403,7 @@ y asi fue como logre __NO__ usar _Windows_.
 
 Referencias:
 
-![Newbie Corner» SOLVED How to set non-root access to serial ports?](https://bbs.archlinux.org/viewtopic.php?id=178552)
+[Newbie Corner» SOLVED How to set non-root access to serial ports?](https://bbs.archlinux.org/viewtopic.php?id=178552)
 
 [Newbie Corner» SOLVED How to set non-root access to serial ports?](https://bbs.archlinux.org/viewtopic.php?id=178552)
 
