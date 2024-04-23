@@ -471,3 +471,9 @@ if (dataRx.includes("A")) {
 - Considero el proyecto en gran medida terminado; se debe hablar con el profesor para evaluar el proyecto.
 - Falta *preguntar por los datos*
 ----
+
+
+
+# Continuacion
+
+El profeson explico como hacer el serializado en ascii, con el sistema usando un modelo cliente servidor que pregunta antes de enviar los datos.
