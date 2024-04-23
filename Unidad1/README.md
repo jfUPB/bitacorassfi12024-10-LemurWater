@@ -553,6 +553,7 @@ Los microcontroladores son una herramienta extremadamente potente que pueden rea
 
 # Continuacion (Serializacion + p5.js)
 
+![bomb 1](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/ec5985e3-a7e9-447e-b594-dff4a384b9e6)
 
 
 
