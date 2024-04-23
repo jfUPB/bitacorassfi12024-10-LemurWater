@@ -546,3 +546,15 @@ Los microcontroladores son una herramienta extremadamente potente que pueden rea
 
 
 **NOTA:** Falta la *serializacion* (Se debe consultar al profesor de como hacer la implementacion).
+
+
+
+
+
+# Continuacion (Serializacion + p5.js)
+
+
+
+
+
+
