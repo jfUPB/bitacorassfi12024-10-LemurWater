@@ -403,9 +403,13 @@ y asi fue como logre __NO__ usar _Windows_.
 
 Referencias:
 
+![Newbie Corner» SOLVED How to set non-root access to serial ports?](https://bbs.archlinux.org/viewtopic.php?id=178552)
+
 [Newbie Corner» SOLVED How to set non-root access to serial ports?](https://bbs.archlinux.org/viewtopic.php?id=178552)
 
 ![uucp](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/e19663fb-813c-4afa-87e4-fd7e680198a6)
+
+[Arch Wiki - users and groups](https://wiki.archlinux.org/title/users_and_groups)
 
 ![linux WebUSB](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/5d402633-dad4-4b1a-8c15-c7ec209ccc61)
 
