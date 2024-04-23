@@ -478,16 +478,28 @@ if (dataRx.includes("A")) {
 
 El profeson explico como hacer el serializado en ascii, con el sistema usando un modelo cliente servidor que pregunta antes de enviar los datos.
 
+### micro:bit
+
+Se hace la pregunta cada cierto tiempo:
+
 ```python
 while True:
     questionCounter++
     if questionCounter == 20:
         uart.write("Q\n")
         questionCounter = 0
+```
+Si se a leido informacion por el puerto:
+
+```python
     if uart.any():
         display.show(Image.HAPPY)
         data = uart.readline()
         if data:
+```
+Si se le pregunta al __micro:bit__, el responde:
+
+```python
             if data[0] == ord('Q'):
                 uart_buffer = ''
                 if accelerometer.was_gesture('shake'):
@@ -512,6 +524,13 @@ while True:
                 if data[1] == ord('F'):
                     display.scroll(data[2])
 ```
+
+### JavaScript
+
+__NOTA:__ La idea del sistema es _la misma, lo unico que cambia_ es el lenguaje (y lo que esto convella) ...
+
+Se hace la pregunta cada cierto tiempo:
+
 ```javascript
 if (pause == false) {
       counterQuestion++;
@@ -521,11 +540,19 @@ if (pause == false) {
         }
         counterQuestion = 0;
       }
+```
 
+Si se a leido informacion por el puerto:
+
+```javascript
       if (port.availableBytes() > 0) {
         let dataRx = port.read(1); //1
         print("dataRx: " + dataRx);
+```
 
+Si se le pregunta al __PC__ (*_y no esta pausado_), el responde:
+
+```javascript
         if (pause == false) {
           if (dataRx == "Q") {
             sendData();
