@@ -12,18 +12,17 @@ send = False
 questionCounter = 0
 
 while True:
-    questionCounter++
+    questionCounter+= 1
     if questionCounter == 20:
-        uart.write("Q\n")
+        #uart.write("Q")
         questionCounter = 0
     if uart.any():
         display.show(Image.HAPPY)
         data = uart.readline()
         if data:
             if data[0] == ord('Q'):
-                uart_buffer = ''
-                if accelerometer.was_gesture('shake'):
-                    uart.write('P')
+                #if accelerometer.was_gesture('shake'):
+                #    uart.write('P')
                     
                 # Button press
                 if button_a.was_pressed():
