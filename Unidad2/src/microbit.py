@@ -23,25 +23,13 @@ while True:
             if data[0] == ord('Q'):
                 uart_buffer = ''
                 if accelerometer.was_gesture('shake'):
-                    uart_buffer = uart_buffer + 'P'
-                    # send = True
-                else: uart_buffer = uart_buffer + 'p' 
+                    uart.write('P')
                     
                 # Button press
                 if button_a.was_pressed():
-                    uart_buffer = uart_buffer + 'A'
-                    send = True
-                else : uart_buffer = uart_buffer + 'a'
+                    uart.write('A')
                 
                 if button_b.was_pressed():
-                    uart_buffer = uart_buffer + 'D'
-                    send = True
-                else : uart_buffer = uart_buffer + 'd'
-                uart.write(uart_buffer)
-            else:
-                if data[0] == ord('M'):
-                    music.play(['e'],wait=False)
-                if data[1] == ord('F'):
-                    display.scroll(data[2])
+                    uart.write('B')
 
                 
