@@ -477,3 +477,77 @@ if (dataRx.includes("A")) {
 # Continuacion
 
 El profeson explico como hacer el serializado en ascii, con el sistema usando un modelo cliente servidor que pregunta antes de enviar los datos.
+
+```python
+while True:
+    questionCounter++
+    if questionCounter == 20:
+        uart.write("Q\n")
+        questionCounter = 0
+    if uart.any():
+        display.show(Image.HAPPY)
+        data = uart.readline()
+        if data:
+            if data[0] == ord('Q'):
+                uart_buffer = ''
+                if accelerometer.was_gesture('shake'):
+                    uart_buffer = uart_buffer + 'P'
+                    # send = True
+                else: uart_buffer = uart_buffer + 'p' 
+                    
+                # Button press
+                if button_a.was_pressed():
+                    uart_buffer = uart_buffer + 'A'
+                    send = True
+                else : uart_buffer = uart_buffer + 'a'
+                
+                if button_b.was_pressed():
+                    uart_buffer = uart_buffer + 'D'
+                    send = True
+                else : uart_buffer = uart_buffer + 'd'
+                uart.write(uart_buffer)
+            else:
+                if data[0] == ord('M'):
+                    music.play(['e'],wait=False)
+                if data[1] == ord('F'):
+                    display.scroll(data[2])
+```
+```javascript
+if (pause == false) {
+      counterQuestion++;
+      if (counterQuestion == 5) {
+        if (port.opened()) {
+          port.write("Q\n");
+        }
+        counterQuestion = 0;
+      }
+
+      if (port.availableBytes() > 0) {
+        let dataRx = port.read(1); //1
+        print("dataRx: " + dataRx);
+
+        if (pause == false) {
+          if (dataRx == "Q") {
+            sendData();
+          }
+
+          if (dataRx.includes("P")) {
+            pause = true;
+          }
+
+          if (dataRx == "A") {
+            if (direction == "up") direction = "left";
+            else if (direction == "down") direction = "right";
+            else if (direction == "left") direction = "down";
+            else direction = "up";
+          }
+
+          if (dataRx == "B") {
+            if (direction == "up") direction = "right";
+            else if (direction == "down") direction = "left";
+            else if (direction == "left") direction = "up";
+            else direction = "down";
+          }
+        }
+      }
+```
