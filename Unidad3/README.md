@@ -376,6 +376,41 @@ NOTA: E estado aprendiendo como usar el sistema de renderizado de __p5.js__ , di
 
 #### Micro-sesión 1 (25 minutos)
 
+[serial connection __micro:bit__ in GNU/Linux](https://youtu.be/n12hKIMMhLA)
+
+con los conocimientos obtenidos hasta el momento, de otras materias (sistemas computacionales); e logrado hacer un alto y pensar con cabeza fria...
+
+Al intentar conectar el __micro:bit__ al __PC__ me salio el error:
+```error
+Serial Connection FailedNetworkError: Failed to execute 'open' on 'SerialPort': Failed to open serial port.
+```
+Y muy sagazmente le antepuse _arch_ como usualmente ago y lo puse en el buscador:
+
+```
+arch Serial Connection FailedNetworkError: Failed to execute 'open' on 'SerialPort': Failed to open serial port.
+```
+llevandome al siempre confiale foro de __Arch__ Linux (Wikipedia 2.0); donde alguien responde muy amablemente:
+
+```
+IIRC, serial ports belong to group uucp in Arch Linux.
+```
+...y fue hay cuando se me abrio el tercer ojo ...
+
+__recorde__ (platonicamente) que los usuarios pertenecen a grupos y estos les dan los permisos, entonces (como siempre) _clickee_ el link a la __Wikipedia__ de __Arch__ Linux, a leer un poco sobre _users_.
+
+y asi fue como logre __NO__ usar _Windows_.
+
+
+Referencias:
+
+[Newbie Corner» SOLVED How to set non-root access to serial ports?](https://bbs.archlinux.org/viewtopic.php?id=178552)
+
+![uucp](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/e19663fb-813c-4afa-87e4-fd7e680198a6)
+
+![linux WebUSB](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/5d402633-dad4-4b1a-8c15-c7ec209ccc61)
+
+
+
 **Planeación:**
 
 1. ¿Qué voy a trabajar hoy?
