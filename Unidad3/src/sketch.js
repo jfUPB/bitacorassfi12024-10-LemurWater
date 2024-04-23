@@ -6,7 +6,6 @@ let cSize = 40
 let cColor = [127, 127, 127]
 const cObj = {x:0, y:0};
 let cPosition = [0, 0];
-
 // --------------------------------------------------
 function setup() {
   generateCanvas()
