@@ -512,6 +512,9 @@ void loop() {
 ```
 Con los conceptos aprendidos en la materia, puedo entender facilmente (e inclusive entender en codigo de lenguaje que no uso recientemente), cuales son las partes del codigo que intervienen en la serializacion, sus componentes y como sucede el intercambio de datos, el tipo de serializacion (sensilla en el ejemplo), __pero con los conocimientos aprendidos en el curso, me siento en la capacidad de integrar protocolos ascii, binarios y modelo de cliente-servidor que pregunta antes de enviar los datos.__
 
+![code arduino godot](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/20718381-ff97-4027-8cf3-9242a97d81b1)
+
+
 **Meta-aprendizaje:**
 
 1. ¿Qué he logrado en esta micro-sesión de trabajo?
