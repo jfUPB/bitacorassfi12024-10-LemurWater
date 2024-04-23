@@ -538,6 +538,8 @@ por que las cosas son conectables _(todo?)_, y todo habla un lenguaje, es como l
 
 ![Screenshot from 2024-04-23 04-05-02](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/daaa6cb8-c4b8-43f7-bba4-251b4128ce9a)
 
+![MPU-6050](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/2e19fb59-b1b1-436d-9c82-97f893c30d44)
+
 [CHALLENGE 25 MPU 6050 working well mocap suite](https://forum.arduino.cc/t/challenge-25-mpu-6050-working-well-mocap-suite/659042/4)
 
 ![image](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/8464d44d-9c2a-431c-a776-c1f15b3c8349)
