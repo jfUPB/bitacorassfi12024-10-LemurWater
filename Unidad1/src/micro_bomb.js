@@ -6,6 +6,13 @@ let state = 1;
 let canvasWidth = 800;
 let canvasHeight = 400;
 let canvasColor = 40;
+
+let display1 = "?";
+let display2 = "=";
+let display3 = "A";
+let display4 = "X";
+let display5 = "Y";
+let display6 = "Z";
 // --------------------------------------------------------------------
 
 // --------------------------------------------------------------------
@@ -72,12 +79,12 @@ function bomb() {
   // Text
   fill(color(0, 102, 82));
   textSize(55);
-  text("?", 249, 222);
-  text("=", 306, 222);
-  text("A", 359, 222);
-  text("X", 414, 222);
-  text("Y", 470, 222);
-  text("Z", 525, 222);
+  text("1", 249, 222);
+  text("0", 306, 222);
+  text("1", 359, 222);
+  text("0", 414, 222);
+  text("1", 470, 222);
+  text("0", 525, 222);
   fill(color(102, 255, 204));
 }
 function score() {}
