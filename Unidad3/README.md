@@ -336,6 +336,18 @@ Algoritmo para cambiar el color segun la posicion del cursor
 ![13](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/9c392d34-449d-41af-b12b-deb08e701113)
 
 
+Estaba investigando un poco sobre los cursores
+
+[Cursor (user interface))](https://en.wikipedia.org/wiki/Cursor_(user_interface)
+
+![Windows_Command_Prompt](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/2a1f2680-e98b-4799-813c-f5498e0b4eb4)
+![Text_cursor_blinking](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/4fc5c155-b02e-46ed-b765-4e2f6a3fd0ab)
+![Slide_rule_cursor](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/369bdd49-1964-47de-89ab-a5d7864408a8)
+![PointerTrails](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/623989b5-93f4-483b-87bd-ac9874932da6)
+![CursorListHorizontal](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/c18b8bf2-1d9c-41b9-857d-f514ba59d34c)
+![Blender3DCursor](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/f6989d9e-9467-47fb-86f0-b2f5f4c5fbb1)
+
+
 **Trabajo en concentración**
 
 **Meta-aprendizaje:**
