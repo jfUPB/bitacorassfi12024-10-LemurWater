@@ -1034,21 +1034,38 @@ Voy a avanzar lo mas posible en enviar la coneccion BINARIA, un prototipo envian
 
 El _algoritmo_ de la __maquina de estados__ estaba un poco incorrecto, lo modifique para, en ves de ser una maquina pensada para un sistema __NO__ distribuido como un juego local; pero facilmente lo modifique para esta funcionalidad quedara en un solo bloque y se le agrega un bloque de algoritmo al _principio_ para __SOLO funcionar cuando se le pide (pregunta)__, tambien para que el proceso se realize cada cierta cantidad de frames (20) envez de enviar la informacion cada ciclo.
 
+#### Micro-sesion 3:
+
+Siento que voy como un poco lento, me gustaria avanzar mas ... pero al mismo tiiempo siento que ago mejor las pruebas y mi codigo es mas _solido_
+
+"A paso _lento_ pero __seguro__" ... pero le podemos ir metiendo mas velocidad al asunto.
+
+Lo bueno esque siento que son conceptos muy sensillos que no es sino implementarlos, no es sino cuajar la idea (aplicar los conceptos).
+
+
+
+#### Micro-sesion 4 Cierre:
+
+El __mciro:bit__ le envia senales al pc y las recibe, falta enviarlas solo cada ciertos ciclos e interpretar la senal, convertida a datos usables.
+
+__NOTA:__ Todabia falta el envio en estilo _binario_ porque esta en ASCII todabia (por facilidad para probar la coneccion y eso) pero ya casisito le meto el binario.
+
 1. ¿Cuál será el propósito de la sesión de hoy?
 
 >  Avanzar lo mayor posible en el serializado _binario_. Ya entiendo bien el _ASCII_ y comprendo los conceptos de enviar binario en orden de _derecha a iz_ o _iz a derecha_ para saber en que __tipo__ de orden se enviaron los datos.
  
 2. ¿Cuáles fueron los desafíos más significativos de la sesión y cómo los superé?
 
-> Escribe aquí
+> Honestamente, volver como empaparme del proyecto ... como uno lo hace _aprendiendo_ conceptos, estos pueden no estar bien aplicados y el sistema se va envenando desde el principio.
+> __Pero eso tambien hace parte del aprendizaje__.
 
 3. Basado en el trabajo de la sesión, ¿Qué aprendí o qué conclusión saco o cuál es la síntesis?
 
-> Escribe aquí
+> La recoleccion de datos del __micro:bit__, del _acelerometro_ no fue tan sensilla como pense, toco investigar un poco pero rapidamente (como ya sabia el concepto pero no como implementarlo en el lenguaje), castear la variable a un __str__ para ser enviado.
 
 4. ¿Cuáles son los pasos siguientes para continuar avanzando en el proyecto?
 
-> Escribe aquí
+> Trabajo ciclico, volviendo a repasar las fundaciones (algoritmo), mejorandolo, implementandolo y volviendo a continuar el ciclo de mejora.
 
 ### Sesión 3
 
