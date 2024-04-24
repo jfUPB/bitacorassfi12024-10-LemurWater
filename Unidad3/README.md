@@ -1025,6 +1025,10 @@ MPU-9250 is a multi-chip module (MCM) consisting of two dies integrated into a s
 
 ### Sesión 2
 
+#### Micro-sesion 1 Apertura:
+
+Voy a avanzar lo mas posible en enviar la coneccion BINARIA, un prototipo enviando desde el __micro:bit__, y recbiendo la inforamcion en el __PC__.
+
 1. ¿Cuál será el propósito de la sesión de hoy?
 
 > Escribe aquí
