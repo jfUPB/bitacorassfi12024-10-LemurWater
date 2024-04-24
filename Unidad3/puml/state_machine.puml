@@ -49,41 +49,30 @@ state origin ##[bold]magenta {
     origin: movement values to 0
     origin: in retalion of physical world
 }
-origin -> read : Succeeded
+origin -> play : Succeeded
 
-state read {
- read: a
-}
-read --> play : Succeeded
 
 state play ##[bold]yellow {
-    [*] --> sense
+    [*] --> process
+    state process ##[bold]green {
+        process: if 5 _20_ cycles has completed
+    }
+    process --> sense : Succeeded
+ 
+
     state sense ##[bold]red {
     [*] --> x_movement : Entry point
     x_movement -> y_movement: Succeeded
-    y_movement -> z_movement: Succeeded
-    z_movement --> x_rotation: Succeeded
-    x_rotation -> y_rotation: Succeeded
-    y_rotation -> z_rotation: Succeeded
-    z_rotation --> [*]: Succeeded
+    y_movement --> [*]: Succeeded
     }
-    sense --> process : Succeeded
+    sense --> send : Succeeded
  
 
-    state process ##[bold]green {
+    state send ##[bold]blue {
+        send: binary protocol
     }
-    process --> sound : Succeeded
- 
-
-    state sound ##[bold]blue {
-    }
-    sound --> [*]: Succeeded
+    send --> process: Succeeded
 }
-play --> send : Succeeded
-
-state send {
-}
-send -> read : Succeded
-send -> [*] : Disconected
+play -> [*] : Disconnected
 
 @enduml
