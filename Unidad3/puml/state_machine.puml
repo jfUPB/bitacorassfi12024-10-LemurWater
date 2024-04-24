@@ -55,7 +55,7 @@ origin -> play : Succeeded
 state play ##[bold]yellow {
     [*] --> process
     state process ##[bold]green {
-        process: if 5 _20_ cycles has completed
+        process: if  20 cycles has completed
     }
     process --> sense : Succeeded
  
