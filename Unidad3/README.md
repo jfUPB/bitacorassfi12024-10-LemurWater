@@ -1029,9 +1029,14 @@ MPU-9250 is a multi-chip module (MCM) consisting of two dies integrated into a s
 
 Voy a avanzar lo mas posible en enviar la coneccion BINARIA, un prototipo enviando desde el __micro:bit__, y recbiendo la inforamcion en el __PC__.
 
+
+#### Micro-sesion 2:
+
+El _algoritmo_ de la __maquina de estados__ estaba un poco incorrecto, lo modifique para, en ves de ser una maquina pensada para un sistema __NO__ distribuido como un juego local; pero facilmente lo modifique para esta funcionalidad quedara en un solo bloque y se le agrega un bloque de algoritmo al _principio_ para __SOLO funcionar cuando se le pide (pregunta)__, tambien para que el proceso se realize cada cierta cantidad de frames (20) envez de enviar la informacion cada ciclo.
+
 1. ¿Cuál será el propósito de la sesión de hoy?
 
-> Escribe aquí
+>  Avanzar lo mayor posible en el serializado _binario_. Ya entiendo bien el _ASCII_ y comprendo los conceptos de enviar binario en orden de _derecha a iz_ o _iz a derecha_ para saber en que __tipo__ de orden se enviaron los datos.
  
 2. ¿Cuáles fueron los desafíos más significativos de la sesión y cómo los superé?
 
