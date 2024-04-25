@@ -41,11 +41,11 @@
 
 ## Investigar 
 
-* Enlace a una animación interactiva en p5.js que se bloquee debido a una operación computacionalmente intensiva.
+* Enlace a una animación interactiva en p5.js, propuesta por ti y diferente a los ejemplos que te mostré, que se bloquee debido a una operación computacionalmente intensiva.
 
-* Enlace a una animación interactiva en p5.js que solucione la aplicación anterior utilizando un hilo.
+* Enlace a una animación interactiva en p5.js que solucione la aplicación anterior utilizando un hilo (web worker).
 
-* Enlace a una aplicación en p5.js que modifique el hilo secundario del **caso de estudio** de la actividad 3 de manera que permite cambiar de manera aleatoria el color y tamaño de cada partícula.
+* Enlace a una aplicación en p5.js que modifique el hilo secundario del **caso de estudio** de la actividad 7 que permite cambiar de manera aleatoria el color y tamaño de cada partícula.
 
 ## Aplicar
 
