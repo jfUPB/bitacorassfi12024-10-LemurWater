@@ -1,73 +1,42 @@
-# Imports go at the top
 from microbit import *
 import music
 import speech
 import utime
-
-
-state = 'SETUP'
-timer =  20
-startTime = utime.ticks_us()
+# ------------------------------------------------------------------------
 DELAY_TIMER = 75
 DELAY_SHORT = 400
 DELAY_LONG = 1250
+# ------------------------------------------------------------------------
+state = 'ÍNITIALIZE'
+timer
+startTime
+# ------------------------------------------------------------------------
+sequence
+sequencePtr
+# ------------------------------------------------------------------------
+uart.init(baudrate=115200)
+# ------------------------------------------------------------------------
 
-MUSIC_NOTE_A = 'c'
-MUSIC_NOTE_B = 'd'
 
-DISARM_CODE = ['UP', 'DOWN', 'UP', 'DOWN', 'UP', 'UP', 'ARMED']
-userInput = ['VOID', 'VOID', 'VOID', 'VOID', 'VOID', 'VOID', 'ARMED']
-userInputPtr = 0
+# ------------------------------------------------------------------------
+def initialize():
+    global state
 
-wireMode = False
-WIRE_DISARM_CODE = [1, 2, 0]
-wireDisarmPtr = 0
-
-
-def _check_wires():
-    if pin0.is_touched() and pin1.is_touched() and pin2.is_touched():
-        if pin0.is_touched():
-            display.set_pixel(0,0,9)
-            display.set_pixel(0,1,9)
-            display.set_pixel(0,2,9)
-            display.set_pixel(0,3,9)
-            display.set_pixel(0,4,9)
-        if pin1.is_touched():
-            display.set_pixel(1,0,9)
-            display.set_pixel(1,1,9)
-            display.set_pixel(1,2,9)
-            display.set_pixel(1,3,9)
-            display.set_pixel(1,4,9)
-        if pin2.is_touched():
-            display.set_pixel(2,0,9)
-            display.set_pixel(2,1,9)
-            display.set_pixel(2,2,9)
-            display.set_pixel(2,3,9)
-            display.set_pixel(2,4,9)
-        return True
-    else: return False
-    
-def _clear_input():
-    if button_a.was_pressed():
-        display.show(Image.HAPPY)
-    if button_b.was_pressed():
-        display.show(Image.HAPPY)
-    
-def _draw_arrow():
-    display.clear()
-    
-    display.set_pixel(0,2,9)
-    display.set_pixel(1,1,9)
-    display.set_pixel(1,3,9)
-    display.set_pixel(2,0,9)
-    display.set_pixel(2,4,9)
-    
-    display.set_pixel(1,2,9)
-    display.set_pixel(2,2,9)
-    display.set_pixel(3,2,9)
-    display.set_pixel(4,2,9)
-    
-
+    if pin0.is_touched(): 
+        if pin1.is_touched(): 
+            if pin2.is_touched():
+                state ='SETUP'
+                uart.write('1')
+            else :
+                display.show(Image.NO)
+                sleep(2000)
+        else :
+            display.show(Image.NO)
+            sleep(2000)
+    else :
+        display.show(Image.NO)
+        sleep(2000)
+# ------------------------------------------------------------------------
 def setup():
     global state
     global dcode
@@ -75,183 +44,170 @@ def setup():
     global userInputPtr
     global timer
     global startTime
-    global wireDisarmPtr
-    global wireUserInput
-    global wireMode
-    
-    state = 'SETUP'
-    set_volume(255)
+    global sequence
+    global sequencePtr
+
     timer = 20
-    userInput = ['VOID', 'VOID', 'VOID', 'VOID', 'VOID', 'VOID', 'ARMED']
     userInputPtr = 0
     startTime = utime.ticks_us()
+    sequence = [[True, False, False], [False, False, True]]
+    sequencePtr = 0
+    state = 'CONFIGURE'
+    uart.write(str('S=' + state))
 
-    if _check_wires():
-        display.show(Image.YES)
-        wireDisarmPtr = 0
-        wireUserInput = [0, 0, 0]
-        wireMode = True     
-    else : display.show(Image.NO)
-
-    sleep(DELAY_LONG)
-    
-    _draw_arrow()
-    state = 'CONFIG'
     speech.say('CONFIG')
+# ------------------------------------------------------------------------
+def timer_increase():
+    global timer
 
+    if timer > 60:
+        timer = 5
+    else:
+        timer = timer + 5
+        uart.write(str(timer))
+def timer_decrese():
+    global timer
 
-def config():
+    if timer < 5:
+        timer = 60
+    else:
+        timer = timer - 5
+        uart.write(str(timer))
+# ------------------------------------------------------------------------
+def read():
     global state
     global timer
-    global startTime
+    
+    if uart.any():
+        data = uart.read(1)
+        if data:
+            if state == 'CONFIG':
+               if data[0] == ord('+'):
+                   timer_increase()
+               elif data[0] == ord('-'):
+                   timer_decrese()
+               elif data[0] == 'S':
+                   state = 'COUNTDOWN'
+# ------------------------------------------------------------------------
+def configure():
+    global state
+    global timer
 
-    if button_a.is_pressed() and button_b.is_pressed() or pin_logo.is_touched():
-        state = 'ARMED'
-        speech.say('ARMED')
-        startTime = utime.ticks_us()
-        _clear_input()
-        display.scroll(timer, delay=DELAY_TIMER, loop=False, wait=False)
-        sleep(DELAY_LONG)
-        display.show(userInputPtr)
-        sleep(DELAY_SHORT)
-        return
-    if button_a.is_pressed():
-        if timer > 10:
-            timer = timer - 1
-            music.play([MUSIC_NOTE_A])
-            display.scroll(timer, delay=DELAY_TIMER, loop=True, wait=False)
-            #falta serial
-    elif button_b.is_pressed():
-        if timer < 60:
-            timer = timer + 1
-            music.play([MUSIC_NOTE_B])
-            display.scroll(timer, delay=DELAY_TIMER, loop=True, wait=False)
-            #falta serial
+    read()
 
-
+    if button_a.was_pressed():
+        timer_increase()
+    elif button_b.was_pressed():
+        state = 'COUNTDOWN'
+        uart.write('2')
+        speech.say('ACTIVATED')
+# ------------------------------------------------------------------------
 def countdown():
     global state
     global timer
     global startTime
-    
+
     if utime.ticks_diff(utime.ticks_us(), startTime) > 1000000:
+        startTime = utime.ticks_us()
         if timer > 0:
             timer = timer - 1
+            display.scroll(str(timer), wait=False)
             if timer > 10:
                 music.pitch(666, 250, wait=False)
+                uart.write('Y')
             elif timer < 11 and timer > 5:
                 music.pitch(777, 250, wait=False)
+                uart.write('O')
             else:
-                 music.pitch(999, 250, wait=False)
+                music.pitch(999, 250, wait=False)
+                uart.write('R')
         else:
             state = 'EXPLODE'
-            
-        startTime = utime.ticks_us()
-        display.scroll(timer, delay=DELAY_TIMER, loop=False, wait=False)
+            uart.write('3')
+# ------------------------------------------------------------------------
+def wires():
+    global state
+    global sequence
+    global sequencePtr
+    
+    if sequencePtr == 0:
+        if pin0.is_touched() == sequence[0][0]:
+            if pin1.is_touched() == sequence[0][1]:
+                if pin2.is_touched() == sequence[0][2]:
+                    sequencePtr = 1;
+                else:
+                    return
+            else:
+                state = 'EXPLODE'
+                uart.write('3')
+        else:
+            state = 'EXPLODE'
+            uart.write('3')
 
-            
+    elif sequencePtr == 1:
+        if pin0.is_touched() == sequence[1][0]:
+            if pin1.is_touched() == sequence[1][1]:
+                if pin2.is_touched() == sequence[1][2]:
+                    sequencePtr = 2;
+                else:
+                    return
+            else:
+                state = 'EXPLODE'
+                uart.write('3')
+        else:
+            state = 'EXPLODE'
+            uart.write('3')
+
+    elif sequencePtr == 2:
+        if pin0.is_touched() == False:
+            if pin1.is_touched() == False:
+                if pin2.is_touched() == False:
+                    state = 'DISARMED'
+                    uart.write('4')
+                else:
+                    return
+            else:
+                state = 'EXPLODE'
+                uart.write('3')
+        else:
+            state = 'EXPLODE'
+            uart.write('3')
+# ------------------------------------------------------------------------
 def explode():
     global state
-
+    
     music.set_tempo(bpm=110)
     display.show(Image.SKULL)
     music.play(music.FUNERAL, wait=True, loop=False)
     sleep(DELAY_LONG)
     state = 'SETUP'
-
+    uart.write('0')
+# ------------------------------------------------------------------------
 def disarmed():
     global state
-    
+
     display.show(Image.HAPPY)
     music.play(music.ENTERTAINER, wait=True, loop=False)
     sleep(DELAY_LONG)
     state = 'SETUP'
-
-def input_listener():
-    if wireMode == True: cable_disarm()
-    else: button_disarm()
-
-        
-def button_disarm():
-    global userInputPtr
-    global state
-    
-    if button_a.was_pressed():
-        userInput[userInputPtr] = 'DOWN'
-        userInputPtr += 1
-        display.show(userInputPtr)
-            
-    elif button_b.was_pressed():
-        userInput[userInputPtr] = 'UP'
-        userInputPtr += 1
-        display.show(userInputPtr)
-            
-    elif pin_logo.is_touched():
-        userInput[userInputPtr] = 'ARMED'
-        userInputPtr += 1
-        display.show('A')
-
-    if userInputPtr > 6:
-        if userInput == DISARM_CODE:
-            state = 'DISARMED'
-            speech.say('DISARMED')
-            display.show(Image.YES)
-            sleep(DELAY_TIMER)
-        else:
-            display.show(Image.NO)
-            userInputPtr = 0
+    uart.write('0')
+# ------------------------------------------------------------------------
 
 
-def cable_disarm():
-    global wireUserInput
-    global wireDisarmPtr
-    global state
-    
-    if wireDisarmPtr == 0:
-        if pin1.is_touched() == False and pin0.is_touched() == True and pin2.is_touched() == True:
-            wireDisarmPtr += 1
-            music.play('c')
-        elif pin1.is_touched() == True and pin0.is_touched() == True or pin2.is_touched() == True:
-           return
-        else: state = 'EXPLODE'
-
-    if wireDisarmPtr == 1:
-        if pin0.is_touched() == True and pin1.is_touched() == False and pin2.is_touched() == True:
-            wireDisarmPtr += 1
-            music.play('d')
-        elif pin0.is_touched() == True and pin1.is_touched() == True and pin2.is_touched() == True:
-           return
-        else: state = 'EXPLODE'
-
-    if wireDisarmPtr == 2:
-        if pin0.is_touched() == True and pin1.is_touched() == False and pin2.is_touched() == False:
-            wireDisarmPtr += 1
-            music.play('d')
-        elif pin0.is_touched() == True and pin1.is_touched() == False and pin2.is_touched() == True: 
-            return
-        else: state = 'EXPLODE'
-
-    if wireDisarmPtr == 3:
-        if pin0.is_touched() == False and pin1.is_touched() == False and pin2.is_touched() == False:
-            music.play('e')
-            sleep(DELAY_SHORT)
-            state = 'DISARMED'
-        elif pin0.is_touched() == True and pin1.is_touched() == False and pin2.is_touched() == False: 
-            return
-        else: state = 'EXPLODE'
-
-
+# ------------------------------------------------------------------------
 # Code in a 'while True:' loop repeats forever
 while True:
-    if state == 'SETUP':
+    if state == 'INITIALIZE':
+        initialize()
+    elif state == 'SETUP':
         setup()
-    elif state == 'CONFIG':
-        config()
-    elif state == 'ARMED':
+    elif state == 'CONFIGURE':
+        configure()
+    elif state == 'COUNTDOWN':
+        wires()
         countdown()
-        input_listener()
     elif state == 'EXPLODE':
         explode()
     elif state == 'DISARMED':
         disarmed()
-        
+# ------------------------------------------------------------------------
