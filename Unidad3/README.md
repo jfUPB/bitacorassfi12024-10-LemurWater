@@ -439,6 +439,39 @@ big y little endian: orden de almacenado en memoria
 
 Al ser mayor que, supongo que es BIG (confirmado).
 
+La informacion es enpaquetada, supongo que en base 1,
+
+```
+�?�p�@��@p�
+```
+Mas bien cada 3 *simbolos* corresponden a un numero (incleyendo el punto)
+
+![Screenshot from 2024-05-06 10-14-32](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/604a1208-1f5f-4ebd-aad9-d40c5413ba06)
+
+
+Con 1 variable:
+
+```python
+sensor1 = 1.23
+data = struct.pack('>3f',sensor1)
+```
+
+el resutado son 4 *simbolos*
+
+```
+?�p�
+```
+
+Con 2 variables:
+
+```python
+sensor1 = 1.23
+sensor2 = 2.45
+data = struct.pack('>3f',sensor1, sensor2)
+```
+
+Llego a la conclusion de que cada **4** *simbolos* representan una variable enviada
+
 #### Actividad 3
 
 
