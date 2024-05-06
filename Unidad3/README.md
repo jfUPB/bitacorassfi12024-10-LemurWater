@@ -428,8 +428,20 @@ NOTA: E estado aprendiendo como usar el sistema de renderizado de __p5.js__ , di
 ### Sesión 1
 
 
+#### Actividad 2
+
 ¿Qué conclusión puedes sacar hasta este punto? Escribe tu análisis en la bitácora.
 Se crea un arreglo de punto flotante, en un orden predeterminado (big-endian) y luego se obtienen esas variables para convertirlas a binario.
+
+big y little endian: orden de almacenado en memoria
+
+![image](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/074910fc-74d9-425d-8fd0-cb7b89415cc4)
+
+Al ser mayor que, supongo que es BIG (confirmado).
+
+#### Actividad 3
+
+
 
 1. ¿Cuál será el propósito de la sesión de hoy?
 
