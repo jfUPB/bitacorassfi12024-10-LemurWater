@@ -7,12 +7,12 @@ DELAY_TIMER = 75
 DELAY_SHORT = 400
 DELAY_LONG = 1250
 # ------------------------------------------------------------------------
-state = 'ÍNITIALIZE'
-timer
-startTime
+state = 'INITIALIZE'
+timer = 0
+startTime = 0
 # ------------------------------------------------------------------------
-sequence
-sequencePtr
+sequence = [[True, False, True], [True, False, False]]
+sequencePtr = 0
 # ------------------------------------------------------------------------
 uart.init(baudrate=115200)
 # ------------------------------------------------------------------------
@@ -25,17 +25,19 @@ def initialize():
     if pin0.is_touched(): 
         if pin1.is_touched(): 
             if pin2.is_touched():
+                display.show(Image.YES)
+                sleep(1000)
                 state ='SETUP'
                 uart.write('1')
             else :
                 display.show(Image.NO)
-                sleep(2000)
+                sleep(500)
         else :
             display.show(Image.NO)
-            sleep(2000)
+            sleep(500)
     else :
         display.show(Image.NO)
-        sleep(2000)
+        sleep(500)
 # ------------------------------------------------------------------------
 def setup():
     global state
@@ -47,24 +49,30 @@ def setup():
     global sequence
     global sequencePtr
 
-    timer = 20
+    timer = 5
+    display.scroll(timer, wait=False)
     userInputPtr = 0
     startTime = utime.ticks_us()
-    sequence = [[True, False, False], [False, False, True]]
+    sequence = [[True, False, True], [True, False, False]]
     sequencePtr = 0
     state = 'CONFIGURE'
-    uart.write(str('S=' + state))
+    uart.write('2')
 
     speech.say('CONFIG')
 # ------------------------------------------------------------------------
 def timer_increase():
     global timer
 
-    if timer > 60:
+    if timer > 59:
         timer = 5
+        music.play('c')
     else:
         timer = timer + 5
-        uart.write(str(timer))
+        if timer < 29:
+            music.play('d')
+        else:
+            music.play('e')
+    display.scroll(timer, wait=False)
 def timer_decrese():
     global timer
 
@@ -73,6 +81,18 @@ def timer_decrese():
     else:
         timer = timer - 5
         uart.write(str(timer))
+def press_a():
+        timer_increase()
+        uart.write('+')
+def press_b():
+    global state
+    global startTime
+    
+    state = 'COUNTDOWN'
+    speech.say('ACTIVATED')
+    music.play('f6')
+    uart.write('3')
+    startTime = utime.ticks_us()
 # ------------------------------------------------------------------------
 def read():
     global state
@@ -81,26 +101,19 @@ def read():
     if uart.any():
         data = uart.read(1)
         if data:
-            if state == 'CONFIG':
-               if data[0] == ord('+'):
-                   timer_increase()
-               elif data[0] == ord('-'):
-                   timer_decrese()
-               elif data[0] == 'S':
-                   state = 'COUNTDOWN'
+            if state == 'CONFIGURE':
+                if data[0] == ord('+'):
+                    press_a()
+                elif data[0] == ord('3'):
+                    press_b()
 # ------------------------------------------------------------------------
 def configure():
-    global state
-    global timer
-
     read()
 
     if button_a.was_pressed():
-        timer_increase()
+        press_a()
     elif button_b.was_pressed():
-        state = 'COUNTDOWN'
-        uart.write('2')
-        speech.say('ACTIVATED')
+        press_b()
 # ------------------------------------------------------------------------
 def countdown():
     global state
@@ -108,70 +121,105 @@ def countdown():
     global startTime
 
     if utime.ticks_diff(utime.ticks_us(), startTime) > 1000000:
-        startTime = utime.ticks_us()
         if timer > 0:
             timer = timer - 1
+            startTime = utime.ticks_us()
+            uart.write('t')
             display.scroll(str(timer), wait=False)
             if timer > 10:
-                music.pitch(666, 250, wait=False)
-                uart.write('Y')
+                music.play('c6')
             elif timer < 11 and timer > 5:
-                music.pitch(777, 250, wait=False)
-                uart.write('O')
+                music.play('f6')
             else:
-                music.pitch(999, 250, wait=False)
-                uart.write('R')
+                music.play('b6')
         else:
             state = 'EXPLODE'
-            uart.write('3')
+            uart.write('4')
+# ------------------------------------------------------------------------
+def wires_test():
+    global state
+    global sequence
+    global sequencePtr
+    
+    if pin0.is_touched() == True:
+        if pin1.is_touched() == True:
+            if pin2.is_touched() == True:
+                display.show(Image.HAPPY)
+            else:
+                display.show(Image.SAD)
+        else:
+            display.show(Image.SAD)
+    else:
+        display.show(Image.SAD)
 # ------------------------------------------------------------------------
 def wires():
     global state
     global sequence
     global sequencePtr
-    
+
     if sequencePtr == 0:
+        if pin0.is_touched() == True:
+            if pin1.is_touched() == True:
+                if pin2.is_touched() == True:
+                    return
         if pin0.is_touched() == sequence[0][0]:
             if pin1.is_touched() == sequence[0][1]:
                 if pin2.is_touched() == sequence[0][2]:
                     sequencePtr = 1;
+                    uart.write('/')
                 else:
-                    return
+                    pass
+                    # state = 'EXPLODE'
+                    # uart.write('3')
             else:
-                state = 'EXPLODE'
-                uart.write('3')
+                pass
         else:
-            state = 'EXPLODE'
-            uart.write('3')
-
+            pass
+            # state = 'EXPLODE'
+            # uart.write('3')
+                
     elif sequencePtr == 1:
+        if pin0.is_touched() == sequence[0][0]:
+            if pin1.is_touched() == sequence[0][1]:
+                if pin2.is_touched() == sequence[0][2]:
+                    return
+
         if pin0.is_touched() == sequence[1][0]:
             if pin1.is_touched() == sequence[1][1]:
                 if pin2.is_touched() == sequence[1][2]:
                     sequencePtr = 2;
+                    uart.write('/')
                 else:
-                    return
+                    pass
             else:
-                state = 'EXPLODE'
-                uart.write('3')
+                pass
         else:
-            state = 'EXPLODE'
-            uart.write('3')
+            pass
+            # state = 'EXPLODE'
+            # uart.write('4')
 
     elif sequencePtr == 2:
+        if pin0.is_touched() == sequence[1][0]:
+            if pin1.is_touched() == sequence[1][1]:
+                if pin2.is_touched() == sequence[1][2]:
+                    return
         if pin0.is_touched() == False:
             if pin1.is_touched() == False:
                 if pin2.is_touched() == False:
                     state = 'DISARMED'
-                    uart.write('4')
+                    uart.write('5')
                 else:
-                    return
+                    pass
+                    # state = 'EXPLODE'
+                    # uart.write('4')
             else:
-                state = 'EXPLODE'
-                uart.write('3')
+                pass
+                # state = 'EXPLODE'
+                # uart.write('4')
         else:
-            state = 'EXPLODE'
-            uart.write('3')
+            pass
+            # state = 'EXPLODE'
+            # uart.write('4')
 # ------------------------------------------------------------------------
 def explode():
     global state
