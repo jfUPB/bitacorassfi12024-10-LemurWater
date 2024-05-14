@@ -39,6 +39,7 @@ function _setup_() {
   state = 2;
 }
 function aButton() {
+  soundExplosion();
   sendSerial("+");
 }
 function bButton() {
@@ -99,6 +100,10 @@ function countdown() {
 // --------------------------------------------------------------------
 function explode() {
   fill("black");
+  if (reproducing == false) {
+    reproducing = true;
+    soundExpl.play();
+  }
   renderExplosion();
 }
 // --------------------------------------------------------------------
