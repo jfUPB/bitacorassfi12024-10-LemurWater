@@ -4,28 +4,28 @@
 
 **¿Qué quieres lograr con la aplicación?**
 
-> Escribe aquí
+> Aprender como funcionan los sistemas de una consola retro.
 > 
 
 **¿Qué tipo de interacción con el usuario deseas que tenga la aplicación?**
 
-> Escribe aquí
+> Un elemento de entretenimiento. Un sistema de procesamiento que genere un juego (software) y la persona lo controle con una serie de pulsadores y similares, y a su vez, la persona tenga "feedback" del procesamiento (software) a travez de la pantalla (graficos) y sonidos. 
 > 
 
 **¿Qué tipo de sensores y actuadores del micro:bit deseas usar?**
 
-> Escribe aquí
+> botones, pantalla y sonido.
 > 
 
 **¿Qué tipo de protocolo de comunicación deseas usar?**
 
-> Escribe aquí
+> ASCII
 > 
 
 
 **¿Cómo será la arquitectura de la comunicación entre el micro:bit y p5.js?**
 
-> Escribe aquí
+> Cliente servidor
 > 
 
 
@@ -36,7 +36,7 @@
 
 **¿Qué tipo de animación deseas mostrar en el hilo principal?**
 
-> Escribe aquí
+> Un sistema rudimentario y fingido de primera persona estilo shooter
 > 
 
 ## Investigar 
@@ -81,3 +81,5 @@
 
 > Escribe aquí
 > 
+
+
