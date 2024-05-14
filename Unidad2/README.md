@@ -578,3 +578,16 @@ Si se le pregunta al __PC__ (*_y no esta pausado_), el responde:
         }
       }
 ```
+## Continuacion
+
+### Objetivo
+
+Finalizar el proyecto, integrando el engine construido y adaptado anteriormente a los otros proyectos y acabar lo que falta de serializado.
+
+### Notas
+
+Con un poco de dificultad, porque el proyecto era viejo y tenia problemas, se a ido adaptando al estandar del engine que estoy utilizando en los otros proyectos del curso.
+
+Hasta el momento inicia y entra al juego pero tiene algunos botones y errores que no cuadran, tratando de buscar y creando objetos del otro juego pero se resuelven con facilidad.
+
+Cuando el juego este integrado aceptablemente, el siguente paso sera trabajar en el serializado.
