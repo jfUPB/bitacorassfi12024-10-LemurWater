@@ -556,6 +556,13 @@ Los microcontroladores son una herramienta extremadamente potente que pueden rea
 ![bomb 1](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/ec5985e3-a7e9-447e-b594-dff4a384b9e6)
 
 
+## Continuacion (Engine grafico)
 
+Se creo para el proyecto un engine grafico, el cual se adapto para los demas proyectos.
+
+
+## Continuacion (Cables & Serializado)
+
+El proyecto estilo juego fisico se a completado, agregando el sistema de desarmado por cables y envio de informacion serial.
 
 
