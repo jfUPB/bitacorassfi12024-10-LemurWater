@@ -492,29 +492,33 @@ Llego a la conclusion de que cada **4** *simbolos* representan una variable envi
 
 > Escribe aquí
 
+---
+
+# Reposicion
+
 ### Sesión 2 (Miercoles 10)
 
 1. ¿Cuál será el propósito de la sesión de hoy?
 
-> Escribe aquí
+> Agregar/adaptar el engine grafico de los otros proyectos,
  
 2. ¿Cuáles fueron los desafíos más significativos de la sesión y cómo los superé?
 
-> Escribe aquí
+> Hacer las conecciones/cambiar las variables aunque no fue mayor problema
 
 3. Basado en el trabajo de la sesión, ¿Qué aprendí o qué conclusión saco o cuál es la síntesis?
 
-> Escribe aquí
+> Es bueno crear un sistema el cual uno entienda y pueda "portear" con facilidad para reducir futuro trabajo.
 
 4. ¿Cuáles son los pasos siguientes para continuar avanzando en el proyecto?
 
-> Escribe aquí
+> falta el serializado, que el movimiento del microbit afecte el cursor del PC.
 
 ### Sesión 3
 
 1. ¿Cuál será el propósito de la sesión de hoy?
 
-> Escribe aquí
+> enviar los movimientos del microbit hacia el PC
  
 2. ¿Cuáles fueron los desafíos más significativos de la sesión y cómo los superé?
 
