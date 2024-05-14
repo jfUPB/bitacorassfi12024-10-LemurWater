@@ -1,6 +1,11 @@
 let port;
 let connectBtn;
 
+var song;
+// --------------------------------------------------------------------
+function preload() {
+  soundExpl = loadSound(pathExpl);
+}
 // --------------------------------------------------------------------
 function setup() {
   initialize();
