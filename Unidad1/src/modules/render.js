@@ -162,8 +162,8 @@ function renderWires() {
 // --------------------------------------------------------------------
 function renderExplosion() {
   if (explosion_counter > EXPLOSION_MAX) {
-    state = 1;
     explosion_counter = 0;
+    state = 1;
     return;
   } else {
     explosion_counter++;
