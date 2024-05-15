@@ -1,5 +1,12 @@
 # Bitácora de aprendizaje
 
+
+![Screenshot from 2024-05-15 11-58-53](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/cb7ba24c-b14e-47a9-9e1c-f84d954102ac)
+
+![Screenshot from 2024-05-15 11-58-58](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/39fbeda9-9bce-4fae-9f8d-ddc6fa98842d)
+
+
+
 ## SEMANA 2
 
 WEB: https://sistemasfisicosinteractivos1.readthedocs.io/
