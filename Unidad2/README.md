@@ -1,5 +1,11 @@
 # Bitácora de aprendizaje
 
+![Screenshot from 2024-05-15 11-58-08](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/d0882411-bb0e-4161-a088-62afd9c9076c)
+
+![Screenshot from 2024-05-15 11-58-13](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/aa449187-83d6-44ec-a86b-6979109e35de)
+
+
+
 > [!IMPORTANT]  
 > RETO PERSONALIZADO
 > 
