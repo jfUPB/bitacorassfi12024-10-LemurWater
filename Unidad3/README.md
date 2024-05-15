@@ -1,3 +1,10 @@
+# Bitácora de aprendizaje
+
+![Screenshot from 2024-05-15 11-56-50](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/c2ab8b6e-355d-43ab-bfce-7e0ac1d31196)
+
+![Screenshot from 2024-05-15 11-53-56](https://github.com/jfUPB/bitacorassfi12024-10-LemurWater/assets/38868316/855f8ae0-2186-479a-b3b4-f98edafd8b72)
+
+
 # REFERENCIAS:
 
 [WEB del curso](https://sistemasfisicosinteractivos1.readthedocs.io/)
@@ -28,8 +35,6 @@
 [speaker 3](https://microbit.org/projects/make-it-code-it/guitar-2-chords/)
 
 ---
-
-# Bitácora de aprendizaje
 
 ## ¿Cómo voy?
 
